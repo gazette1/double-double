@@ -1,0 +1,2 @@
+trained_at,train_cutoff,train_rows,fit_rows,holdout_rows,best_iteration,holdout_logloss_raw,holdout_logloss_platt,holdout_auc,holdout_dd_rate,holdout_mean_p_platt,minutes
+2026-10-29 17:24,2026-10-28,239334,203414,35920,410,0.18277585712448371,0.18229985854516675,0.8887126942732169,0.0751391982182628,0.07511630503930108,0.32

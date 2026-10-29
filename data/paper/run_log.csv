@@ -1,0 +1,5 @@
+run_et,date,mode,games,pending_players,scored,priced_fd,twoway,picks,margin_slate,bar,credits_used,credits_remaining,unmatched_names,model_trained_at,seconds
+2026-10-29 17:28,2026-10-29,live,3,93,82,24,19,0,0.011896228408711879,0.03,3,461,,2026-10-29 17:24,11.1
+2026-10-29 17:32,2026-10-29,live,3,93,82,24,19,0,0.028366876955468634,0.03,0,,,2026-10-29 17:24,13.1
+2026-10-29 17:32,2026-10-28,backfill,12,256,232,0,0,3,,0.03,,,,2026-10-29 17:24,8.6
+2026-10-29 17:32,2026-10-28,grade,3,3,0,0,0,,3,0.2

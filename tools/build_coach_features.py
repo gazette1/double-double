@@ -27,6 +27,7 @@ Output: data/features/coach_features.parquet, data/features/coach_timeline.csv, 
 Usage: PYTHONUTF8=1 python tools/build_coach_features.py --seasons 2018 ... 2027
 """
 import argparse
+import hashlib
 from pathlib import Path
 
 import numpy as np
@@ -128,17 +129,29 @@ def head_coach_timeline(tb, snaps, mid):
     for y in seasons:
         for t in sorted(tb.loc[tb["season"] == y, "team_id"].unique()):
             opening = hc_by.get((y - 1, t))
+            source = "snapshot_prev"
+            if not opening:  # the team was between coaches when the previous snapshot was taken: use the end-of-year staff
+                opening = hc_by.get((y, t))
+                source = "snapshot_same"
+                if opening:
+                    review.append({"season": y, "team_id": t, "team": abbr_of[t], "opening_hc": opening[1],
+                                   "end_of_year_hc": opening[1],
+                                   "status": "no head coach in the previous snapshot; opening coach taken from the end-of-year snapshot"})
             segs = []
             if opening:
-                segs.append((pd.Timestamp("1900-01-01"), opening[0], opening[1], "snapshot_prev"))
+                segs.append((pd.Timestamp("1900-01-01"), opening[0], opening[1], source))
             else:
                 segs.append((pd.Timestamp("1900-01-01"), -1, "unknown", "missing"))
+            first_game = tb.loc[(tb["season"] == y) & (tb["team_id"] == t), "game_date"].min()
             rows = mid[(mid["season"] == y) & (mid["team_id"] == t)].sort_values("change_date")
             for r in rows.itertuples():
                 cid = names_by.get((y, t), {}).get(r.in_coach.lower())
-                if cid is None:
-                    cid = -abs(hash(r.in_coach)) % 10**8  # stable synthetic id for an interim not in any snapshot
-                segs.append((r.change_date, cid, r.in_coach, "midseason_table"))
+                if cid is None:  # an interim absent from every snapshot: a deterministic synthetic id
+                    cid = 90000000 + int(hashlib.md5(r.in_coach.encode("utf-8")).hexdigest()[:6], 16)
+                if r.change_date <= first_game:  # a pre-season change: the new coach opens the season
+                    segs[0] = (pd.Timestamp("1900-01-01"), cid, r.in_coach, "preseason_table")
+                else:
+                    segs.append((r.change_date, cid, r.in_coach, "midseason_table"))
             end = hc_by.get((y, t))
             if end and opening and end[0] != opening[0] and not len(rows):
                 review.append({"season": y, "team_id": t, "team": abbr_of[t], "opening_hc": opening[1],

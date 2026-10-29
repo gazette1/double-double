@@ -1,23 +1,27 @@
 # Double Double Bot
 
-NBA double-double prop research and backtest. Vault master note: `Obsidian Vault/Double Double Bot/Double Double Bot.md` (start there). Started 2026-10-29.
+NBA double-double prop research, backtest and paper-trade pipeline. Vault master note: `Obsidian Vault/Double Double Bot/Double Double Bot.md` (start there); the daily procedure is the vault job `Jobs/Run Daily DD Picks`. Started 2026-10-29.
 
 ## Layout
 - `tools/pull_hoopr.py` downloads ESPN box scores, team box scores and schedules (sportsdataverse hoopR-nba-data) into `data/raw/hoopr/`. Season key is the season end year.
 - `tools/check_sources.py` checks which public data sources respond.
-- `tools/odds_snapshot.py` logs The Odds API `player_double_double` prices (FanDuel, DraftKings by default) to `data/odds/dd_prices.csv` and `data/odds/snapshots/`. One credit per game per call.
+- `tools/odds_snapshot.py` logs The Odds API `player_double_double` prices (FanDuel, DraftKings, the two-way books and the other DC books; ten keys bill as one region) to `data/odds/dd_prices.csv` (column `snapshot_kind`: open or pretip) and `data/odds/snapshots/`, and every run's credits to `data/odds/credits_log.csv`. One credit per game per call. Importable (`snapshot(...)`) by the pipeline scripts.
 - `tools/market_check.py` compares the latest logged prices with realized double-double rates.
 - `tools/stat_structure_check.py` measures within-player stat correlations, dispersion and the arena assist effect from the game logs.
-- `tools/build_dataset.py` builds `data/features/dataset_v1.parquet` (point-in-time features, spec in `docs/SPEC_v1.md`, catalog in `docs/FEATURES_v1.md`).
+- `tools/build_dataset.py` builds `data/features/dataset_v1.parquet` (point-in-time features, spec in `docs/SPEC_v1.md`, catalog in `docs/FEATURES_v1.md`). `build_table(pb, tb, info)` is the shared feature code path that the production trainer and the daily run reuse.
 - `tools/train_eval.py` runs the v1 walk-forward backtest to `data/eval/v1/`.
 - `tools/train_eval_v2.py` runs the v2 models (minutes model, simulation probability, stack, blends, calibration study) to `data/eval/v2/`, spec in `docs/SPEC_v2.md`.
 - `tools/edge_bands.py` assumption-based edge view by price band from the v2 predictions.
-- `tools/pull_tracking.py` pulls per-game tracking and hustle box scores (rebound chances, potential assists, box outs) from stats.nba.com through `nba_api`, one request per game date per measure, into `data/raw/tracking/`. Resumable, and it waits out the site's throttling blocks (hung requests) with long pauses and re-passes instead of retrying quickly.
-- `tools/pull_matchups.py` pulls season-level defender versus offensive-player matchup totals (who guarded whom, partial possessions, points and assists allowed) per defensive team into `data/raw/matchups/`.
-- `tools/build_tracking.py` matches NBA player ids to ESPN ids (`data/raw/tracking/crosswalk.csv`) and writes `data/features/tracking_games.parquet`, `tracking_team_games.parquet` and the point-in-time player features `tracking_features.parquet` (prefix `trk_`).
-- `tools/build_opponent_features.py` writes `data/features/opponent_features.parquet`: opponent position-allowed (`oppx_`), opponent tracking profile (`oppt_`) and prior-season matchup features (`mu_`), all point-in-time.
-- `tools/tracking_lift.py` controlled walk-forward test of those feature groups against the v1 feature set, including residual boosting from the saved v1 prediction (zero trees equals v1), output in `data/eval/tracking/report_tracking.md`. Result 2026-10-29: no measurable lift; the layer is not part of the production model.
+- `tools/pull_tracking.py`, `tools/pull_matchups.py`, `tools/build_tracking.py`, `tools/build_opponent_features.py`, `tools/tracking_lift.py`: the stats.nba.com tracking and matchup layer and its controlled lift test (`data/eval/tracking/report_tracking.md`). Result 2026-10-29: no measurable lift; the layer is not part of the production model and the daily pipeline does not call stats.nba.com.
 - `research_notes/` five cited research notes; `reports/NBA double double prop models.md` the synthesis.
 
+## Paper-trade pipeline (built 2026-10-29)
+- `tools/paper_common.py` shared pieces: ESPN scoreboard, injuries, rosters and box scores (public JSON), de-vig (multiplicative and power), the price board, name matching, file paths, the voice check on generated text.
+- `tools/train_production.py` fits the production model (v1 C_full on the 155 features, Platt-calibrated on the last 15 percent of rows by date) on every season through yesterday, rebuilding the feature table into `data/features/dataset_prod.parquet` through `build_table`. Outputs `data/models/production/` (booster, `platt.json`, `manifest.json`, `features.json`, `training_history.csv`). The daily run retrains when the manifest is older than 7 days.
+- `tools/daily_run.py` the morning run: hoopR refresh, slate and injuries and rosters from ESPN, pending rows for every available rostered player appended to the history and featured through `build_table`, calibrated probabilities, price snapshot, fair probabilities from the two-way quotes, edge selection (thresholds at the top of the file), `data/paper/picks_{date}.csv`, `board_{date}.csv`, `discord_{date}.md` (text in the strikeout bot's layout; nothing is posted). `--reuse-prices` replays the logged snapshot at no cost; `--date` with a past date backfills a day from its actual lineups; `--no-odds` skips prices.
+- `tools/pretip_snapshot.py` before tip: prices for the picked games only, injury re-check (ruled out becomes void), closing FanDuel, best and fair prices written into the picks file, `discord_pretip_{date}.md`.
+- `tools/grade.py` next morning: grades yesterday from the box scores (hoopR, else the ESPN summary), pays the paper stake at the open and close, computes fair closing line value under both de-vig methods, replaces the date's rows in `data/paper/ledger.csv`, writes `discord_grade_{date}.md` with the day's record and the season line against the 100-pick gate.
+- `data/paper/run_log.csv` one line per run; `data/paper/logs/` the console output of every run.
+
 ## Running
-All scripts run from the project root with `PYTHONUTF8=1 python tools/<script>.py`. Python 3.13 with pandas, numpy, scipy, lightgbm, scikit-learn, pyarrow, requests, plus `nba_api` 1.12 (installed 2026-10-29 with Russ's go-ahead) for the tracking and matchup pulls. `.env` (optional) holds `ODDS_API_KEY`; otherwise the StrikeOut Bot `.env` is read.
+All scripts run from the project root with `PYTHONUTF8=1 python tools/<script>.py`. Python 3.13 with pandas, numpy, scipy, lightgbm, scikit-learn, pyarrow, requests, plus `nba_api` 1.12 (installed 2026-10-29 with Russ's go-ahead) for the tracking and matchup pulls only. `.env` (optional) holds `ODDS_API_KEY`; otherwise the StrikeOut Bot `.env` is read. Paper stakes only; no scheduled task exists.
