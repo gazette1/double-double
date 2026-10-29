@@ -1,0 +1,56 @@
+snapshot_et,game_date,event_id,away,home,commence_time,book,market,market_last_update,player,side,price,implied
+2026-10-29 10:23,2026-10-29,b123d92eb8046e43fabf95a33a676634,Cleveland Cavaliers,Atlanta Hawks,2026-10-30T00:10:00Z,draftkings,player_double_double,2026-10-29T14:22:59Z,Jalen Johnson,Yes,-165,0.6226
+2026-10-29 10:23,2026-10-29,b123d92eb8046e43fabf95a33a676634,Cleveland Cavaliers,Atlanta Hawks,2026-10-30T00:10:00Z,draftkings,player_double_double,2026-10-29T14:22:59Z,Evan Mobley,Yes,119,0.4566
+2026-10-29 10:23,2026-10-29,b123d92eb8046e43fabf95a33a676634,Cleveland Cavaliers,Atlanta Hawks,2026-10-30T00:10:00Z,draftkings,player_double_double,2026-10-29T14:22:59Z,Jarrett Allen,Yes,184,0.3521
+2026-10-29 10:23,2026-10-29,b123d92eb8046e43fabf95a33a676634,Cleveland Cavaliers,Atlanta Hawks,2026-10-30T00:10:00Z,draftkings,player_double_double,2026-10-29T14:22:59Z,James Harden,Yes,404,0.1984
+2026-10-29 10:23,2026-10-29,b123d92eb8046e43fabf95a33a676634,Cleveland Cavaliers,Atlanta Hawks,2026-10-30T00:10:00Z,draftkings,player_double_double,2026-10-29T14:22:59Z,Onyeka Okongwu,Yes,469,0.1757
+2026-10-29 10:23,2026-10-29,b123d92eb8046e43fabf95a33a676634,Cleveland Cavaliers,Atlanta Hawks,2026-10-30T00:10:00Z,draftkings,player_double_double,2026-10-29T14:22:59Z,Dyson Daniels,Yes,620,0.1389
+2026-10-29 10:23,2026-10-29,b123d92eb8046e43fabf95a33a676634,Cleveland Cavaliers,Atlanta Hawks,2026-10-30T00:10:00Z,draftkings,player_double_double,2026-10-29T14:22:59Z,Donovan Mitchell,Yes,900,0.1
+2026-10-29 10:23,2026-10-29,b123d92eb8046e43fabf95a33a676634,Cleveland Cavaliers,Atlanta Hawks,2026-10-30T00:10:00Z,draftkings,player_double_double,2026-10-29T14:22:59Z,Peyton Watson,Yes,1480,0.0633
+2026-10-29 10:23,2026-10-29,b123d92eb8046e43fabf95a33a676634,Cleveland Cavaliers,Atlanta Hawks,2026-10-30T00:10:00Z,draftkings,player_double_double,2026-10-29T14:22:59Z,Nickeil Alexander-Walker,Yes,4600,0.0213
+2026-10-29 10:23,2026-10-29,b123d92eb8046e43fabf95a33a676634,Cleveland Cavaliers,Atlanta Hawks,2026-10-30T00:10:00Z,fanduel,player_double_double,2026-10-29T14:23:03Z,Jalen Johnson,Yes,-188,0.6528
+2026-10-29 10:23,2026-10-29,b123d92eb8046e43fabf95a33a676634,Cleveland Cavaliers,Atlanta Hawks,2026-10-30T00:10:00Z,fanduel,player_double_double,2026-10-29T14:23:03Z,Evan Mobley,Yes,120,0.4545
+2026-10-29 10:23,2026-10-29,b123d92eb8046e43fabf95a33a676634,Cleveland Cavaliers,Atlanta Hawks,2026-10-30T00:10:00Z,fanduel,player_double_double,2026-10-29T14:23:03Z,Jarrett Allen,Yes,164,0.3788
+2026-10-29 10:23,2026-10-29,b123d92eb8046e43fabf95a33a676634,Cleveland Cavaliers,Atlanta Hawks,2026-10-30T00:10:00Z,fanduel,player_double_double,2026-10-29T14:23:03Z,James Harden,Yes,350,0.2222
+2026-10-29 10:23,2026-10-29,b123d92eb8046e43fabf95a33a676634,Cleveland Cavaliers,Atlanta Hawks,2026-10-30T00:10:00Z,fanduel,player_double_double,2026-10-29T14:23:03Z,Onyeka Okongwu,Yes,520,0.1613
+2026-10-29 10:23,2026-10-29,b123d92eb8046e43fabf95a33a676634,Cleveland Cavaliers,Atlanta Hawks,2026-10-30T00:10:00Z,fanduel,player_double_double,2026-10-29T14:23:03Z,Dyson Daniels,Yes,640,0.1351
+2026-10-29 10:23,2026-10-29,b123d92eb8046e43fabf95a33a676634,Cleveland Cavaliers,Atlanta Hawks,2026-10-30T00:10:00Z,fanduel,player_double_double,2026-10-29T14:23:03Z,Donovan Mitchell,Yes,700,0.125
+2026-10-29 10:23,2026-10-29,b123d92eb8046e43fabf95a33a676634,Cleveland Cavaliers,Atlanta Hawks,2026-10-30T00:10:00Z,fanduel,player_double_double,2026-10-29T14:23:03Z,Peyton Watson,Yes,1280,0.0725
+2026-10-29 10:23,2026-10-29,b123d92eb8046e43fabf95a33a676634,Cleveland Cavaliers,Atlanta Hawks,2026-10-30T00:10:00Z,fanduel,player_double_double,2026-10-29T14:23:03Z,Nickeil Alexander-Walker,Yes,5000,0.0196
+2026-10-29 10:23,2026-10-29,f91d27cc050b1b85073d745372c73833,Sacramento Kings,New Orleans Pelicans,2026-10-30T00:10:00Z,fanduel,player_double_double,2026-10-29T14:23:29Z,Domantas Sabonis,Yes,-700,0.875
+2026-10-29 10:23,2026-10-29,f91d27cc050b1b85073d745372c73833,Sacramento Kings,New Orleans Pelicans,2026-10-30T00:10:00Z,fanduel,player_double_double,2026-10-29T14:23:29Z,Precious Achiuwa,Yes,255,0.2817
+2026-10-29 10:23,2026-10-29,f91d27cc050b1b85073d745372c73833,Sacramento Kings,New Orleans Pelicans,2026-10-30T00:10:00Z,fanduel,player_double_double,2026-10-29T14:23:29Z,Dejounte Murray,Yes,390,0.2041
+2026-10-29 10:23,2026-10-29,f91d27cc050b1b85073d745372c73833,Sacramento Kings,New Orleans Pelicans,2026-10-30T00:10:00Z,fanduel,player_double_double,2026-10-29T14:23:29Z,Darius Acuff Jr.,Yes,1000,0.0909
+2026-10-29 10:23,2026-10-29,f91d27cc050b1b85073d745372c73833,Sacramento Kings,New Orleans Pelicans,2026-10-30T00:10:00Z,fanduel,player_double_double,2026-10-29T14:23:29Z,Zion Williamson,Yes,1000,0.0909
+2026-10-29 10:23,2026-10-29,f91d27cc050b1b85073d745372c73833,Sacramento Kings,New Orleans Pelicans,2026-10-30T00:10:00Z,fanduel,player_double_double,2026-10-29T14:23:29Z,De'Andre Hunter,Yes,1280,0.0725
+2026-10-29 10:23,2026-10-29,f91d27cc050b1b85073d745372c73833,Sacramento Kings,New Orleans Pelicans,2026-10-30T00:10:00Z,fanduel,player_double_double,2026-10-29T14:23:29Z,Trey Murphy III,Yes,1400,0.0667
+2026-10-29 10:23,2026-10-29,f91d27cc050b1b85073d745372c73833,Sacramento Kings,New Orleans Pelicans,2026-10-30T00:10:00Z,draftkings,player_double_double,2026-10-29T14:23:18Z,Domantas Sabonis,Yes,-438,0.8141
+2026-10-29 10:23,2026-10-29,f91d27cc050b1b85073d745372c73833,Sacramento Kings,New Orleans Pelicans,2026-10-30T00:10:00Z,draftkings,player_double_double,2026-10-29T14:23:18Z,Precious Achiuwa,Yes,275,0.2667
+2026-10-29 10:23,2026-10-29,f91d27cc050b1b85073d745372c73833,Sacramento Kings,New Orleans Pelicans,2026-10-30T00:10:00Z,draftkings,player_double_double,2026-10-29T14:23:18Z,Dejounte Murray,Yes,490,0.1695
+2026-10-29 10:23,2026-10-29,f91d27cc050b1b85073d745372c73833,Sacramento Kings,New Orleans Pelicans,2026-10-30T00:10:00Z,draftkings,player_double_double,2026-10-29T14:23:18Z,Zion Williamson,Yes,1000,0.0909
+2026-10-29 10:23,2026-10-29,f91d27cc050b1b85073d745372c73833,Sacramento Kings,New Orleans Pelicans,2026-10-30T00:10:00Z,draftkings,player_double_double,2026-10-29T14:23:18Z,Darius Acuff Jr.,Yes,1080,0.0847
+2026-10-29 10:23,2026-10-29,f91d27cc050b1b85073d745372c73833,Sacramento Kings,New Orleans Pelicans,2026-10-30T00:10:00Z,draftkings,player_double_double,2026-10-29T14:23:18Z,De'Andre Hunter,Yes,1480,0.0633
+2026-10-29 10:23,2026-10-29,f91d27cc050b1b85073d745372c73833,Sacramento Kings,New Orleans Pelicans,2026-10-30T00:10:00Z,draftkings,player_double_double,2026-10-29T14:23:18Z,Trey Murphy III,Yes,1560,0.0602
+2026-10-29 10:23,2026-10-29,f91d27cc050b1b85073d745372c73833,Sacramento Kings,New Orleans Pelicans,2026-10-30T00:10:00Z,draftkings,player_double_double,2026-10-29T14:23:18Z,Zach LaVine,Yes,3900,0.025
+2026-10-29 10:23,2026-10-29,ba667ca1b0b042f0661cb9d9af56c165,Memphis Grizzlies,Portland Trail Blazers,2026-10-30T02:10:00Z,fanduel,player_double_double,2026-10-29T14:22:36Z,Donovan Clingan,Yes,158,0.3876
+2026-10-29 10:23,2026-10-29,ba667ca1b0b042f0661cb9d9af56c165,Memphis Grizzlies,Portland Trail Blazers,2026-10-30T02:10:00Z,fanduel,player_double_double,2026-10-29T14:22:36Z,Cameron Boozer,Yes,162,0.3817
+2026-10-29 10:23,2026-10-29,ba667ca1b0b042f0661cb9d9af56c165,Memphis Grizzlies,Portland Trail Blazers,2026-10-30T02:10:00Z,fanduel,player_double_double,2026-10-29T14:22:36Z,Deni Avdija,Yes,260,0.2778
+2026-10-29 10:23,2026-10-29,ba667ca1b0b042f0661cb9d9af56c165,Memphis Grizzlies,Portland Trail Blazers,2026-10-30T02:10:00Z,fanduel,player_double_double,2026-10-29T14:22:36Z,Zach Edey,Yes,430,0.1887
+2026-10-29 10:23,2026-10-29,ba667ca1b0b042f0661cb9d9af56c165,Memphis Grizzlies,Portland Trail Blazers,2026-10-30T02:10:00Z,fanduel,player_double_double,2026-10-29T14:22:36Z,Ty Jerome,Yes,490,0.1695
+2026-10-29 10:23,2026-10-29,ba667ca1b0b042f0661cb9d9af56c165,Memphis Grizzlies,Portland Trail Blazers,2026-10-30T02:10:00Z,fanduel,player_double_double,2026-10-29T14:22:36Z,Ja Morant,Yes,520,0.1613
+2026-10-29 10:23,2026-10-29,ba667ca1b0b042f0661cb9d9af56c165,Memphis Grizzlies,Portland Trail Blazers,2026-10-30T02:10:00Z,fanduel,player_double_double,2026-10-29T14:22:36Z,Cedric Coward,Yes,640,0.1351
+2026-10-29 10:23,2026-10-29,ba667ca1b0b042f0661cb9d9af56c165,Memphis Grizzlies,Portland Trail Blazers,2026-10-30T02:10:00Z,fanduel,player_double_double,2026-10-29T14:22:36Z,Robert Williams,Yes,680,0.1282
+2026-10-29 10:23,2026-10-29,ba667ca1b0b042f0661cb9d9af56c165,Memphis Grizzlies,Portland Trail Blazers,2026-10-30T02:10:00Z,fanduel,player_double_double,2026-10-29T14:22:36Z,Damian Lillard,Yes,1500,0.0625
+2026-10-29 10:23,2026-10-29,ba667ca1b0b042f0661cb9d9af56c165,Memphis Grizzlies,Portland Trail Blazers,2026-10-30T02:10:00Z,fanduel,player_double_double,2026-10-29T14:22:36Z,Jrue Holiday,Yes,2000,0.0476
+2026-10-29 10:23,2026-10-29,ba667ca1b0b042f0661cb9d9af56c165,Memphis Grizzlies,Portland Trail Blazers,2026-10-30T02:10:00Z,fanduel,player_double_double,2026-10-29T14:22:36Z,Toumani Camara,Yes,4000,0.0244
+2026-10-29 10:23,2026-10-29,ba667ca1b0b042f0661cb9d9af56c165,Memphis Grizzlies,Portland Trail Blazers,2026-10-30T02:10:00Z,draftkings,player_double_double,2026-10-29T14:23:02Z,Donovan Clingan,Yes,149,0.4016
+2026-10-29 10:23,2026-10-29,ba667ca1b0b042f0661cb9d9af56c165,Memphis Grizzlies,Portland Trail Blazers,2026-10-30T02:10:00Z,draftkings,player_double_double,2026-10-29T14:23:02Z,Cameron Boozer,Yes,194,0.3401
+2026-10-29 10:23,2026-10-29,ba667ca1b0b042f0661cb9d9af56c165,Memphis Grizzlies,Portland Trail Blazers,2026-10-30T02:10:00Z,draftkings,player_double_double,2026-10-29T14:23:02Z,Deni Avdija,Yes,270,0.2703
+2026-10-29 10:23,2026-10-29,ba667ca1b0b042f0661cb9d9af56c165,Memphis Grizzlies,Portland Trail Blazers,2026-10-30T02:10:00Z,draftkings,player_double_double,2026-10-29T14:23:02Z,Zach Edey,Yes,376,0.2101
+2026-10-29 10:23,2026-10-29,ba667ca1b0b042f0661cb9d9af56c165,Memphis Grizzlies,Portland Trail Blazers,2026-10-30T02:10:00Z,draftkings,player_double_double,2026-10-29T14:23:02Z,Cedric Coward,Yes,548,0.1543
+2026-10-29 10:23,2026-10-29,ba667ca1b0b042f0661cb9d9af56c165,Memphis Grizzlies,Portland Trail Blazers,2026-10-30T02:10:00Z,draftkings,player_double_double,2026-10-29T14:23:02Z,Ja Morant,Yes,610,0.1408
+2026-10-29 10:23,2026-10-29,ba667ca1b0b042f0661cb9d9af56c165,Memphis Grizzlies,Portland Trail Blazers,2026-10-30T02:10:00Z,draftkings,player_double_double,2026-10-29T14:23:02Z,Ty Jerome,Yes,640,0.1351
+2026-10-29 10:23,2026-10-29,ba667ca1b0b042f0661cb9d9af56c165,Memphis Grizzlies,Portland Trail Blazers,2026-10-30T02:10:00Z,draftkings,player_double_double,2026-10-29T14:23:02Z,Robert Williams,Yes,650,0.1333
+2026-10-29 10:23,2026-10-29,ba667ca1b0b042f0661cb9d9af56c165,Memphis Grizzlies,Portland Trail Blazers,2026-10-30T02:10:00Z,draftkings,player_double_double,2026-10-29T14:23:02Z,Damian Lillard,Yes,1960,0.0485
+2026-10-29 10:23,2026-10-29,ba667ca1b0b042f0661cb9d9af56c165,Memphis Grizzlies,Portland Trail Blazers,2026-10-30T02:10:00Z,draftkings,player_double_double,2026-10-29T14:23:02Z,Jrue Holiday,Yes,2900,0.0333
+2026-10-29 10:23,2026-10-29,ba667ca1b0b042f0661cb9d9af56c165,Memphis Grizzlies,Portland Trail Blazers,2026-10-30T02:10:00Z,draftkings,player_double_double,2026-10-29T14:23:02Z,Toumani Camara,Yes,2900,0.0333

@@ -1,0 +1,16 @@
+# Local data stays out of the repository. Committed: code, docs, research notes, reports, the price log,
+# the paper-trade ledger and the production model the daily Action needs.
+data/raw/
+data/features/
+data/models/*
+!data/models/production/
+data/eval/**/*.parquet
+data/eval/**/predictions*
+data/eval/*_log*.txt
+.env
+__pycache__/
+*.pyc
+.venv/
+*.tmp
+data/eval/**/run_log.txt
+*.log
