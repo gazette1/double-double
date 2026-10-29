@@ -30,3 +30,70 @@ _Passed on the favorites: Domantas Sabonis p 0.79, FD -750, fair 0.75._
 _Credits used 0, remaining None. Paper stakes only, 1 unit per pick. Model trained 2026-10-29 17:24 through 2026-10-28._
 
 [  13.1s] wrote picks_2026-10-29.csv (0 picks), board_2026-10-29.csv (82 rows), discord_2026-10-29.md
+----- daily 2026-10-29, started 2026-10-29 17:39 ET -----
+[   0.0s] daily run for 2026-10-29 (live)
+[   0.0s] production model trained 2026-10-29 17:24 (cutoff 2026-10-28, 0 days old)
+[   0.4s] slate: 3 games: CLE at ATL 20:00 (ATL -1.5), SAC at NO 20:00 (NO -6.5), MEM at POR 22:00 (POR -7.5)
+[   1.2s] history through 2026-10-28: 301015 player rows
+[   3.9s] rosters: 102 players on 6 teams; injury report 93 players league-wide, 9 of tonight's players Out or Doubtful
+[   3.9s] pending rows 93 for 3 games
+[   4.1s] played rows 246265
+[   4.9s] player form done
+[   5.0s] history and schedule done
+[   5.4s] team context done (team-games 23224, 6 from player box sums, 12 without box stats)
+[   7.3s] rank, share, and absence features done
+[   7.6s] live rows 82 of 93 pending players (11 with fewer than 5 prior games skipped; 0 without any box-score history)
+[   7.6s] skipped (fewer than 5 prior games): Keshon Gilbert (ATL, 4), Jaron Pierre Jr. (NO, 0), Malik Dia (NO, 0), Alex Karaban (SAC, 2), Cameron Boozer (MEM, 4), Meleek Thomas (CLE, 2), Carson Cooper (MEM, 0), Emanuel Sharp (SAC, 4), Zuby Ejiofor (ATL, 2), Darius Acuff Jr. (SAC, 4), Karim Lopez (MEM, 0)
+[   7.6s] predicted 82 players; top: Domantas Sabonis 0.79, Jalen Johnson 0.54, Evan Mobley 0.39, Precious Achiuwa 0.31, Derik Queen 0.30, Donovan Clingan 0.28
+[   7.6s] reusing the logged open snapshot of 2026-10-29 17:28 (229 rows, 0 credits)
+[   7.8s] prices: 24 scored players with a FanDuel quote, 19 with a two-way quote; books in the snapshot: ['ballybet', 'betmgm', 'draftkings', 'espnbet', 'fanduel', 'hardrockbet', 'novig']
+[   7.8s] 2 priced players without a model row (no history, fewer than 5 games, or Out) saved to priced_unscored_2026-10-29.csv
+
+🏀 DD picks: 2026-10-29 (3 games, 82 players scored)
+
+No plays tonight. Closest by edge against the fair price, with the blocking rule:
+• Precious Achiuwa (SAC) model 0.31, fair 0.22 / 0.16, FD +320, edge +0.091 / +0.149: p below 0.35
+• Derik Queen (NO) model 0.30, fair 0.23 / 0.19, FD +310, edge +0.070 / +0.106: p below 0.35
+• Domantas Sabonis (SAC) model 0.79, fair 0.75 / 0.81, FD -750, edge +0.042 / -0.016: edge +0.042/-0.016 below bar 0.060; price edge -0.091 below 0.02
+
+_Bar: edge above 0.030 under both de-vig methods (0.060 in a team's first 5 games, doubled for near-locks in 10-point spreads); FanDuel one-sided margin tonight 0.028 on players with fair at least 0.20, floor 0.03; p at least 0.35; price edge at least 0.02 at the book._
+_Priced but not scored (fewer than 5 prior games, no history, or listed out): Darius Acuff Jr. (FD +1200, fair 0.09); Cameron Boozer (FD +164, fair 0.33)._
+_Passed on the favorites: Domantas Sabonis p 0.79, FD -750, fair 0.75._
+_Prices replayed from the logged snapshot, no credits used. Paper stakes only, 1 unit per pick. Model trained 2026-10-29 17:24 through 2026-10-28._
+
+[   7.8s] wrote picks_2026-10-29.csv (0 picks), board_2026-10-29.csv (82 rows), discord_2026-10-29.md
+----- daily 2026-10-29, started 2026-10-29 17:46 ET -----
+[   0.0s] daily run for 2026-10-29 (live)
+[   0.4s] hoopR player_box_2027: 0.1 MB
+[   0.8s] hoopR team_box_2027: 0.0 MB
+[   1.3s] hoopR schedule_2027: 0.1 MB
+[   1.3s] production model trained 2026-10-29 17:24 (cutoff 2026-10-28, 0 days old)
+[   1.7s] slate: 3 games: CLE at ATL 20:00 (ATL -1.5), SAC at NO 20:00 (NO -6.5), MEM at POR 22:00 (POR -7.5)
+[   2.5s] history through 2026-10-28: 301015 player rows
+[   5.1s] rosters: 102 players on 6 teams; injury report 94 players league-wide, 9 of tonight's players Out or Doubtful
+[   5.1s] pending rows 93 for 3 games
+[   5.3s] played rows 246265
+[   6.1s] player form done
+[   6.2s] history and schedule done
+[   6.6s] team context done (team-games 23224, 6 from player box sums, 12 without box stats)
+[   8.5s] rank, share, and absence features done
+[   8.7s] live rows 82 of 93 pending players (11 with fewer than 5 prior games skipped; 0 without any box-score history)
+[   8.7s] skipped (fewer than 5 prior games): Keshon Gilbert (ATL, 4), Jaron Pierre Jr. (NO, 0), Malik Dia (NO, 0), Alex Karaban (SAC, 2), Cameron Boozer (MEM, 4), Meleek Thomas (CLE, 2), Carson Cooper (MEM, 0), Emanuel Sharp (SAC, 4), Zuby Ejiofor (ATL, 2), Darius Acuff Jr. (SAC, 4), Karim Lopez (MEM, 0)
+[   8.7s] predicted 82 players; top: Domantas Sabonis 0.79, Jalen Johnson 0.54, Evan Mobley 0.39, Precious Achiuwa 0.31, Derik Queen 0.30, Donovan Clingan 0.28
+[   8.7s] reusing the logged open snapshot of 2026-10-29 17:28 (229 rows, 0 credits)
+[   8.9s] prices: 24 scored players with a FanDuel quote, 19 with a two-way quote; books in the snapshot: ['ballybet', 'betmgm', 'draftkings', 'espnbet', 'fanduel', 'hardrockbet', 'novig']
+[   8.9s] 2 priced players without a model row (no history, fewer than 5 games, or Out) saved to priced_unscored_2026-10-29.csv
+
+🏀 DD picks: 2026-10-29 (3 games, 82 players scored)
+
+No plays tonight. Closest by edge against the fair price, with the blocking rule:
+• Precious Achiuwa (SAC) model 0.31, fair 0.22 / 0.16, FD +320, edge +0.091 / +0.149: p below 0.35
+• Derik Queen (NO) model 0.30, fair 0.23 / 0.19, FD +310, edge +0.070 / +0.106: p below 0.35
+• Domantas Sabonis (SAC) model 0.79, fair 0.75 / 0.81, FD -750, edge +0.042 / -0.016: edge +0.042/-0.016 below bar 0.060; price edge -0.091 below 0.02
+
+_Bar: edge above 0.030 under both de-vig methods (0.060 in a team's first 5 games, doubled for near-locks in 10-point spreads); FanDuel one-sided margin tonight 0.028 on players with fair at least 0.20, floor 0.03; p at least 0.35; price edge at least 0.02 at the book._
+_Priced but not scored (fewer than 5 prior games, no history, or listed out): Darius Acuff Jr. (FD +1200, fair 0.09); Cameron Boozer (FD +164, fair 0.33)._
+_Passed on the favorites: Domantas Sabonis p 0.79, FD -750, fair 0.75._
+_Prices replayed from the logged snapshot, no credits used. Paper stakes only, 1 unit per pick. Model trained 2026-10-29 17:24 through 2026-10-28._
+
+[   8.9s] wrote picks_2026-10-29.csv (0 picks), board_2026-10-29.csv (82 rows), discord_2026-10-29.md

@@ -40,7 +40,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import build_dataset as bd  # noqa: E402
 import odds_snapshot as osn  # noqa: E402
 import pull_hoopr  # noqa: E402
-from common import MIN_PRIOR_GAMES, PLAYER_COLS, load_player_box  # noqa: E402
+from common import MIN_PRIOR_GAMES, PLAYER_COLS, SEASONS, load_player_box  # noqa: E402
 from paper_common import (BEST_BOOKS, BOOK_LABEL, ET, PROD_DIR, TEAM_ABBR, TEAM_NAME_TO_ID,  # noqa: E402
                           append_run_log, board_path, espn_injuries, espn_roster, espn_scoreboard, fmt_price, is_out,
                           logged_price_rows, match_names, now_et, picks_path, price_board, summary_path, tee_stdout,
@@ -402,16 +402,28 @@ def main():
     log(f"daily run for {date} ({'live' if live_mode else 'backfill'})", t0)
 
     if not args.no_pull:
+        # every season is needed for the feature history (a fresh checkout, as in the GitHub Action, has none);
+        # only the current season is re-downloaded when the file already exists
         season = season_of(date if live_mode else today)
-        for kind in pull_hoopr.KINDS:
-            p, status = pull_hoopr.fetch(kind, season, force=True)
-            log(f"hoopR {kind}_{season}: {status}", t0)
+        for y in SEASONS:
+            for kind in pull_hoopr.KINDS:
+                p, status = pull_hoopr.fetch(kind, y, force=(y == season))
+                if status != "cached":
+                    log(f"hoopR {kind}_{y}: {status}", t0)
     model_m, spec, booster, platt = ensure_model(args.no_retrain, t0)
 
     games = espn_scoreboard(date)
+    if live_mode:
+        started = [g for g in games if g["status_state"] != "pre"]
+        if started:
+            log("games already started or finished, left out: " + ", ".join(
+                f"{g['away_abbr']} at {g['home_abbr']} ({g['status_name']})" for g in started), t0)
+        games = [g for g in games if g["status_state"] == "pre"]
     if not games:
-        write_text(summary_path(date), f"🏀 DD picks: {date}\n\nNo NBA games on this date.\n")
-        log("no games; summary written", t0)
+        write_text(summary_path(date), f"🏀 DD picks: {date}\n\nNo NBA games left to price on this date.\n")
+        picks_path(date).parent.mkdir(parents=True, exist_ok=True)
+        pd.DataFrame(columns=PICK_COLUMNS).to_csv(picks_path(date), index=False)
+        log("no games to price; empty picks file and summary written", t0)
         return
     log(f"slate: {len(games)} games: " + ", ".join(f"{g['away_abbr']} at {g['home_abbr']} "
         f"{g['tip_et'].strftime('%H:%M')} ({g['spread_detail']})" for g in games), t0)
