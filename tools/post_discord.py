@@ -13,6 +13,10 @@ environment, this project's .env, or the StrikeOut Bot .env, and posts once; the
 19:00 and 20:00 UTC so that one of them is 3 PM Eastern on either side of the clock change).
 --label adds a bracketed tag to the title, for the one manual test post.
 
+Russ, 2026-10-29 evening, after the first edge-rule post: "All these numbers are confusing. I just want 5 dudes sent
+to phone like strikeout." So the daily post is now --kind top: the five names tools/top_post.py ranks by model
+probability, sent whole (it is short). --kind picks still posts the edge-rule headline when wanted.
+
 Run: PYTHONUTF8=1 python tools/post_discord.py [--date YYYY-MM-DD] [--kind picks|pretip|grade] [--post]
                                                 [--full] [--ny-hour 15] [--label test]
 """
@@ -27,8 +31,10 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from odds_snapshot import ENV_CANDIDATES  # noqa: E402
 from paper_common import PAPER_DIR, append_run_log, now_et, today_et, yesterday_et  # noqa: E402
 
-FILES = {"picks": "discord_{date}.md", "pretip": "discord_pretip_{date}.md", "grade": "discord_grade_{date}.md"}
-COLORS = {"picks": 0x1ABC9C, "pretip": 0xF39C12, "grade": 0x3498DB}
+FILES = {"top": "discord_top_{date}.md", "picks": "discord_{date}.md", "pretip": "discord_pretip_{date}.md",
+         "grade": "discord_grade_{date}.md"}
+COLORS = {"top": 0x1ABC9C, "picks": 0x95A5A6, "pretip": 0xF39C12, "grade": 0x3498DB}
+FULL_KINDS = {"top"}  # short posts that go out whole, legend line included
 TIMEOUT = 15
 
 
@@ -68,7 +74,7 @@ def send_discord(url, title, body, color):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--date", default=None, help="game date; default today for picks and pretip, yesterday for grade")
-    ap.add_argument("--kind", default="picks", choices=sorted(FILES))
+    ap.add_argument("--kind", default="top", choices=sorted(FILES))
     ap.add_argument("--post", action="store_true", help="send to the webhook (default is a dry run)")
     ap.add_argument("--full", action="store_true", help="post the whole summary instead of the headline")
     ap.add_argument("--ny-hour", type=int, default=None, help="do nothing unless the New York hour equals this")
@@ -82,7 +88,7 @@ def main():
     if not path.exists():
         sys.exit(f"no summary file {path}")
     text = path.read_text(encoding="utf-8")
-    if args.full:
+    if args.full or args.kind in FULL_KINDS:
         title, _, body = text.strip().partition("\n")
         body = body.strip()
     else:

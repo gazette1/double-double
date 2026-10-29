@@ -60,13 +60,17 @@ jobs:
         if: steps.guard.outputs.step == 'daily' || steps.guard.outputs.step == 'post_test'
         run: python tools/daily_run.py
 
-      - name: Post the headline to Discord
+      - name: Post the five most likely double-doubles to Discord
         if: steps.guard.outputs.step == 'daily'
-        run: python tools/post_discord.py --kind picks --post
+        run: |
+          python tools/top_post.py
+          python tools/post_discord.py --kind top --post
 
       - name: One labeled test post
         if: steps.guard.outputs.step == 'post_test'
-        run: python tools/post_discord.py --kind picks --post --label test
+        run: |
+          python tools/top_post.py
+          python tools/post_discord.py --kind top --post --label test
 
       - name: Pre-tip snapshot of the picked games
         if: steps.guard.outputs.step == 'pretip'

@@ -7,6 +7,8 @@ more; void when the player never took the court, FanDuel's settlement rule), pay
 logged open price (FanDuel when quoted, else the best bettable book) and at the FanDuel close, compute fair
 closing line value under both de-vig methods, replace that date's rows in data/paper/ledger.csv and write
 data/paper/discord_grade_{date}.md in the strikeout bot's results layout (not posted).
+The five names tools/top_post.py posted (data/paper/top_{date}.csv) are graded the same way at the FanDuel price
+into data/paper/ledger_top.csv, so the next post can carry the record (Russ, 2026-10-29: five names, like strikeout).
 
 Closing line value, in probability points, positive favors the pick:
   clv_fd_pts     = FanDuel closing implied minus FanDuel open implied (raw line movement at the book)
@@ -38,6 +40,7 @@ RESULT_COLUMNS = ["minutes", "points", "rebounds", "assists", "steals", "blocks"
                   "won", "profit_open", "profit_close", "clv_fd_pts", "fair_clv_mult", "fair_clv_power",
                   "ev_close_mult", "ev_close_power", "fair_move_mult", "graded_at", "note"]
 EMOJI = {"win": "✅", "loss": "❌", "void": "⚪", "pending": "⏳"}
+TOP_LEDGER_PATH = LEDGER_PATH.with_name("ledger_top.csv")
 
 
 def log(msg, t0):
@@ -136,6 +139,41 @@ def grade_rows(picks, box):
     return out
 
 
+def grade_top(date, no_pull, t0, box=None):
+    """Grade the five names top_post.py posted for the date, at the FanDuel open price, into ledger_top.csv."""
+    path = LEDGER_PATH.parent / f"top_{date}.csv"
+    if not path.exists():
+        return None
+    top = pd.read_csv(path)
+    if top.empty:
+        return None
+    top["book_price"] = top["fd_price"]
+    top["book_implied"] = top["fd_implied"]
+    top["stake"] = 1.0
+    if box is None:
+        box = box_scores_for(top, date, no_pull, t0)
+    else:
+        missing = set(top["game_id"].astype(int)) - set(box["game_id"].astype(int))
+        if missing:
+            extra = box_scores_for(top[top["game_id"].isin(missing)], date, True, t0)
+            box = pd.concat([box, extra], ignore_index=True)
+    graded = grade_rows(top, box)
+    if TOP_LEDGER_PATH.exists():
+        led = pd.read_csv(TOP_LEDGER_PATH)
+        led = led[led["date"].astype(str) != str(date)]
+        led = pd.concat([led, graded], ignore_index=True, sort=False)
+    else:
+        led = graded.copy()
+    led = led.sort_values(["date", "rank"])
+    led.to_csv(TOP_LEDGER_PATH, index=False)
+    w, l = int((graded["result"] == "win").sum()), int((graded["result"] == "loss").sum())
+    pend = int((graded["result"] == "pending").sum())
+    units = graded["profit_open"].sum() if graded["profit_open"].notna().any() else float("nan")
+    unit_txt = f"{units:+.2f} units at FanDuel prices" if units == units else "no prices logged"
+    log(f"top five {date}: {w}-{l}, {pend} pending, {unit_txt}; {TOP_LEDGER_PATH.name} now {len(led)} rows", t0)
+    return graded
+
+
 def update_ledger(graded, date):
     if LEDGER_PATH.exists():
         led = pd.read_csv(LEDGER_PATH)
@@ -226,9 +264,11 @@ def main():
         append_run_log({"run_et": now_et().strftime("%Y-%m-%d %H:%M"), "date": date, "mode": "grade", "picks": 0,
                         "seconds": round(time.time() - t0, 1)})
         print(text)
+        grade_top(date, args.no_pull, t0)
         return
     box = box_scores_for(picks, date, args.no_pull, t0)
     graded = grade_rows(picks, box)
+    grade_top(date, args.no_pull, t0, box)
     pending = int((graded["result"] == "pending").sum())
     if pending:
         log(f"{pending} picks are in games that are not final; re-run later to grade them", t0)
