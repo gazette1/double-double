@@ -170,7 +170,20 @@ def grade_top(date, no_pull, t0, box=None):
     pend = int((graded["result"] == "pending").sum())
     units = graded["profit_open"].sum() if graded["profit_open"].notna().any() else float("nan")
     unit_txt = f"{units:+.2f} units at FanDuel prices" if units == units else "no prices logged"
-    log(f"top five {date}: {w}-{l}, {pend} pending, {unit_txt}; {TOP_LEDGER_PATH.name} now {len(led)} rows", t0)
+    decided = graded[graded["result"].isin(["win", "loss"])]
+    exp_hits = float(decided["p_cal"].sum())
+    log(f"top five {date}: {w}-{l} against {exp_hits:.2f} expected hits, {pend} pending, {unit_txt}; "
+        f"{TOP_LEDGER_PATH.name} now {len(led)} rows", t0)
+    ld = led[led["result"].isin(["win", "loss"])]
+    if len(ld):
+        sw, se = int((ld["result"] == "win").sum()), float(ld["p_cal"].sum())
+        sd = float(np.sqrt((ld["p_cal"] * (1 - ld["p_cal"])).sum()))
+        z = (sw - se) / sd if sd > 0 else float("nan")
+        log(f"five-name record to date: {sw}-{len(ld) - sw}, expected {se:.1f} hits, z {z:+.2f} "
+            f"(luck against model bias; a z beyond 2 for a run of 100 legs means the model, not the dice)", t0)
+    append_run_log({"run_et": now_et().strftime("%Y-%m-%d %H:%M"), "date": date, "mode": "grade_top",
+                    "picks": len(graded), "wins": w, "losses": l, "pending": pend, "expected_hits": round(exp_hits, 2),
+                    "units_open": round(units, 2) if units == units else np.nan})
     return graded
 
 

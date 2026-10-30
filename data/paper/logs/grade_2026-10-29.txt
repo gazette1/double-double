@@ -1,0 +1,20 @@
+----- grade 2026-10-29, started 2026-10-30 04:27 ET -----
+🏀 DD results: 2026-10-29
+
+No plays were posted for this date, nothing to grade.
+
+[   0.6s] hoopR player_box_2027: 0.1 MB
+[   1.0s] hoopR team_box_2027: 0.0 MB
+[   1.5s] hoopR schedule_2027: 0.1 MB
+[   2.0s] game 401909893 not in hoopR yet; ESPN summary final with 26 rows
+[   2.4s] game 401909894 not in hoopR yet; ESPN summary final with 25 rows
+[   2.4s] top five 2026-10-29: 0-5, 0 pending, -5.00 units at FanDuel prices; ledger_top.csv now 10 rows
+----- grade 2026-10-29, started 2026-10-30 04:34 ET -----
+🏀 DD results: 2026-10-29
+
+No plays were posted for this date, nothing to grade.
+
+[   0.6s] game 401909893 not in hoopR yet; ESPN summary final with 26 rows
+[   0.9s] game 401909894 not in hoopR yet; ESPN summary final with 25 rows
+[   1.0s] top five 2026-10-29: 0-5 against 2.33 expected hits, 0 pending, -5.00 units at FanDuel prices; ledger_top.csv now 10 rows
+[   1.0s] five-name record to date: 4-6, expected 5.7 hits, z -1.14 (luck against model bias; a z beyond 2 for a run of 100 legs means the model, not the dice)
