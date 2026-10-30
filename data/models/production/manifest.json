@@ -1,18 +1,18 @@
 {
   "model": "C_full",
   "calibration": "platt",
-  "reason": "v1 C_full with Platt calibration. The v2 C_stack gains 0.0002 pooled log loss under the same calibration (inside noise) and would add the minutes model and the simulation to the daily path. Tracking and matchup features excluded: no measured lift in the controlled test of 2026-10-29.",
-  "trained_at": "2026-10-29 17:24",
-  "train_cutoff": "2026-10-28",
+  "reason": "v1 C_full with Platt calibration. The v2 C_stack gains 0.0002 pooled log loss under the same calibration (inside noise) and would add the minutes model and the simulation to the daily path. Tracking and matchup features excluded: no measured lift in the controlled test of 2026-10-29. Game-state features (gs_) tested for production on 2026-10-30: the controlled test of the prototype cleared its interval (-0.00022 pooled) but the production implementation did not (-0.00006, interval crossing zero; holdout +0.00006), so they stay out until a market spread replaces the proxy.",
+  "trained_at": "2026-10-30 17:45",
+  "train_cutoff": "2026-10-29",
   "dataset": "data\\features\\dataset_prod.parquet",
-  "dataset_rows": 239334,
-  "dataset_max_date": "2026-10-28",
-  "train_rows": 239334,
+  "dataset_rows": 239395,
+  "dataset_max_date": "2026-10-29",
+  "train_rows": 239395,
   "fit_rows": 203414,
-  "holdout_rows": 35920,
+  "holdout_rows": 35981,
   "fit_end": "2025-03-16",
   "holdout_start": "2025-03-17",
-  "holdout_end": "2026-10-28",
+  "holdout_end": "2026-10-29",
   "seasons": [
     2018,
     2019,
@@ -46,17 +46,27 @@
   },
   "n_features": 155,
   "feature_hash": "7b73595d6938",
-  "league_dd_rate_train": 0.08453876173046872,
+  "league_dd_rate_train": 0.08452557488669354,
   "proxy_k": 10,
   "platt": {
-    "a": 0.966850381990148,
-    "b": -0.1754228487383705
+    "a": 0.9652327108115357,
+    "b": -0.18010238731344155
   },
-  "holdout_logloss_raw": 0.18277585712448371,
-  "holdout_logloss_platt": 0.18229985854516675,
-  "holdout_auc": 0.8887126942732169,
-  "holdout_dd_rate": 0.0751391982182628,
-  "holdout_mean_p_platt": 0.07511630503930108,
+  "holdout_logloss_raw": 0.1828246013118406,
+  "holdout_logloss_platt": 0.1823331167124092,
+  "holdout_auc": 0.8885105209430981,
+  "holdout_dd_rate": 0.07506739668158195,
+  "holdout_mean_p_platt": 0.07500303392138256,
+  "feature_set": "v1",
+  "comparison_alternative_set": {
+    "feature_set": "gs",
+    "n_features": 160,
+    "best_iteration": 424,
+    "holdout_logloss_raw": 0.182747921588906,
+    "holdout_logloss_platt": 0.18233041697243133,
+    "holdout_auc": 0.8885796726817703,
+    "platt_logloss_delta_prod_minus_alt": 2.699739977879423e-06
+  },
   "top_gain_features": {
     "dd_rate_ewm": 296924.0991063118,
     "dd_rate_l20": 101025.1615896225,
@@ -84,39 +94,10 @@
     "2024": "2024-06-17",
     "2025": "2025-06-22",
     "2026": "2026-06-13",
-    "2027": "2026-10-28"
+    "2027": "2026-10-29"
   },
   "build_info": {
-    "raw_player_rows": 301430,
-    "duplicate_player_rows_dropped": 0,
-    "exhibition_games_dropped": 17,
-    "exhibition_player_rows_dropped": 357,
-    "alias_duplicate_rows_dropped": 36,
-    "alias_duplicate_played_rows_dropped": 31,
-    "same_date_conflict_games_dropped": [
-      401161536
-    ],
-    "player_rows_after_cleaning": 301015,
-    "played_rows": 246172,
-    "team_games_from_player_box_sums": 0,
-    "team_games_without_box_stats": 12,
-    "team_games_only_in_team_box": 2,
-    "regular_team_game_rows": 178359,
-    "absent_regular_team_game_rows": 21678,
-    "team_games_in_player_box_sequence": 23204,
-    "window_check_max_abs_diff": {
-      "dd_rate_l5": 0.0,
-      "min_l5": 0.0,
-      "reb_l20": 0.0,
-      "min_sd_l20": 6.52367049269742e-13,
-      "pts_ewm": 0.0,
-      "pts_szn": 0.0
-    },
-    "window_check_nan_pattern_match": {
-      "dd_rate_l5": true,
-      "pts_szn": true,
-      "min_sd_l20": true
-    }
+    "reused": "C:\\Users\\harri\\Documents\\Double Double Bot\\data\\features\\dataset_prod.parquet"
   },
   "files": {
     "model": "C_full_prod.txt",

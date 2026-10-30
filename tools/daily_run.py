@@ -21,7 +21,7 @@ the price snapshot (no credits); selection then falls back to the three highest 
 so. Paper stakes only, one unit per pick.
 
 Run: PYTHONUTF8=1 python tools/daily_run.py [--date YYYY-MM-DD] [--no-pull] [--no-odds] [--no-retrain]
-                                             [--books a,b,c] [--max-picks 3] [--verify]
+                                             [--books a,b,c] [--max-picks 3] [--verify] [--dry-run]
 """
 import argparse
 import json
@@ -392,13 +392,15 @@ def main():
     ap.add_argument("--verify", action="store_true", help="run the window recomputation check in the build")
     ap.add_argument("--reuse-prices", action="store_true",
                     help="re-run with the logged open snapshot of the date instead of a new API call (no credits)")
+    ap.add_argument("--dry-run", action="store_true",
+                    help="build and predict only: no prices, no files, no run-log row (a check of the live path)")
     args = ap.parse_args()
     t0 = time.time()
     date = args.date or today_et()
     today = today_et()
     assert date <= today, "cannot run a future date"
     live_mode = date == today
-    tee_stdout("daily", date)
+    tee_stdout("dryrun" if args.dry_run else "daily", date)
     log(f"daily run for {date} ({'live' if live_mode else 'backfill'})", t0)
 
     if not args.no_pull:
@@ -410,7 +412,7 @@ def main():
                 p, status = pull_hoopr.fetch(kind, y, force=(y == season))
                 if status != "cached":
                     log(f"hoopR {kind}_{y}: {status}", t0)
-    model_m, spec, booster, platt = ensure_model(args.no_retrain, t0)
+    model_m, spec, booster, platt = ensure_model(args.no_retrain or args.dry_run, t0)
 
     games = espn_scoreboard(date)
     if live_mode:
@@ -447,6 +449,14 @@ def main():
     live["injury_status"] = live["athlete_id"].map(status_map)
     log(f"predicted {len(live)} players; top: " + ", ".join(
         f"{r.athlete_display_name} {r.p_cal:.2f}" for r in live.sort_values("p_cal", ascending=False).head(6).itertuples()), t0)
+    if args.dry_run:
+        gs = [c for c in spec["features"] if c.startswith("gs_")]
+        cover = {c: round(float(live[c].notna().mean()), 3) for c in gs}
+        log(f"dry run: {len(live)} players scored with {len(spec['features'])} features; game-state coverage {cover}", t0)
+        show = ["athlete_display_name", "team_abbreviation", "p_cal"] + gs
+        print(live.sort_values("p_cal", ascending=False)[show].head(12).round(3).to_string(index=False))
+        log("dry run: nothing written", t0)
+        return
 
     credits = {}
     unmatched = []

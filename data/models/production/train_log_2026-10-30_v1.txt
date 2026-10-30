@@ -1,0 +1,6 @@
+[   0.2s] reused dataset_prod.parquet (239395, 181)
+[   0.2s] production feature set v1: 155 features (alternative set 160)
+[   0.3s] training rows through 2026-10-29: 239395 (0 later rows excluded)
+[  12.6s] C_full best iteration 410; holdout log loss raw 0.18282, Platt 0.18233, AUC 0.8885
+[  25.3s] alternative set (gs, 160 features) on the same holdout: best iteration 424; log loss raw 0.18275, Platt 0.18233, AUC 0.8886; production minus alternative (Platt) +0.00000
+[  25.4s] saved C_full_prod.txt, platt.json, manifest.json; top features: dd_rate_ewm, dd_rate_l20, dd_rate_szn, reb_ewm, ast_ewm, abs_absent_rebounds_pg, reb_l10, prev_dd_rate

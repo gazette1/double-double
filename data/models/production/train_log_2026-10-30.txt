@@ -1,0 +1,13 @@
+[   3.6s] raw player box 301509 rows, 301094 after cleaning, through 2026-10-29
+[   3.8s] played rows 246238
+[   4.8s] player form done
+[   4.9s] history and schedule done
+[   5.1s] team context done (team-games 23224, 0 from player box sums, 12 without box stats)
+[   7.3s] rank, share, and absence features done
+[   8.0s] window recomputation check max abs diff {'dd_rate_l5': 0.0, 'min_l5': 0.0, 'reb_l20': 0.0, 'min_sd_l20': 6.52367049269742e-13, 'pts_ewm': 0.0, 'pts_szn': 0.0}, NaN patterns {'dd_rate_l5': True, 'pts_szn': True, 'min_sd_l20': True}
+[   8.5s] features: 155 v1 plus 5 game-state (gs_exp_margin, gs_abs_exp_margin, gs_exp_total, gs_exp_pace, gs_pace_gap)
+[  10.2s] wrote dataset_prod.parquet (239395, 181) (rows with at least 5 prior games)
+[  10.3s] training rows through 2026-10-29: 239395 (0 later rows excluded)
+[  22.7s] C_full best iteration 424; holdout log loss raw 0.18280, Platt 0.18239, AUC 0.8883
+[  35.2s] v1 features alone on the same holdout: best iteration 410; log loss raw 0.18282, Platt 0.18233, AUC 0.8885; full minus v1 (Platt) +0.00006
+[  35.4s] saved C_full_prod.txt, platt.json, manifest.json; top features: dd_rate_ewm, dd_rate_l20, dd_rate_szn, reb_ewm, abs_absent_rebounds_pg, ast_ewm, prev_dd_rate, reb_szn

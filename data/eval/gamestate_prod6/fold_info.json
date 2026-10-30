@@ -1,0 +1,42 @@
+{
+  "2023": {
+    "n_fit": 108266,
+    "n_hold": 19126,
+    "n_test": 27230,
+    "cut_date": "2021-12-12",
+    "BASE_best_iteration": 244,
+    "BASE_holdout_logloss": 0.19091115823245022,
+    "BASE+GSPROD6_best_iteration": 240,
+    "BASE+GSPROD6_holdout_logloss": 0.19070854657648295
+  },
+  "2024": {
+    "n_fit": 131428,
+    "n_hold": 23194,
+    "n_test": 27609,
+    "cut_date": "2022-11-14",
+    "BASE_best_iteration": 415,
+    "BASE_holdout_logloss": 0.19248008849375692,
+    "BASE+GSPROD6_best_iteration": 347,
+    "BASE+GSPROD6_holdout_logloss": 0.1924466423559907
+  },
+  "2025": {
+    "n_fit": 154663,
+    "n_hold": 27568,
+    "n_test": 27646,
+    "cut_date": "2023-10-25",
+    "BASE_best_iteration": 291,
+    "BASE_holdout_logloss": 0.18845978204044328,
+    "BASE+GSPROD6_best_iteration": 311,
+    "BASE+GSPROD6_holdout_logloss": 0.18842408968402402
+  },
+  "2026": {
+    "n_fit": 178306,
+    "n_hold": 31571,
+    "n_test": 28078,
+    "cut_date": "2024-04-03",
+    "BASE_best_iteration": 371,
+    "BASE_holdout_logloss": 0.1916744493628809,
+    "BASE+GSPROD6_best_iteration": 356,
+    "BASE+GSPROD6_holdout_logloss": 0.1914098706586882
+  }
+}

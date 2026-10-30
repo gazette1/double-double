@@ -1,0 +1,36 @@
+----- daily 2026-10-30, started 2026-10-30 17:33 ET -----
+[   0.0s] daily run for 2026-10-30 (live)
+[   0.5s] hoopR player_box_2027: 0.1 MB
+[   0.9s] hoopR team_box_2027: 0.0 MB
+[   1.3s] hoopR schedule_2027: 0.1 MB
+[   1.3s] production model trained 2026-10-29 17:24 (cutoff 2026-10-28, 1 days old)
+[   1.6s] slate: 10 games: CHA at WSH 19:00 (CHA -1.5), CHI at BOS 19:30 (BOS -14.5), DET at BKN 19:30 (DET -7.5), NY at PHI 19:30 (NY -3.5), ORL at TOR 19:30 (TOR -5.5), IND at MIA 20:00 (MIA -8.5), HOU at DAL 20:00 (HOU -6.5), LAC at MIN 20:00 (MIN -6.5), LAL at GS 22:00 (LAL -3.5), DEN at PHX 22:00 (DEN -4.5)
+[   2.4s] history through 2026-10-29: 301094 player rows
+[  10.8s] rosters: 348 players on 20 teams; injury report 98 players league-wide, 54 of tonight's players Out or Doubtful
+[  10.9s] pending rows 294 for 10 games
+[  11.1s] played rows 246532
+[  12.0s] player form done
+[  12.1s] history and schedule done
+[  12.5s] team context done (team-games 23244, 20 from player box sums, 12 without box stats)
+[  14.7s] rank, share, and absence features done
+[  14.9s] live rows 258 of 294 pending players (36 with fewer than 5 prior games skipped; 0 without any box-score history)
+[  15.0s] skipped (fewer than 5 prior games): Jaden Bradley (TOR, 4), Arthur Kaluma (LAL, 0), Bryce Hopkins (DEN, 4), Lawson Lovering (LAL, 2), Jaden Akins (NY, 1), Quadir Copeland (HOU, 0), Trevon Brazile (DEN, 4), Grant Nelson (BKN, 4), Graham Ike (GS, 4), Tre Donaldson (MIA, 0), Tyler Nickel (NY, 0), Dailyn Swain (CHI, 1), Joshua Jefferson (BKN, 1), Labaron Philon Jr. (PHI, 2), Jaylin Sellers (CHI, 2), Ugonna Onyenso (DET, 0), Koa Peat (PHX, 2), Isaiah Evans (MIN, 3), Baba Miller (LAC, 3), Mikel Brown Jr. (BKN, 3), Tobe Awaka (CHI, 2), Nick Martinelli (LAC, 2), Bruce Thornton (HOU, 4), Felix Okpara (WSH, 1), Braden Smith (IND, 1), Tobi Lawal (DAL, 3), Dillon Mitchell (BOS, 0), Ryan Conwell (MIA, 3), Cameron Carr (LAL, 0), AK Okereke (LAL, 0), Chris Cenac Jr. (BOS, 1), AJ Dybantsa (WSH, 1), Allen Graves (TOR, 4), Keaton Wagler (LAC, 4), Ebuka Okorie (DET, 2), Hannes Steinbach (CHA, 1)
+[  15.0s] predicted 258 players; top: Nikola Jokic 0.79, Karl-Anthony Towns 0.75, Giannis Antetokounmpo 0.58, Alperen Sengun 0.53, Jayson Tatum 0.51, Bam Adebayo 0.48
+10 NBA games on 2026-10-30 (ET) in this snapshot (open)
+800 price rows logged; credits used this run 10; credits remaining 450
+[  19.3s] prices: 100 scored players with a FanDuel quote, 76 with a two-way quote; books in the snapshot: ['ballybet', 'betmgm', 'draftkings', 'espnbet', 'fanduel', 'hardrockbet', 'novig']
+[  19.4s] 5 priced players without a model row (no history, fewer than 5 games, or Out) saved to priced_unscored_2026-10-30.csv
+
+🏀 DD picks: 2026-10-30 (10 games, 258 players scored)
+
+🟢 **Alperen Sengun** (HOU at DAL) Yes **+108** FD
+   model **0.53** · fair 0.43 / 0.42 · edge **+0.098** / +0.107 · FD edge +0.047 · spread HOU -6.5  _(listed Day-To-Day)_
+🟢 **Yaxel Lendeborg** (GS vs LAL) Yes **+235** FD
+   model **0.35** · fair 0.27 / 0.24 · edge **+0.081** / +0.112 · FD edge +0.054 · spread LAL -3.5
+
+_Bar: edge above 0.030 under both de-vig methods (0.060 in a team's first 5 games, doubled for near-locks in 10-point spreads); FanDuel one-sided margin tonight 0.026 on players with fair at least 0.20, floor 0.03; p at least 0.35; price edge at least 0.02 at the book._
+_Priced but not scored (fewer than 5 prior games, no history, or listed out): AJ Dybantsa (FD +1500); Mikel Brown Jr. (FD +2800); Keaton Wagler (FD +1700, fair 0.05); Trevon Brazile (FD +1200); Cameron Johnson (DK +4500)._
+_Passed on the favorites: Nikola Jokic p 0.79, FD -900, fair 0.82; Karl-Anthony Towns p 0.75, FD -310, fair 0.64; Giannis Antetokounmpo p 0.58, FD -340, fair 0.69._
+_Credits used 10, remaining 450. Paper stakes only, 1 unit per pick. Model trained 2026-10-29 17:24 through 2026-10-28._
+
+[  19.4s] wrote picks_2026-10-30.csv (2 picks), board_2026-10-30.csv (258 rows), discord_2026-10-30.md

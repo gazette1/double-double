@@ -1,7 +1,7 @@
 """
 train_production.py: fit the production double-double model on every season through yesterday.
 
-Model: v1 C_full, LightGBM binary on the 155 point-in-time features (abs_ features included), early-stopped
+Model: v1 C_full, LightGBM binary on the 155 v1 point-in-time features (abs_ features included), early-stopped
 and Platt-calibrated on the last 15 percent of rows by date, the protocol of the backtests
 (tools/train_eval.py, tools/train_eval_v2.py). Why not the v2 C_stack: under the same Platt calibration the
 stack beats C_full by 0.0002 pooled log loss over the four test seasons (data/eval/v2/report_v2.md,
@@ -16,7 +16,14 @@ manifest (train cutoff, rows, features, holdout scores, league rate for the prox
 Each run also appends to training_history.csv. Retrain weekly (tools/daily_run.py retrains when the
 manifest is older than 7 days).
 
+Feature set: --feature-set v1 (default, 155 features) or gs (plus the five game-state features that
+build_dataset computes since 2026-10-30). Each run also fits the other set on the same rows, holdout and seed
+and records it in the manifest (comparison_alternative_set), the side-by-side that decides a swap. On
+2026-10-30 the game-state set did not reproduce its controlled-test gain in production form (holdout Platt log
+loss +0.00006 against v1 alone; four-season test -0.00006 with the interval crossing zero), so v1 stays.
+
 Run: PYTHONUTF8=1 python tools/train_production.py [--cutoff YYYY-MM-DD] [--no-rebuild] [--max-rounds 3000]
+                                                  [--feature-set v1|gs] [--no-compare]
 """
 import argparse
 import hashlib
@@ -45,7 +52,10 @@ FEATURES_PATH = PROD_DIR / "features.json"
 HISTORY_PATH = PROD_DIR / "training_history.csv"
 MODEL_REASON = ("v1 C_full with Platt calibration. The v2 C_stack gains 0.0002 pooled log loss under the same "
                 "calibration (inside noise) and would add the minutes model and the simulation to the daily path. "
-                "Tracking and matchup features excluded: no measured lift in the controlled test of 2026-10-29.")
+                "Tracking and matchup features excluded: no measured lift in the controlled test of 2026-10-29. "
+                "Game-state features (gs_) tested for production on 2026-10-30: the controlled test of the prototype "
+                "cleared its interval (-0.00022 pooled) but the production implementation did not (-0.00006, "
+                "interval crossing zero; holdout +0.00006), so they stay out until a market spread replaces the proxy.")
 
 
 def log(msg, t0):
@@ -61,7 +71,11 @@ def rebuild_dataset(t0):
     ds = ds[ds["games_played_career"] >= MIN_PRIOR_GAMES]
     ds = ds.sort_values(["game_date_time", "game_id", "athlete_id"]).reset_index(drop=True)
     v1 = json.loads(FEATURE_LIST_PATH.read_text(encoding="utf-8"))
-    assert feature_names == v1["features"], "production feature list differs from the v1 list"
+    extra = [f for f in feature_names if f not in v1["features"]]
+    missing = [f for f in v1["features"] if f not in feature_names]
+    assert not missing and all(f.startswith("gs_") for f in extra), \
+        f"unexpected feature set change: missing {missing}, extra {extra}"
+    log(f"features: {len(v1['features'])} v1 plus {len(extra)} game-state ({', '.join(extra)})", t0)
     FEATURES_DIR.mkdir(parents=True, exist_ok=True)
     ds.to_parquet(PROD_DATASET, index=False)
     log(f"wrote {PROD_DATASET.name} {ds.shape} (rows with at least {MIN_PRIOR_GAMES} prior games)", t0)
@@ -83,6 +97,10 @@ def main():
     ap.add_argument("--cutoff", default=None, help="last game date to train on (default yesterday, ET)")
     ap.add_argument("--no-rebuild", action="store_true", help="reuse data/features/dataset_prod.parquet")
     ap.add_argument("--max-rounds", type=int, default=3000)
+    ap.add_argument("--feature-set", choices=["v1", "gs"], default="v1",
+                    help="v1: the 155 v1 features (default); gs: plus the five game-state features")
+    ap.add_argument("--no-compare", action="store_true",
+                    help="skip the side-by-side fit of the other feature set (same rows, holdout and seed)")
     args = ap.parse_args()
     t0 = time.time()
     np.random.seed(SEED)
@@ -92,10 +110,16 @@ def main():
     spec = json.loads(FEATURE_LIST_PATH.read_text(encoding="utf-8"))
     if args.no_rebuild and PROD_DATASET.exists():
         df = pd.read_parquet(PROD_DATASET)
-        feats, build_info = spec["features"], {"reused": str(PROD_DATASET)}
+        feats = spec["features"] + [c for c in df.columns if c.startswith("gs_")]
+        build_info = {"reused": str(PROD_DATASET)}
         log(f"reused {PROD_DATASET.name} {df.shape}", t0)
     else:
         df, feats, build_info = rebuild_dataset(t0)
+    all_feats = list(feats)
+    v1_feats = [f for f in all_feats if not f.startswith("gs_")]
+    feats = all_feats if args.feature_set == "gs" else v1_feats
+    alt_feats = v1_feats if args.feature_set == "gs" else all_feats
+    log(f"production feature set {args.feature_set}: {len(feats)} features (alternative set {len(alt_feats)})", t0)
     df["position"] = pd.Categorical(df["position"].astype(object), categories=spec["position_categories"])
     train = df[df["game_date"] <= cutoff]
     dropped = len(df) - len(train)
@@ -122,6 +146,29 @@ def main():
     log(f"C_full best iteration {best}; holdout log loss raw {scores['holdout_logloss_raw']:.5f}, "
         f"Platt {scores['holdout_logloss_platt']:.5f}, AUC {scores['holdout_auc']:.4f}", t0)
 
+    # side by side with the other feature set on the same fit rows, holdout and seed: the before-swap check
+    comp = {}
+    base_feats = alt_feats
+    if not args.no_compare and set(base_feats) != set(feats):
+        dtr_b = lgb.Dataset(fit[base_feats], label=y_fit, categorical_feature=["position"], free_raw_data=False)
+        dho_b = lgb.Dataset(hold[base_feats], label=y_hold, categorical_feature=["position"], reference=dtr_b,
+                            free_raw_data=False)
+        bb = lgb.train(LGB_PARAMS, dtr_b, num_boost_round=args.max_rounds, valid_sets=[dho_b], valid_names=["holdout"],
+                       callbacks=[lgb.early_stopping(EARLY_STOP, verbose=False), lgb.log_evaluation(0)])
+        best_b = bb.best_iteration if bb.best_iteration > 0 else bb.current_iteration()
+        ph_b = bb.predict(hold[base_feats], num_iteration=best_b)
+        ph_b_cal = Platt().fit(ph_b, y_hold).predict(ph_b)
+        comp = {"feature_set": "v1" if args.feature_set == "gs" else "gs", "n_features": len(base_feats),
+                "best_iteration": int(best_b),
+                "holdout_logloss_raw": float(log_loss(y_hold, clip(ph_b), labels=[0, 1])),
+                "holdout_logloss_platt": float(log_loss(y_hold, clip(ph_b_cal), labels=[0, 1])),
+                "holdout_auc": float(roc_auc_score(y_hold, ph_b))}
+        comp["platt_logloss_delta_prod_minus_alt"] = scores["holdout_logloss_platt"] - comp["holdout_logloss_platt"]
+        log(f"alternative set ({comp['feature_set']}, {len(base_feats)} features) on the same holdout: best iteration "
+            f"{best_b}; log loss raw {comp['holdout_logloss_raw']:.5f}, Platt {comp['holdout_logloss_platt']:.5f}, "
+            f"AUC {comp['holdout_auc']:.4f}; production minus alternative (Platt) "
+            f"{comp['platt_logloss_delta_prod_minus_alt']:+.5f}", t0)
+
     booster.save_model(str(MODEL_PATH), num_iteration=best)
     PLATT_PATH.write_text(json.dumps({"method": "platt", "a": platt.a, "b": platt.b,
                                       "formula": "p_cal = sigmoid(a * logit(p_raw) + b)"}, indent=2),
@@ -145,6 +192,7 @@ def main():
         "feature_hash": hashlib.sha1(",".join(feats).encode()).hexdigest()[:12],
         "league_dd_rate_train": float(train["dd"].mean()), "proxy_k": 10,
         "platt": {"a": platt.a, "b": platt.b}, **scores,
+        "feature_set": args.feature_set, "comparison_alternative_set": comp,
         "top_gain_features": {k: float(v) for k, v in gain.head(15).items()},
         "raw_file_max_dates": raw_file_dates(), "build_info": build_info,
         "files": {"model": MODEL_PATH.name, "platt": PLATT_PATH.name, "features": FEATURES_PATH.name},
@@ -152,7 +200,9 @@ def main():
     MANIFEST_PATH.write_text(json.dumps(manifest, indent=2, default=str), encoding="utf-8")
     hist = pd.DataFrame([{"trained_at": manifest["trained_at"], "train_cutoff": manifest["train_cutoff"],
                           "train_rows": len(train), "fit_rows": len(fit), "holdout_rows": len(hold),
-                          "best_iteration": best, **scores, "minutes": round((time.time() - t0) / 60, 2)}])
+                          "best_iteration": best, **scores, "n_features": len(feats),
+                          "feature_set": args.feature_set, "alt_holdout_logloss_platt": comp.get("holdout_logloss_platt"),
+                          "minutes": round((time.time() - t0) / 60, 2)}])
     hist.to_csv(HISTORY_PATH, mode="a", header=not HISTORY_PATH.exists(), index=False)
     log(f"saved {MODEL_PATH.name}, {PLATT_PATH.name}, {MANIFEST_PATH.name}; top features: "
         + ", ".join(gain.head(8).index), t0)

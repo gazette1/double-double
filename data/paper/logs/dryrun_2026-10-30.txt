@@ -1,0 +1,60 @@
+----- dryrun 2026-10-30, started 2026-10-30 17:42 ET -----
+[   0.0s] daily run for 2026-10-30 (live)
+[   0.0s] production model trained 2026-10-30 17:41 (cutoff 2026-10-29, 0 days old)
+[   0.5s] slate: 10 games: CHA at WSH 19:00 (CHA -1.5), CHI at BOS 19:30 (BOS -14.5), DET at BKN 19:30 (DET -7.5), NY at PHI 19:30 (NY -3.5), ORL at TOR 19:30 (TOR -5.5), IND at MIA 20:00 (MIA -8.5), HOU at DAL 20:00 (HOU -6.5), LAC at MIN 20:00 (MIN -6.5), LAL at GS 22:00 (LAL -3.5), DEN at PHX 22:00 (DEN -4.5)
+[   2.6s] history through 2026-10-29: 301094 player rows
+[  10.5s] rosters: 348 players on 20 teams; injury report 98 players league-wide, 54 of tonight's players Out or Doubtful
+[  10.6s] pending rows 294 for 10 games
+[  10.8s] played rows 246532
+[  11.8s] player form done
+[  11.9s] history and schedule done
+[  12.4s] team context done (team-games 23244, 20 from player box sums, 12 without box stats)
+[  14.5s] rank, share, and absence features done
+[  14.7s] live rows 258 of 294 pending players (36 with fewer than 5 prior games skipped; 0 without any box-score history)
+[  14.8s] skipped (fewer than 5 prior games): Jaden Bradley (TOR, 4), Arthur Kaluma (LAL, 0), Bryce Hopkins (DEN, 4), Lawson Lovering (LAL, 2), Jaden Akins (NY, 1), Quadir Copeland (HOU, 0), Trevon Brazile (DEN, 4), Grant Nelson (BKN, 4), Graham Ike (GS, 4), Tre Donaldson (MIA, 0), Tyler Nickel (NY, 0), Dailyn Swain (CHI, 1), Joshua Jefferson (BKN, 1), Labaron Philon Jr. (PHI, 2), Jaylin Sellers (CHI, 2), Ugonna Onyenso (DET, 0), Koa Peat (PHX, 2), Isaiah Evans (MIN, 3), Baba Miller (LAC, 3), Mikel Brown Jr. (BKN, 3), Tobe Awaka (CHI, 2), Nick Martinelli (LAC, 2), Bruce Thornton (HOU, 4), Felix Okpara (WSH, 1), Braden Smith (IND, 1), Tobi Lawal (DAL, 3), Dillon Mitchell (BOS, 0), Ryan Conwell (MIA, 3), Cameron Carr (LAL, 0), AK Okereke (LAL, 0), Chris Cenac Jr. (BOS, 1), AJ Dybantsa (WSH, 1), Allen Graves (TOR, 4), Keaton Wagler (LAC, 4), Ebuka Okorie (DET, 2), Hannes Steinbach (CHA, 1)
+[  14.8s] predicted 258 players; top: Nikola Jokic 0.78, Karl-Anthony Towns 0.77, Giannis Antetokounmpo 0.57, Alperen Sengun 0.50, Jayson Tatum 0.48, Bam Adebayo 0.47
+[  14.8s] dry run: 258 players scored with 160 features; game-state coverage {'gs_exp_margin': 1.0, 'gs_abs_exp_margin': 1.0, 'gs_exp_total': 1.0, 'gs_exp_pace': 1.0, 'gs_pace_gap': 1.0}
+ athlete_display_name team_abbreviation  p_cal  gs_exp_margin  gs_abs_exp_margin  gs_exp_total  gs_exp_pace  gs_pace_gap
+         Nikola Jokic               DEN  0.784       3.200000           3.200000    231.699997    97.623001        3.256
+   Karl-Anthony Towns                NY  0.767      13.450000          13.450000    216.975006    94.959999       -0.790
+Giannis Antetokounmpo               MIA  0.574       0.750000           0.750000    242.975006   103.084999        1.352
+       Alperen Sengun               HOU  0.504      12.450000          12.450000    231.824997    99.074997       -6.444
+         Jayson Tatum               BOS  0.479      20.799999          20.799999    234.500000   102.869003      -10.686
+          Bam Adebayo               MIA  0.470       0.750000           0.750000    242.975006   103.084999        1.352
+        Anthony Davis               WSH  0.414     -14.500000          14.500000    230.250000    98.642998        5.264
+          Joel Embiid               PHI  0.399     -13.450000          13.450000    216.975006    94.959999        0.790
+           Trae Young               WSH  0.352     -14.500000          14.500000    230.250000    98.642998        5.264
+      Yaxel Lendeborg                GS  0.349      -3.850000           3.850000    225.725006    93.866997        3.106
+      Cade Cunningham               DET  0.284      14.400000          14.400000    217.050003    95.028999       -3.874
+          Luka Doncic               LAL  0.254       3.850000           3.850000    225.725006    93.866997       -3.106
+[  14.8s] dry run: nothing written
+----- dryrun 2026-10-30, started 2026-10-30 17:46 ET -----
+[   0.0s] daily run for 2026-10-30 (live)
+[   0.0s] production model trained 2026-10-30 17:45 (cutoff 2026-10-29, 0 days old)
+[   0.7s] slate: 10 games: CHA at WSH 19:00 (CHA -1.5), CHI at BOS 19:30 (BOS -14.5), DET at BKN 19:30 (DET -7.5), NY at PHI 19:30 (NY -3.5), ORL at TOR 19:30 (TOR -5.5), IND at MIA 20:00 (MIA -8.5), HOU at DAL 20:00 (HOU -6.5), LAC at MIN 20:00 (MIN -6.5), LAL at GS 22:00 (LAL -3.5), DEN at PHX 22:00 (DEN -4.5)
+[   1.9s] history through 2026-10-29: 301094 player rows
+[  13.6s] rosters: 348 players on 20 teams; injury report 98 players league-wide, 54 of tonight's players Out or Doubtful
+[  13.7s] pending rows 294 for 10 games
+[  14.1s] played rows 246532
+[  15.5s] player form done
+[  15.7s] history and schedule done
+[  16.4s] team context done (team-games 23244, 20 from player box sums, 12 without box stats)
+[  19.6s] rank, share, and absence features done
+[  20.0s] live rows 258 of 294 pending players (36 with fewer than 5 prior games skipped; 0 without any box-score history)
+[  20.0s] skipped (fewer than 5 prior games): Jaden Bradley (TOR, 4), Arthur Kaluma (LAL, 0), Bryce Hopkins (DEN, 4), Lawson Lovering (LAL, 2), Jaden Akins (NY, 1), Quadir Copeland (HOU, 0), Trevon Brazile (DEN, 4), Grant Nelson (BKN, 4), Graham Ike (GS, 4), Tre Donaldson (MIA, 0), Tyler Nickel (NY, 0), Dailyn Swain (CHI, 1), Joshua Jefferson (BKN, 1), Labaron Philon Jr. (PHI, 2), Jaylin Sellers (CHI, 2), Ugonna Onyenso (DET, 0), Koa Peat (PHX, 2), Isaiah Evans (MIN, 3), Baba Miller (LAC, 3), Mikel Brown Jr. (BKN, 3), Tobe Awaka (CHI, 2), Nick Martinelli (LAC, 2), Bruce Thornton (HOU, 4), Felix Okpara (WSH, 1), Braden Smith (IND, 1), Tobi Lawal (DAL, 3), Dillon Mitchell (BOS, 0), Ryan Conwell (MIA, 3), Cameron Carr (LAL, 0), AK Okereke (LAL, 0), Chris Cenac Jr. (BOS, 1), AJ Dybantsa (WSH, 1), Allen Graves (TOR, 4), Keaton Wagler (LAC, 4), Ebuka Okorie (DET, 2), Hannes Steinbach (CHA, 1)
+[  20.1s] predicted 258 players; top: Nikola Jokic 0.78, Karl-Anthony Towns 0.75, Giannis Antetokounmpo 0.58, Alperen Sengun 0.53, Jayson Tatum 0.51, Bam Adebayo 0.48
+[  20.1s] dry run: 258 players scored with 155 features; game-state coverage {}
+ athlete_display_name team_abbreviation  p_cal
+         Nikola Jokic               DEN  0.785
+   Karl-Anthony Towns                NY  0.747
+Giannis Antetokounmpo               MIA  0.576
+       Alperen Sengun               HOU  0.527
+         Jayson Tatum               BOS  0.512
+          Bam Adebayo               MIA  0.477
+        Anthony Davis               WSH  0.411
+           Trae Young               WSH  0.386
+      Yaxel Lendeborg                GS  0.352
+          Joel Embiid               PHI  0.345
+       Scottie Barnes               TOR  0.295
+          Luka Doncic               LAL  0.288
+[  20.1s] dry run: nothing written

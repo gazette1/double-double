@@ -26,6 +26,7 @@ from common import (DATASET_PATH, DOCS_DIR, FEATURE_LIST_PATH, FEATURES_DIR, MIN
 
 EWM_HALFLIFE = 8
 REST_CAP = 10
+HCA = 2.5  # home-court points in the expected-margin proxy (game-state features, adopted 2026-10-30)
 REGULAR_MIN = 15.0
 POSITIONS = ["C", "F", "G", "PF", "PG", "SF", "SG"]
 DOC = []  # feature documentation registry, written to docs/FEATURES_v1.md
@@ -283,6 +284,7 @@ def team_features(tg):
     tg["poss"] = (tg["field_goals_attempted"] - tg["offensive_rebounds"] + tg["turnovers"]
                   + 0.44 * tg["free_throws_attempted"])
     tg["pd"] = tg["team_score"] - tg["opponent_team_score"]
+    tg["pf"] = tg["team_score"]
     opp = tg[["game_id", "team_id", "offensive_rebounds", "defensive_rebounds", "assists", "team_score"]].rename(
         columns={"team_id": "opponent_team_id", "offensive_rebounds": "o_oreb", "defensive_rebounds": "o_dreb",
                  "assists": "o_ast", "team_score": "o_pts"})
@@ -301,16 +303,26 @@ def team_features(tg):
     kt = within_group_index(tid)
     tskey = tid.astype(np.int64) * 10000 + tg["season"].to_numpy()
     kts = within_group_index(tskey)
-    vcols = ["poss", "pd", "allow_reb", "allow_ast", "allow_pts", "dreb", "o_oreb"]
+    vcols = ["poss", "pd", "pf", "allow_reb", "allow_ast", "allow_pts", "dreb", "o_oreb"]
     vi = {c: i for i, c in enumerate(vcols)}
     V = tg[vcols].to_numpy(np.float64)
     wins = {"l10": window_sums_nan(V, tid, kt, 10), "l20": window_sums_nan(V, tid, kt, 20),
             "szn": window_sums_nan(V, tskey, kts, None)}
     cols = {"game_id": tg["game_id"].to_numpy(), "team_id": tg["team_id"].to_numpy()}
     for tag, (S, N) in wins.items():
-        for c in ["poss", "pd", "allow_reb", "allow_ast", "allow_pts"]:
+        for c in ["poss", "pd", "pf", "allow_reb", "allow_ast", "allow_pts"]:
             cols[f"{c}_{tag}"] = safe_div(S[:, vi[c]], N[:, vi[c]])
         cols[f"dreb_rate_{tag}"] = safe_div(S[:, vi["dreb"]], S[:, vi["dreb"]] + S[:, vi["o_oreb"]])
+    # league possessions per team-game to date within the season, from earlier dates only (same-day games and
+    # the pending games of a live run never enter); a season's first 30 team-games use the previous season's mean
+    day = tg.groupby(["season", "game_date"], sort=True)["poss"].agg(["sum", "count"]).reset_index()
+    day["cs"] = day.groupby("season")["sum"].cumsum() - day["sum"]
+    day["cn"] = day.groupby("season")["count"].cumsum() - day["count"]
+    season_mean = (day.groupby("season")["sum"].sum() / day.groupby("season")["count"].sum()).sort_index()
+    prev_mean = season_mean.shift(1)
+    day["league_poss"] = np.where(day["cn"] >= 30, safe_div(day["cs"], day["cn"]), day["season"].map(prev_mean))
+    key_day = pd.MultiIndex.from_frame(tg[["season", "game_date"]])
+    cols["league_poss"] = key_day.map(day.set_index(["season", "game_date"])["league_poss"]).to_numpy(np.float64)
     dn = tg["game_date"].to_numpy().astype("datetime64[D]").astype(np.int64)
     prev = np.full(len(tg), np.nan)
     prev[1:] = dn[:-1]
@@ -320,6 +332,21 @@ def team_features(tg):
     cols["team_b2b"] = np.where(np.isnan(gap), np.nan, (gap == 1).astype(np.float64))
     cols["team_game_num"] = (kts + 1).astype(np.float64)
     return pd.DataFrame(cols)
+
+
+def doc_gamestate():
+    lt = "Both teams' earlier games only (trailing-20 windows shifted one game); home court is known before tip."
+    w = "team's and opponent's last 20 games"
+    doc("gs_exp_margin", "Team context",
+        f"Expected margin proxy: pd_diff_l20 plus {HCA} for the home team, minus {HCA} for the away team. "
+        "Adopted 2026-10-30 with the other gs_ features after the controlled test in data/eval/gamestate/.", w, lt)
+    doc("gs_abs_exp_margin", "Team context", "Absolute expected margin (blowout risk in either direction).", w, lt)
+    doc("gs_exp_total", "Team context",
+        "Expected total: mean over the two teams of trailing-20 points for plus points against.", w, lt)
+    doc("gs_exp_pace", "Team context",
+        "Expected pace: team_poss_l20 x opp_poss_l20 / league possessions per team-game this season from earlier "
+        "dates only (the previous season's mean in a season's first 30 team-games).", w, lt)
+    doc("gs_pace_gap", "Team context", "team_poss_l20 minus opp_poss_l20.", w, lt)
 
 
 def doc_team():
@@ -698,6 +725,18 @@ def build_table(pb, tb, info, t0=None, verify=True):
     for c in ["team_days_rest", "team_b2b", "team_game_num"]:
         feats[c] = own[c].to_numpy()
     doc_team()
+    # game-state features (adopted 2026-10-30 after the controlled test in data/eval/gamestate/): the expected
+    # margin from the two trailing-20 point differentials plus home court, its size, the expected total, the
+    # expected pace as team x opponent / league possessions, and the pace gap. gs_opp_pd_l20 of the test is
+    # opp_pd_l20 above and is not repeated.
+    side = np.where(feats["home"] == 1.0, 1.0, -1.0)
+    feats["gs_exp_margin"] = feats["pd_diff_l20"] + HCA * side
+    feats["gs_abs_exp_margin"] = np.abs(feats["gs_exp_margin"])
+    feats["gs_exp_total"] = (own["pf_l20"].to_numpy() + own["allow_pts_l20"].to_numpy()
+                             + opp["pf_l20"].to_numpy() + opp["allow_pts_l20"].to_numpy()) / 2.0
+    feats["gs_exp_pace"] = safe_div(feats["team_poss_l20"] * feats["opp_poss_l20"], own["league_poss"].to_numpy())
+    feats["gs_pace_gap"] = feats["team_poss_l20"] - feats["opp_poss_l20"]
+    doc_gamestate()
     log(f"team context done (team-games {len(tg)}, {n_fallback} from player box sums, {n_nostats} without box stats)", t0)
 
     # rolling last-20 rebounds and assists per game, before and after each played row (for the rank)
