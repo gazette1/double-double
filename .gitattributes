@@ -1,0 +1,5 @@
+# Line endings: LF in the repository and the working tree (CRLF crept in from editor writes on 2026-10-30).
+* text=auto eol=lf
+*.parquet binary
+*.png binary
+*.txt text eol=lf
