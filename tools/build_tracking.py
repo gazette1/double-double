@@ -7,7 +7,9 @@ hoopR player box scores. Outputs:
   data/features/tracking_games.parquet         one row per matched player-game with the raw tracking columns
   data/features/tracking_team_games.parquet    team-game sums of the tracking columns (for opponent features)
   data/features/tracking_features.parquet      point-in-time player features (prior tracked games only), keyed
-                                               by athlete_id and game_date, prefix trk_
+                                               by athlete_id and game_date, prefix trk_; since 2026-10-30 also the
+                                               box-out success ratios (own rebound, team rebound and defensive share
+                                               per box out) over trailing 10, 20 and EWM windows
 Matching: exact on normalized name + team + date, then name + date, then a fuzzy pass within team-date with
 minutes agreement. One-to-one assignment by matched-row count. The report printed at the end gives the share
 of tracking rows and of hoopR played rows that matched.
@@ -35,7 +37,8 @@ KEEP = {
     "pass": ["MIN", "PASSES_MADE", "PASSES_RECEIVED", "AST", "FT_AST", "SECONDARY_AST", "POTENTIAL_AST",
              "AST_PTS_CREATED"],
     "hustle": ["MIN", "CONTESTED_SHOTS", "DEFLECTIONS", "CHARGES_DRAWN", "SCREEN_ASSISTS",
-               "LOOSE_BALLS_RECOVERED", "OFF_BOXOUTS", "DEF_BOXOUTS", "BOX_OUT_PLAYER_REBS", "BOX_OUTS"],
+               "LOOSE_BALLS_RECOVERED", "OFF_BOXOUTS", "DEF_BOXOUTS", "BOX_OUT_PLAYER_REBS", "BOX_OUTS",
+               "BOX_OUT_PLAYER_TEAM_REBS"],
 }
 TEAM_AGG = {"reb_REB_CHANCES": "rebch", "reb_REB": "trk_reb", "reb_REB_CONTEST": "rebcon",
             "pass_POTENTIAL_AST": "potast", "pass_PASSES_MADE": "passes", "pass_AST": "trk_ast",
@@ -168,6 +171,7 @@ def point_in_time_features(g):
         "passrec": g["pass_PASSES_RECEIVED"], "secast": g["pass_SECONDARY_AST"],
         "astpts": g["pass_AST_PTS_CREATED"], "boxouts": g["hustle_BOX_OUTS"], "defbox": g["hustle_DEF_BOXOUTS"],
         "boxreb": g["hustle_BOX_OUT_PLAYER_REBS"], "deflect": g["hustle_DEFLECTIONS"],
+        "boxteamreb": g["hustle_BOX_OUT_PLAYER_TEAM_REBS"],
         "screenast": g["hustle_SCREEN_ASSISTS"], "contested": g["hustle_CONTESTED_SHOTS"],
         "loose": g["hustle_LOOSE_BALLS_RECOVERED"], "min": g["trk_min"],
         "rebdist": g["reb_AVG_REB_DIST"] * g["reb_REB"],
@@ -183,6 +187,12 @@ def point_in_time_features(g):
             out[f"trk_{k}_pm_l{w}"] = S[k] / S["min"]
         out[f"trk_rebch_conv_l{w}"] = S["reb"] / S["rebch"]
         out[f"trk_ast_conv_l{w}"] = S["ast"] / S["potast"]
+        if w in (10, 20):
+            # Russ, 2026-10-30: "successful box out rates". Share of box outs that end as the player's own
+            # rebound, as any team rebound, and the defensive share of his box outs.
+            out[f"trk_boxout_success_l{w}"] = S["boxreb"] / S["boxouts"]
+            out[f"trk_boxout_teamsuccess_l{w}"] = S["boxteamreb"] / S["boxouts"]
+            out[f"trk_boxout_defshare_l{w}"] = S["defbox"] / S["boxouts"]
         if w == 10:
             out["trk_reb_contest_share_l10"] = S["rebcon"] / S["reb"]
             out["trk_rebdist_l10"] = S["rebdist"] / S["reb"]
@@ -191,6 +201,8 @@ def point_in_time_features(g):
         out[f"trk_{k}_pm_ewm"] = E[k] / E["min"]
     out["trk_rebch_conv_ewm"] = E["reb"] / E["rebch"]
     out["trk_ast_conv_ewm"] = E["ast"] / E["potast"]
+    out["trk_boxout_success_ewm"] = E["boxreb"] / E["boxouts"]
+    out["trk_boxout_teamsuccess_ewm"] = E["boxteamreb"] / E["boxouts"]
     out["trk_rebch_pg_ewm"] = E["rebch"]
     out["trk_potast_pg_ewm"] = E["potast"]
     out["trk_min_ewm"] = E["min"]

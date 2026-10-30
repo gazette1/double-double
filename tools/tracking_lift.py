@@ -22,9 +22,13 @@ identical rows, hyperparameters, seed and calibration, so differences come from 
   RESID_MU   the same with the matchup features
   RESID_ALL  the same with all three groups
   BLEND      0.5/0.5 logit blend of REF and BASE+ALL (diagnostic)
+  --extra FILE adds one more feature group keyed game_id, athlete_id (prefixes --extra-prefix, label --extra-name):
+             BASE+NAME, BASE+TRK+NAME, RESID_NAME and RESID_TRK+NAME, bootstrapped against BASE, BASE+TRK, REF,
+             RESID_NONE and RESID_TRK (used 2026-10-30 for the open-look shot features, data/eval/shots_era/)
 Outputs under data/eval/tracking/: report_tracking.md and CSVs. Models under data/models/tracking/.
 
-Usage: PYTHONUTF8=1 python tools/tracking_lift.py
+Usage: PYTHONUTF8=1 python tools/tracking_lift.py [--out DIR]
+       [--extra data/features/shot_features.parquet --extra-prefix shot_ --extra-name SHOT]
 """
 import json
 import time
@@ -48,6 +52,8 @@ P_CLIP = 1e-4
 Q_MIN = 0.20
 TEST_SEASONS = [2025, 2026]
 FIRST_TRAIN = 2024
+EXTRA_NAME = None  # an optional extra feature group, see --extra
+EXTRA_PREFIXES = ()
 LGB_PARAMS = {
     "objective": "binary", "metric": "binary_logloss", "num_leaves": 31, "learning_rate": 0.03,
     "min_child_samples": 100, "feature_fraction": 0.8, "bagging_fraction": 0.8, "bagging_freq": 1,
@@ -107,6 +113,8 @@ def holdout_split(train):
 
 
 def group_of(feature):
+    if EXTRA_PREFIXES and feature.startswith(tuple(EXTRA_PREFIXES)):
+        return EXTRA_NAME
     if feature.startswith(("trk_", "exp_")):
         return "TRK"
     if feature.startswith(("oppx_", "oppt_")):
@@ -184,13 +192,17 @@ def disagreement(df, col, base_col):
 
 def main():
     import argparse
-    global TEST_SEASONS, FIRST_TRAIN, EVAL
+    global TEST_SEASONS, FIRST_TRAIN, EVAL, EXTRA_NAME, EXTRA_PREFIXES
     ap = argparse.ArgumentParser()
     ap.add_argument("--test-seasons", nargs="+", type=int, default=TEST_SEASONS)
     ap.add_argument("--first-train", type=int, default=FIRST_TRAIN)
     ap.add_argument("--out", default=str(EVAL))
+    ap.add_argument("--extra", default=None, help="parquet keyed game_id, athlete_id with one more feature group")
+    ap.add_argument("--extra-prefix", nargs="+", default=["shot_"])
+    ap.add_argument("--extra-name", default="SHOT")
     args = ap.parse_args()
     TEST_SEASONS, FIRST_TRAIN, EVAL = args.test_seasons, args.first_train, Path(args.out)
+    EXTRA_NAME, EXTRA_PREFIXES = args.extra_name, tuple(args.extra_prefix)
     EVAL.mkdir(parents=True, exist_ok=True)
     MODELS.mkdir(parents=True, exist_ok=True)
     spec = json.load(open(FEAT / "dataset_v1_features.json"))
@@ -207,6 +219,12 @@ def main():
                            columns=["game_id", "athlete_id", "p_A_cal", "p_C_full_cal"])
     df = ds.merge(trk, on=["athlete_id", "game_date"], how="left").merge(opp, on=["game_id", "athlete_id"], how="left")
     df = df.merge(pred, on=["game_id", "athlete_id"], how="inner")
+    extra_feats = []
+    if args.extra:
+        ex = pd.read_parquet(args.extra)
+        extra_feats = [c for c in ex.columns if c.startswith(EXTRA_PREFIXES)]
+        df = df.merge(ex[["game_id", "athlete_id"] + extra_feats].drop_duplicates(["game_id", "athlete_id"]),
+                      on=["game_id", "athlete_id"], how="left")
     df["exp_rebch"] = df["trk_rebch_pm_ewm"] * df["min_ewm"]
     df["exp_potast"] = df["trk_potast_pm_ewm"] * df["min_ewm"]
     df["z_ref"] = logit(df["p_C_full_cal"])
@@ -220,6 +238,9 @@ def main():
         "BASE+MU": base_feats + mu_feats,
         "BASE+ALL": base_feats + trk_feats + opp_feats + mu_feats,
     }
+    if extra_feats:
+        variants[f"BASE+{EXTRA_NAME}"] = base_feats + extra_feats
+        variants[f"BASE+TRK+{EXTRA_NAME}"] = base_feats + trk_feats + extra_feats
     stacks = {
         "STACK_BASE": ["z_ref", "min_ewm", "position"],
         "STACK_ALL": ["z_ref", "min_ewm", "position"] + trk_feats + opp_feats + mu_feats,
@@ -231,7 +252,11 @@ def main():
         "RESID_MU": ["min_ewm", "position"] + mu_feats,
         "RESID_ALL": ["min_ewm", "position"] + trk_feats + opp_feats + mu_feats,
     }
-    log(f"rows {len(df)}; features base {len(base_feats)}, trk {len(trk_feats)}, opp {len(opp_feats)}, mu {len(mu_feats)}")
+    if extra_feats:
+        resids[f"RESID_{EXTRA_NAME}"] = ["min_ewm", "position"] + extra_feats
+        resids[f"RESID_TRK+{EXTRA_NAME}"] = ["min_ewm", "position"] + trk_feats + extra_feats
+    log(f"rows {len(df)}; features base {len(base_feats)}, trk {len(trk_feats)}, opp {len(opp_feats)}, mu {len(mu_feats)}, "
+        f"extra {len(extra_feats)}")
     coverage = pd.DataFrame({
         "season": sorted(df["season"].unique()),
         "rows": [int((df["season"] == s).sum()) for s in sorted(df["season"].unique())],
@@ -239,6 +264,9 @@ def main():
         "oppt_present": [float(df.loc[df["season"] == s, opp_feats[0] if opp_feats else "dd"].notna().mean()) for s in sorted(df["season"].unique())],
         "mu_present": [float(df.loc[df["season"] == s, "mu_def_pts_vs_exp"].notna().mean()) if "mu_def_pts_vs_exp" in df else np.nan for s in sorted(df["season"].unique())],
     })
+    if extra_feats:
+        coverage[f"{EXTRA_NAME.lower()}_present"] = [float(df.loc[df["season"] == s, extra_feats[0]].notna().mean())
+                                                  for s in sorted(df["season"].unique())]
     coverage.to_csv(EVAL / "coverage.csv", index=False)
 
     fold_info = {}
@@ -315,7 +343,11 @@ def main():
         b3 = block_bootstrap(g, ["p_STACK_ALL_cal", "p_STACK_BASE_cal", "p_BASE+ALL_cal"], "p_REF_cal")
         b4 = block_bootstrap(g, [f"p_{m}_cal" for m in resids] + [f"p_{m}_raw" for m in resids] + ["p_BLEND_cal"], "p_REF_cal")
         b5 = block_bootstrap(g, [f"p_{m}_raw" for m in resids if m != "RESID_NONE"], "p_RESID_NONE_raw")
-        b = pd.concat([b1, b2, b3, b4, b5], ignore_index=True)
+        bl = [b1, b2, b3, b4, b5]
+        if extra_feats:
+            bl.append(block_bootstrap(g, [f"p_RESID_TRK+{EXTRA_NAME}_raw", f"p_RESID_{EXTRA_NAME}_raw"], "p_RESID_TRK_raw"))
+            bl.append(block_bootstrap(g, [f"p_BASE+TRK+{EXTRA_NAME}_cal"], "p_BASE+TRK_cal"))
+        b = pd.concat(bl, ignore_index=True)
         b.insert(0, "season", season)
         boots.append(b)
     boot = pd.concat(boots, ignore_index=True)
@@ -326,7 +358,10 @@ def main():
                      disagreement(test, "p_STACK_ALL_cal", "p_REF_cal"),
                      disagreement(test, "p_BASE+TRK_cal", "p_BASE_cal"),
                      disagreement(test, "p_BASE+OPP_cal", "p_BASE_cal"),
-                     disagreement(test, "p_BASE+MU_cal", "p_BASE_cal")], ignore_index=True)
+                     disagreement(test, "p_BASE+MU_cal", "p_BASE_cal")]
+                    + ([disagreement(test, f"p_RESID_{EXTRA_NAME}_raw", "p_REF_cal"),
+                        disagreement(test, f"p_BASE+{EXTRA_NAME}_cal", "p_BASE_cal")] if extra_feats else []),
+                    ignore_index=True)
     dis.to_csv(EVAL / "disagreement.csv", index=False)
 
     imp_rows, grp_rows = [], []
@@ -336,7 +371,7 @@ def main():
         for gname, v in grp.items():
             grp_rows.append({"model": name, "season": S, "group": gname, "gain_share": float(v),
                              "n_features": int((share.index.map(group_of) == gname).sum())})
-        if name in ("BASE+ALL", "STACK_ALL", "RESID_ALL"):
+        if name in ("BASE+ALL", "STACK_ALL", "RESID_ALL", f"BASE+TRK+{EXTRA_NAME}", f"RESID_TRK+{EXTRA_NAME}"):
             for i, (f, v) in enumerate(share.sort_values(ascending=False).head(30).items(), 1):
                 imp_rows.append({"model": name, "season": S, "rank": i, "feature": f, "group": group_of(f), "gain_share": float(v)})
     imp = pd.DataFrame(imp_rows)
@@ -355,6 +390,10 @@ def main():
              "features (plus min_ewm and position), so zero trees equals REF exactly and every departure from REF is chosen by the holdout; "
              "RESID_NONE is the control with no new features, and the raw rows skip the Platt step. BLEND_REF_ALL is a 0.5/0.5 logit blend "
              "of REF and BASE+ALL. The proxy price q = min(0.97, 1.08 x Baseline A) is an assumption, not a book price.\n")
+    if extra_feats:
+        L.append(f"Extra group {EXTRA_NAME}: {len(extra_feats)} features from {args.extra} (prefixes "
+                 f"{', '.join(EXTRA_PREFIXES)}), merged on game_id and athlete_id; variants BASE+{EXTRA_NAME}, "
+                 f"BASE+TRK+{EXTRA_NAME}, RESID_{EXTRA_NAME} and RESID_TRK+{EXTRA_NAME}.\n")
     L.append("## Coverage\n" + md(coverage) + "\n")
     L.append("## Metric 1: calibrated log loss, Brier, AUC\n" + md(metrics) + "\n")
     L.append("## Bootstrap of log-loss differences (block bootstrap by game date, 1000 resamples; negative favors the model)\n" + md(boot, 5) + "\n")

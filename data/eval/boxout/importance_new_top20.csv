@@ -1,0 +1,17 @@
+season,rank,feature,gain_share
+2025,1,trk_boxout_success_l10,0.0
+2025,2,trk_boxout_teamsuccess_l10,0.0
+2025,3,trk_boxout_defshare_l10,0.0
+2025,4,trk_boxout_success_l20,0.0
+2025,5,trk_boxout_teamsuccess_l20,0.0
+2025,6,trk_boxout_defshare_l20,0.0
+2025,7,trk_boxout_success_ewm,0.0
+2025,8,trk_boxout_teamsuccess_ewm,0.0
+2026,1,trk_boxout_success_l20,0.00019894491037262697
+2026,2,trk_boxout_defshare_l20,0.00019361387829713124
+2026,3,trk_boxout_defshare_l10,0.00014266903203490503
+2026,4,trk_boxout_teamsuccess_ewm,8.474124030255643e-05
+2026,5,trk_boxout_success_ewm,7.213619096005245e-05
+2026,6,trk_boxout_teamsuccess_l10,3.304861875703376e-05
+2026,7,trk_boxout_teamsuccess_l20,1.819010699030821e-05
+2026,8,trk_boxout_success_l10,1.2924716701301229e-05
