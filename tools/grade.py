@@ -267,11 +267,10 @@ def main():
     date = args.date or yesterday_et()
     tee_stdout("grade", date)
     path = picks_path(date)
-    if not path.exists():
-        sys.exit(f"no picks file for {date}: {path}; run tools/daily_run.py --date {date} first")
-    picks = pd.read_csv(path)
+    picks = pd.read_csv(path) if path.exists() else pd.DataFrame()  # no file: no run that day, nothing to grade
     if picks.empty:
-        text = f"🏀 DD results: {date}\n\nNo plays were posted for this date, nothing to grade.\n"
+        why = "No plays were posted for this date" if path.exists() else "No run was made for this date"
+        text = f"🏀 DD results: {date}\n\n{why}, nothing to grade.\n"
         grade_summary_path(date).parent.mkdir(parents=True, exist_ok=True)
         grade_summary_path(date).write_text(text, encoding="utf-8")
         append_run_log({"run_et": now_et().strftime("%Y-%m-%d %H:%M"), "date": date, "mode": "grade", "picks": 0,
