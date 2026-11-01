@@ -17,3 +17,120 @@ running the chain by hand (missing)
 no picks file for 2026-10-31: C:\Users\harri\Documents\Double Double Bot\data\paper\picks_2026-10-31.csv; run tools/daily_run.py --date 2026-10-31 first
 grade exit=1
 stopping the chain; nothing committed
+----- fallback 2026-11-01, started 2026-11-01 15:46 ET -----
+fallback for 2026-11-01: deadline 15:40, cap 16:30, poll every 4 min
+=== git pull --ff-only
+Already up to date.
+[15:46] missing: no Action run for the slot by 15:46 ET
+running the chain by hand (missing)
+=== grade
+----- grade 2026-10-31, started 2026-11-01 15:46 ET -----
+🏀 DD results: 2026-10-31
+
+No run was made for this date, nothing to grade.
+grade exit=0
+=== daily_run
+----- daily 2026-11-01, started 2026-11-01 15:46 ET -----
+[   0.0s] daily run for 2026-11-01 (live)
+[   0.5s] hoopR player_box_2027: 0.1 MB
+[   0.9s] hoopR team_box_2027: 0.0 MB
+[   1.4s] hoopR schedule_2027: 0.1 MB
+[   1.4s] production model trained 2026-10-30 17:45 (cutoff 2026-10-29, 1 days old)
+[   1.8s] games already started or finished, left out: BOS at ORL (STATUS_IN_PROGRESS)
+[   1.8s] slate: 3 games: BKN at IND 17:00 (IND -3.5), LAC at GS 20:30 (GS -2.5), TOR at LAL 21:00 (LAL -2.5)
+[   2.5s] history through 2026-10-31: 301549 player rows
+[   5.5s] rosters: 107 players on 6 teams; injury report 89 players league-wide, 22 of tonight's players Out or Doubtful
+[   5.6s] pending rows 85 for 3 games
+[   5.8s] played rows 246714
+[   6.6s] player form done
+[   6.7s] history and schedule done
+[   7.2s] team context done (team-games 23264, 6 from player box sums, 12 without box stats)
+[   9.2s] rank, share, and absence features done
+[   9.5s] live rows 74 of 85 pending players (11 with fewer than 5 prior games skipped; 0 without any box-score history)
+[   9.5s] skipped (fewer than 5 prior games): Jaden Bradley (TOR, 4), Arthur Kaluma (LAL, 0), Lawson Lovering (LAL, 2), Grant Nelson (BKN, 4), Graham Ike (GS, 4), Joshua Jefferson (BKN, 1), Baba Miller (LAC, 4), Nick Martinelli (LAC, 3), Braden Smith (IND, 2), Cameron Carr (LAL, 0), AK Okereke (LAL, 0)
+[   9.5s] predicted 74 players; top: Yaxel Lendeborg 0.30, Walker Kessler 0.27, Luka Doncic 0.25, Andrew Nembhard 0.22, Julius Randle 0.21, Scottie Barnes 0.20
+4 NBA games on 2026-11-01 (ET) in this snapshot (open)
+286 price rows logged; credits used this run 4; credits remaining 492
+[  11.5s] prices: 33 scored players with a FanDuel quote, 21 with a two-way quote; books in the snapshot: ['ballybet', 'betmgm', 'draftkings', 'espnbet', 'fanduel', 'hardrockbet', 'novig']
+[  11.5s] 12 priced players without a model row (no history, fewer than 5 games, or Out) saved to priced_unscored_2026-11-01.csv
+
+🏀 DD picks: 2026-11-01 (3 games, 74 players scored)
+
+No plays tonight. Closest by edge against the fair price, with the blocking rule:
+• Brandin Podziemski (GS) model 0.10, fair 0.10 / 0.07, FD +700, edge -0.001 / +0.039: p below 0.35; edge -0.001/+0.039 below bar 0.030; price edge -0.021 below 0.02
+• Yaxel Lendeborg (GS) model 0.30, fair 0.30 / 0.28, FD +220, edge -0.004 / +0.019: p below 0.35; edge -0.004/+0.019 below bar 0.030; price edge -0.016 below 0.02
+• Michael Porter Jr. (BKN) model 0.19, fair 0.22 / 0.18, FD +290, edge -0.040 / +0.001: p below 0.35; edge -0.040/+0.001 below bar 0.030; price edge -0.071 below 0.02
+
+_Bar: edge above 0.030 under both de-vig methods (0.060 in a team's first 5 games, doubled for near-locks in 10-point spreads); FanDuel one-sided margin tonight 0.023 on players with fair at least 0.20, floor 0.03; p at least 0.35; price edge at least 0.02 at the book._
+_Priced but not scored (fewer than 5 prior games, no history, or listed out): Jase Richardson (DK +7000); Tristan da Silva (DK +4000); Desmond Bane (FD +2500); Payton Pritchard (FD +2200); Derrick White (FD +1400); Paul George (FD +1200, fair 0.09); Anthony Black (FD +1100); Neemias Queta (FD +450); Franz Wagner (FD +280); Wendell Carter Jr (FD +198); Jayson Tatum (FD +178); Obi Toppin (DK n/a, fair 0.11)._
+_Credits used 4, remaining 492. Paper stakes only, 1 unit per pick. Model trained 2026-10-30 17:45 through 2026-10-29._
+
+[  11.6s] wrote picks_2026-11-01.csv (0 picks), board_2026-11-01.csv (74 rows), discord_2026-11-01.md
+daily_run exit=0
+=== top_post
+🏀 Top Double-Double Plays: 2026-11-01 (3 games)
+**Tonight's 5 most likely double-doubles, ranked by the model**
+
+🟡 **Yaxel Lendeborg** (GS vs LAC, 8:30 PM ET)
+   model **30%** · FD +220
+🟡 **Walker Kessler** (LAL vs TOR, 9:00 PM ET)
+   model **27%** · FD +118
+🟡 **Luka Doncic** (LAL vs TOR, 9:00 PM ET)
+   model **25%** · FD +146
+🟡 **Andrew Nembhard** (IND vs BKN, 5:00 PM ET)
+   model **22%** · FD +130
+🟡 **Julius Randle** (BKN at IND, 5:00 PM ET)
+   model **21%** · FD +225
+
+_2026-10-30: 3-1, -0.3u at FanDuel prices (hit: Nikola Jokic, Karl-Anthony Towns, Giannis Antetokounmpo) · season 7-7_
+_🟢 model above the FanDuel price · 🟡 below it. Paper picks, graded the next day._
+top_post exit=0
+=== post
+🏀 Top Double-Double Plays: 2026-11-01 (3 games)
+**Tonight's 5 most likely double-doubles, ranked by the model**
+
+🟡 **Yaxel Lendeborg** (GS vs LAC, 8:30 PM ET)
+   model **30%** · FD +220
+🟡 **Walker Kessler** (LAL vs TOR, 9:00 PM ET)
+   model **27%** · FD +118
+🟡 **Luka Doncic** (LAL vs TOR, 9:00 PM ET)
+   model **25%** · FD +146
+🟡 **Andrew Nembhard** (IND vs BKN, 5:00 PM ET)
+   model **22%** · FD +130
+🟡 **Julius Randle** (BKN at IND, 5:00 PM ET)
+   model **21%** · FD +225
+
+_2026-10-30: 3-1, -0.3u at FanDuel prices (hit: Nikola Jokic, Karl-Anthony Towns, Giannis Antetokounmpo) · season 7-7_
+_🟢 model above the FanDuel price · 🟡 below it. Paper picks, graded the next day._
+Discord: HTTP 204 (sent)
+post exit=0
+warning: in the working copy of 'data/odds/credits_log.csv', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'data/odds/dd_prices.csv', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'data/paper/run_log.csv', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'data/paper/board_2026-11-01.csv', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'data/paper/discord_2026-11-01.md', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'data/paper/discord_grade_2026-10-31.md', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'data/paper/discord_top_2026-11-01.md', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'data/paper/logs/daily_2026-11-01.txt', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'data/paper/logs/grade_2026-10-31.txt', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'data/paper/picks_2026-11-01.csv', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'data/paper/priced_unscored_2026-11-01.csv', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'data/paper/top_2026-11-01.csv', CRLF will be replaced by LF the next time Git touches it
+[main 69e3c3b] paper trade 2026-11-01 fallback by hand from the paper-trade session
+ 15 files changed, 810 insertions(+)
+ create mode 100644 data/odds/snapshots/2026-11-01_1545_open.json
+ create mode 100644 data/odds/snapshots/2026-11-01_1546_open.json
+ create mode 100644 data/paper/board_2026-11-01.csv
+ create mode 100644 data/paper/discord_2026-11-01.md
+ create mode 100644 data/paper/discord_grade_2026-10-31.md
+ create mode 100644 data/paper/discord_top_2026-11-01.md
+ create mode 100644 data/paper/logs/daily_2026-11-01.txt
+ create mode 100644 data/paper/logs/fallback_2026-11-01.txt
+ create mode 100644 data/paper/logs/grade_2026-10-31.txt
+ create mode 100644 data/paper/picks_2026-11-01.csv
+ create mode 100644 data/paper/priced_unscored_2026-11-01.csv
+ create mode 100644 data/paper/top_2026-11-01.csv
+Current branch main is up to date.
+To github.com:gazette1/double-double.git
+   03e5c2d..69e3c3b  main -> main
+push exit 0
