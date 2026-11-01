@@ -1,0 +1,17 @@
+----- grade 2026-10-30, started 2026-11-01 11:49 ET -----
+[   0.5s] hoopR player_box_2027: 0.1 MB
+[   0.9s] hoopR team_box_2027: 0.0 MB
+[   1.4s] hoopR schedule_2027: 0.1 MB
+[   4.1s] top five 2026-10-30: 3-1 against 2.63 expected hits, 0 pending, -0.27 units at FanDuel prices; ledger_top.csv now 15 rows
+[   4.1s] five-name record to date: 7-7, expected 8.3 hits, z -0.75 (luck against model bias; a z beyond 2 for a run of 100 legs means the model, not the dice)
+
+🏀 DD results: 2026-10-30
+
+**0-1** (0%) · -1.00u at the open price
+⚪ **Alperen Sengun** (HOU vs DAL) Yes +108 · model 0.53 · no box score (no two-way close; did not play)
+❌ **Yaxel Lendeborg** (GS vs LAL) Yes +235 · model 0.35 · 6 pts 1 reb 0 ast
+
+📈 **Season:** 0-1 (0%) · -1.00u at the open price on 1 priced picks · no picks with a two-way close yet
+_Gate: 100 more picks with a two-way close needed before the CLV test reads. Backfill picks without prices, not counted: 3-0._
+
+[   4.1s] ledger ledger.csv now 5 rows; wrote discord_grade_2026-10-30.md
