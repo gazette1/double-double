@@ -1,0 +1,19 @@
+----- fallback 2026-11-01, started 2026-11-01 15:10 ET -----
+fallback for 2026-11-01: deadline 15:40, cap 16:30, poll every 4 min
+=== git pull --ff-only
+Already up to date.
+[15:10] wait: no run for the slot yet; 1 run(s) today, none active
+[15:14] wait: no run for the slot yet; 1 run(s) today, none active
+[15:18] wait: no run for the slot yet; 1 run(s) today, none active
+[15:22] wait: no run for the slot yet; 1 run(s) today, none active
+[15:26] wait: no run for the slot yet; 1 run(s) today, none active
+[15:30] wait: no run for the slot yet; 1 run(s) today, none active
+[15:34] wait: no run for the slot yet; 1 run(s) today, none active
+[15:38] wait: no run for the slot yet; 1 run(s) today, none active
+[15:42] missing: no Action run for the slot by 15:42 ET
+running the chain by hand (missing)
+=== grade
+----- grade 2026-10-31, started 2026-11-01 15:42 ET -----
+no picks file for 2026-10-31: C:\Users\harri\Documents\Double Double Bot\data\paper\picks_2026-10-31.csv; run tools/daily_run.py --date 2026-10-31 first
+grade exit=1
+stopping the chain; nothing committed
