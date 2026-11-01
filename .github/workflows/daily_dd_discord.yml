@@ -64,7 +64,7 @@ jobs:
         if: steps.guard.outputs.step == 'daily'
         run: |
           python tools/top_post.py
-          python tools/post_discord.py --kind top --post
+          python tools/post_discord.py --kind top --post --once
 
       - name: One labeled test post
         if: steps.guard.outputs.step == 'post_test'
