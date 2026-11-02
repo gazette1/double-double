@@ -1,0 +1,34 @@
+----- daily 2026-11-02, started 2026-11-02 15:54 ET -----
+[   0.0s] daily run for 2026-11-02 (live)
+[   0.4s] hoopR player_box_2027: 0.1 MB
+[   0.8s] hoopR team_box_2027: 0.0 MB
+[   1.3s] hoopR schedule_2027: 0.1 MB
+[   1.3s] production model trained 2026-10-30 17:45 (cutoff 2026-10-29, 2 days old)
+[   1.7s] slate: 15 games: OKC at CLE 19:00 (CLE -4.5), DET at CHA 19:30 (DET -6.5), ATL at IND 19:30 (ATL -10.5), BKN at NY 19:30 (NY -14.5), WSH at ORL 19:30 (ORL -2.5), CHI at PHI 19:30 (PHI -10.5), SAC at DAL 20:00 (DAL -8.5), NO at MEM 20:00 (MEM -5.5), MIL at MIN 20:00 (MIN -10.5), BOS at HOU 20:30 (HOU -5.5), UTAH at SA 20:30 (SA -16.5), POR at DEN 21:00 (DEN -4.5), PHX at GS 22:00 (GS -2.5), TOR at LAC 22:00 (TOR -5.5), MIA at LAL 22:00 (LAL -1.5)
+[   2.9s] history through 2026-11-01: 301653 player rows
+[  15.7s] rosters: 521 players on 30 teams; injury report 100 players league-wide, 80 of tonight's players Out or Doubtful
+[  15.8s] pending rows 441 for 15 games
+[  16.1s] played rows 247159
+[  17.0s] player form done
+[  17.2s] history and schedule done
+[  17.6s] team context done (team-games 23296, 30 from player box sums, 12 without box stats)
+[  19.9s] rank, share, and absence features done
+[  20.1s] live rows 396 of 441 pending players (45 with fewer than 5 prior games skipped; 0 without any box-score history)
+[  20.1s] skipped (fewer than 5 prior games): Arthur Kaluma (LAL, 0), Bryce Hopkins (DEN, 4), Keshon Gilbert (ATL, 4), Lawson Lovering (LAL, 2), Jaden Akins (NY, 1), Quadir Copeland (HOU, 0), Kylan Boswell (CHA, 0), Grant Nelson (BKN, 4), Jaron Pierre Jr. (NO, 0), Malik Dia (NO, 0), Tre Donaldson (MIA, 0), Tyler Nickel (NY, 0), Dailyn Swain (CHI, 1), Joshua Jefferson (BKN, 1), Labaron Philon Jr. (PHI, 4), Jaylin Sellers (CHI, 3), Alex Karaban (SAC, 4), Ugonna Onyenso (DET, 0), Meleek Thomas (CLE, 3), Koa Peat (PHX, 2), Isaiah Evans (MIN, 4), Mikel Brown Jr. (BKN, 4), Maliq Brown (SA, 1), Tobe Awaka (CHI, 3), Josh Dix (OKC, 3), Tarris Reed Jr. (SA, 3), Carson Cooper (MEM, 1), Nick Martinelli (LAC, 4), Felix Okpara (WSH, 1), Braden Smith (IND, 3), Tobi Lawal (DAL, 3), Ernest Udeh Jr. (CLE, 0), Zuby Ejiofor (ATL, 2), Dillon Mitchell (BOS, 0), Ryan Conwell (MIA, 4), Ja'Kobi Gillespie (SA, 2), Cameron Carr (LAL, 1), AK Okereke (LAL, 0), Chris Cenac Jr. (BOS, 2), AJ Dybantsa (WSH, 2), Nate Ament (MIL, 4), Bogoljub Markovic (MIL, 1), Karim Lopez (MEM, 2), Ebuka Okorie (DET, 3), Hannes Steinbach (CHA, 2)
+[  20.2s] predicted 396 players; top: Karl-Anthony Towns 0.75, Domantas Sabonis 0.75, Nikola Jokic 0.68, Giannis Antetokounmpo 0.59, Victor Wembanyama 0.55, Jalen Johnson 0.55
+15 NBA games on 2026-11-02 (ET) in this snapshot (open)
+1078 price rows logged; credits used this run 15; credits remaining 477
+[  26.4s] prices: 147 scored players with a FanDuel quote, 101 with a two-way quote; books in the snapshot: ['ballybet', 'betmgm', 'draftkings', 'espnbet', 'fanduel', 'hardrockbet', 'novig']
+[  26.4s] 2 priced players without a model row (no history, fewer than 5 games, or Out) saved to priced_unscored_2026-11-02.csv
+
+🏀 DD picks: 2026-11-02 (15 games, 396 players scored)
+
+🟢 **Joel Embiid** (PHI vs CHI) Yes **+164** FD
+   model **0.41** · fair 0.32 / 0.21 · edge **+0.092** / +0.201 · FD edge +0.029 · spread PHI -10.5  _(listed Day-To-Day)_
+
+_Bar: edge above 0.038 under both de-vig methods (0.068 in a team's first 5 games, doubled for near-locks in 10-point spreads); FanDuel one-sided margin tonight 0.038 on players with fair at least 0.20, floor 0.03; p at least 0.35; price edge at least 0.02 at the book._
+_Priced but not scored (fewer than 5 prior games, no history, or listed out): Mikel Brown Jr. (FD +5000); AJ Dybantsa (FD +1200)._
+_Passed on the favorites: Karl-Anthony Towns p 0.75, FD -310, fair 0.66; Domantas Sabonis p 0.75, FD -390, fair 0.69; Nikola Jokic p 0.68, FD -670, fair 0.81; Giannis Antetokounmpo p 0.59, FD -320, fair 0.71._
+_Credits used 15, remaining 477. Paper stakes only, 1 unit per pick. Model trained 2026-10-30 17:45 through 2026-10-29._
+
+[  26.5s] wrote picks_2026-11-02.csv (1 picks), board_2026-11-02.csv (396 rows), discord_2026-11-02.md
