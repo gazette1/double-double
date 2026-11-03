@@ -1,0 +1,16 @@
+----- grade 2026-11-02, started 2026-11-03 15:53 ET -----
+[   0.5s] hoopR player_box_2027: 0.1 MB
+[   1.0s] hoopR team_box_2027: 0.0 MB
+[   1.4s] hoopR schedule_2027: 0.1 MB
+[   3.8s] top five 2026-11-02: 3-2 against 3.32 expected hits, 0 pending, -1.06 units at FanDuel prices; ledger_top.csv now 25 rows
+[   3.8s] five-name record to date: 12-12, expected 12.9 hits, z -0.38 (luck against model bias; a z beyond 2 for a run of 100 legs means the model, not the dice)
+
+🏀 DD results: 2026-11-02
+
+**0-1** (0%) · -1.00u at the open price
+❌ **Joel Embiid** (PHI vs CHI) Yes +164 · model 0.41 · 15 pts 8 reb 3 ast
+
+📈 **Season:** 0-2 (0%) · -2.00u at the open price on 2 priced picks · no picks with a two-way close yet
+_Gate: 100 more picks with a two-way close needed before the CLV test reads. Backfill picks without prices, not counted: 3-0._
+
+[   3.8s] ledger ledger.csv now 6 rows; wrote discord_grade_2026-11-02.md
