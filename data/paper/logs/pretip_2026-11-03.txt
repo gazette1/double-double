@@ -1,0 +1,2 @@
+----- pretip 2026-11-03, started 2026-11-03 18:56 ET -----
+[   0.0s] picks file for 2026-11-03 has no picks; nothing to snapshot
