@@ -1,0 +1,36 @@
+----- daily 2026-11-04, started 2026-11-04 15:53 ET -----
+[   0.0s] daily run for 2026-11-04 (live)
+[   0.5s] hoopR player_box_2027: 0.1 MB
+[   0.9s] hoopR team_box_2027: 0.0 MB
+[   1.3s] hoopR schedule_2027: 0.1 MB
+[   1.3s] production model trained 2026-10-30 17:45 (cutoff 2026-10-29, 4 days old)
+[   1.7s] slate: 14 games: PHI at DET 19:00 (DET -2.5), ATL at WSH 19:00 (ATL -3.5), MIL at BOS 19:30 (BOS -11.5), CHA at BKN 19:30 (CHA -3.5), CHI at NY 19:30 (NY -12.5), IND at MEM 20:00 (MEM -6.5), UTAH at NO 20:00 (NO -4.5), CLE at OKC 20:00 (OKC -3.5), MIN at HOU 20:30 (HOU -7.5), TOR at DEN 21:00 (DEN -4.5), POR at PHX 21:00 (POR -2.5), DAL at SA 21:30 (SA -12.5), LAL at SAC 22:00 (LAL -12.5), MIA at LAC 22:30 (MIA -5.5)
+[   5.2s] history through 2026-11-02: 302047 player rows
+[  16.3s] rosters: 486 players on 28 teams; injury report 96 players league-wide, 65 of tonight's players Out or Doubtful
+[  16.4s] pending rows 421 for 14 games
+[  16.6s] played rows 247471
+[  17.4s] player form done
+[  17.5s] history and schedule done
+[  17.9s] team context done (team-games 23324, 28 from player box sums, 12 without box stats)
+[  20.1s] rank, share, and absence features done
+[  20.3s] live rows 379 of 421 pending players (42 with fewer than 5 prior games skipped; 0 without any box-score history)
+[  20.4s] skipped (fewer than 5 prior games): Alpha Diallo (DEN, 2), Arthur Kaluma (LAL, 0), Bryce Hopkins (DEN, 4), Keshon Gilbert (ATL, 4), Lawson Lovering (LAL, 3), Jaden Akins (NY, 1), Quadir Copeland (HOU, 0), Kylan Boswell (CHA, 0), Grant Nelson (BKN, 4), Jaron Pierre Jr. (NO, 0), Malik Dia (NO, 0), Tre Donaldson (MIA, 0), Tyler Nickel (NY, 0), Dailyn Swain (CHI, 1), Joshua Jefferson (BKN, 1), Jaylin Sellers (CHI, 4), Alex Karaban (SAC, 4), Ugonna Onyenso (DET, 0), Meleek Thomas (CLE, 4), Koa Peat (PHX, 2), Isaiah Evans (MIN, 4), Maliq Brown (SA, 1), Tobe Awaka (CHI, 4), Josh Dix (OKC, 4), Tarris Reed Jr. (SA, 4), Carson Cooper (MEM, 1), Nick Martinelli (LAC, 4), Felix Okpara (WSH, 1), Braden Smith (IND, 4), Tobi Lawal (DAL, 4), Ernest Udeh Jr. (CLE, 0), Zuby Ejiofor (ATL, 3), Dillon Mitchell (BOS, 1), Ja'Kobi Gillespie (SA, 2), Cameron Carr (LAL, 2), AK Okereke (LAL, 0), Chris Cenac Jr. (BOS, 3), AJ Dybantsa (WSH, 3), Bogoljub Markovic (MIL, 1), Karim Lopez (MEM, 2), Ebuka Okorie (DET, 4), Hannes Steinbach (CHA, 3)
+[  20.4s] predicted 379 players; top: Karl-Anthony Towns 0.82, Nikola Jokic 0.74, Victor Wembanyama 0.62, Domantas Sabonis 0.61, Giannis Antetokounmpo 0.58, Jalen Johnson 0.53
+14 NBA games on 2026-11-04 (ET) in this snapshot (open)
+1043 price rows logged; credits used this run 14; credits remaining 463
+[  26.7s] prices: 147 scored players with a FanDuel quote, 99 with a two-way quote; books in the snapshot: ['ballybet', 'betmgm', 'draftkings', 'espnbet', 'fanduel', 'hardrockbet', 'novig']
+[  26.7s] 4 priced players without a model row (no history, fewer than 5 games, or Out) saved to priced_unscored_2026-11-04.csv
+
+🏀 DD picks: 2026-11-04 (14 games, 379 players scored)
+
+No plays tonight. Closest by edge against the fair price, with the blocking rule:
+• Derik Queen (NO) model 0.27, fair 0.17 / 0.11, FD +520, edge +0.105 / +0.157: p below 0.35
+• Neemias Queta (BOS) model 0.27, fair 0.17 / 0.08, FD +390, edge +0.092 / +0.189: p below 0.35
+• Moussa Diabate (CHA) model 0.31, fair 0.25 / 0.23, FD +300, edge +0.063 / +0.082: p below 0.35
+
+_Bar: edge above 0.030 under both de-vig methods (0.060 in a team's first 5 games, doubled for near-locks in 10-point spreads); FanDuel one-sided margin tonight 0.024 on players with fair at least 0.20, floor 0.03; p at least 0.35; price edge at least 0.02 at the book._
+_Priced but not scored (fewer than 5 prior games, no history, or listed out): AJ Dybantsa (FD +850); Josh Hart (DK n/a); Meleek Thomas (DK +5200); Ivica Zubac (FD +205, fair 0.31)._
+_Passed on the favorites: Karl-Anthony Towns p 0.82, FD -470, fair 0.77; Nikola Jokic p 0.74, FD -670, fair 0.81; Victor Wembanyama p 0.62, FD -275, fair 0.69; Domantas Sabonis p 0.61, FD -270, fair 0.65._
+_Credits used 14, remaining 463. Paper stakes only, 1 unit per pick. Model trained 2026-10-30 17:45 through 2026-10-29._
+
+[  26.8s] wrote picks_2026-11-04.csv (0 picks), board_2026-11-04.csv (379 rows), discord_2026-11-04.md
