@@ -48,6 +48,20 @@ BOOK_LABEL = {"fanduel": "FD", "draftkings": "DK", "betmgm": "MGM", "williamhill
               "espnbet": "SCORE", "hardrockbet": "HR", "betrivers": "BR", "ballybet": "BALLY", "novig": "NOVIG"}
 OUT_STATUSES = {"out", "doubtful", "suspended", "injured reserve", "ir"}
 
+# Russ, 2026-11-04: "no back to backs with players". A row is on a back-to-back when its team played the night
+# before (team_b2b) or the player did (b2b); both are model features, so live rows and boards carry them. Such
+# players are left out of the five-name post and cannot be edge-rule picks.
+EXCLUDE_B2B = True
+
+
+def on_back_to_back(df):
+    """Boolean Series, True where a row is on the second night of a back-to-back; missing flags count as no."""
+    out = pd.Series(False, index=df.index)
+    for c in ("team_b2b", "b2b"):
+        if c in df:
+            out = out | (pd.to_numeric(df[c], errors="coerce").fillna(0) == 1)
+    return out
+
 
 # --------------------------------------------------------------------------------------------
 # Time and files

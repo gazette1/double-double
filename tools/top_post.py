@@ -3,8 +3,10 @@ top_post.py: the five most likely double-doubles tonight, in the StrikeOut Bot's
 
 Russ, 2026-10-29, after seeing the first edge-rule post: "All these numbers are confusing. I just want 5 dudes
 sent to phone like strikeout. Most likely to double double based on the data and today's games." This reads the
-board daily_run.py wrote for the date, drops players listed out or doubtful, ranks the rest by the calibrated
-model probability and writes two files in data/paper:
+board daily_run.py wrote for the date, drops players listed out or doubtful and players on the second night of a
+back-to-back (Russ, 2026-11-04: "no back to backs with players"; the board's team_b2b and b2b flags, switch
+EXCLUDE_B2B in paper_common), ranks the rest by the calibrated model probability and writes two files in
+data/paper:
   discord_top_{date}.md  the post: one line per player with team, opponent, tip time, model percent and the
                          FanDuel price, a green mark when the model sits above FanDuel's implied probability and
                          a yellow one when it sits below, plus the edge-rule value play when there is one
@@ -23,7 +25,7 @@ from pathlib import Path
 import pandas as pd
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from paper_common import PAPER_DIR, today_et  # noqa: E402
+from paper_common import EXCLUDE_B2B, PAPER_DIR, on_back_to_back, today_et  # noqa: E402
 
 SKIP_STATUS = {"out", "doubtful"}
 TOP_LEDGER = PAPER_DIR / "ledger_top.csv"
@@ -50,6 +52,8 @@ def rank(board, n):
     status = b["injury_status"].fillna("").astype(str).str.lower() if "injury_status" in b else ""
     if len(b) and isinstance(status, pd.Series):
         b = b[~status.isin(SKIP_STATUS)]
+    if EXCLUDE_B2B:
+        b = b[~on_back_to_back(b)]
     b = b.sort_values(["p_cal", "player"], ascending=[False, True]).head(n)
     b.insert(0, "rank", range(1, len(b) + 1))
     return b
@@ -96,7 +100,8 @@ def post_text(date, board, top, record=None):
     lines.append("")
     if record:
         lines.append(record)
-    lines.append("_🟢 model above the FanDuel price · 🟡 below it. Paper picks, graded the next day._")
+    back = " Players on the second night of a back-to-back are left out." if EXCLUDE_B2B else ""
+    lines.append(f"_🟢 model above the FanDuel price · 🟡 below it.{back} Paper picks, graded the next day._")
     return "\n".join(lines) + "\n"
 
 

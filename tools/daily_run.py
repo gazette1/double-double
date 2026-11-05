@@ -12,7 +12,8 @@ daily_run.py: the morning paper-trade run of the Double Double Bot (master note,
 5. Log prices with tools/odds_snapshot.py (FanDuel, DraftKings and the two-way books), derive fair
    probabilities from the two-way quotes under multiplicative and power de-vig, compute edge = p minus fair and
    the FanDuel edge = p minus the FanDuel implied probability.
-6. Select by edge under the design thresholds (constants below) and write data/paper/picks_{date}.csv,
+6. Select by edge under the design thresholds (constants below; a player on the second night of a back-to-back,
+   team_b2b or b2b, is never a pick: Russ, 2026-11-04) and write data/paper/picks_{date}.csv,
    board_{date}.csv (every scored or priced player) and discord_{date}.md (Discord text, not posted).
 
 Backfill: --date with a past date rebuilds that day as of its morning: history strictly before the date, the
@@ -41,10 +42,10 @@ import build_dataset as bd  # noqa: E402
 import odds_snapshot as osn  # noqa: E402
 import pull_hoopr  # noqa: E402
 from common import MIN_PRIOR_GAMES, PLAYER_COLS, SEASONS, load_player_box  # noqa: E402
-from paper_common import (BEST_BOOKS, BOOK_LABEL, ET, PROD_DIR, TEAM_ABBR, TEAM_NAME_TO_ID,  # noqa: E402
+from paper_common import (BEST_BOOKS, BOOK_LABEL, ET, EXCLUDE_B2B, PROD_DIR, TEAM_ABBR, TEAM_NAME_TO_ID,  # noqa: E402
                           append_run_log, board_path, espn_injuries, espn_roster, espn_scoreboard, fmt_price, is_out,
-                          logged_price_rows, match_names, now_et, picks_path, price_board, summary_path, tee_stdout,
-                          today_et, write_text)
+                          logged_price_rows, match_names, now_et, on_back_to_back, picks_path, price_board,
+                          summary_path, tee_stdout, today_et, write_text)
 from train_eval import baseline_a  # noqa: E402
 
 # Selection thresholds (Bot design step 3). Edges are probability points.
@@ -272,9 +273,12 @@ def select_picks(live, games, no_odds, max_picks):
     near_lock = (df["p_cal"] >= NEAR_LOCK_P) & (df["spread_team"].abs() >= BIG_SPREAD)
     df.loc[near_lock, "bar"] = df.loc[near_lock, "bar"] * 2
 
+    df["b2b_out"] = on_back_to_back(df) if EXCLUDE_B2B else False
     reasons = []
     for r in df.itertuples():
         why = []
+        if r.b2b_out:
+            why.append("second night of a back-to-back")
         if r.p_cal < P_MIN:
             why.append(f"p below {P_MIN:.2f}")
         if no_odds:
@@ -304,7 +308,7 @@ def select_picks(live, games, no_odds, max_picks):
 
     if no_odds:
         df["selection"] = "probability (no prices logged)"
-        ranked = df[df["p_cal"] >= P_MIN].sort_values(["p_cal", "p_raw"], ascending=False)
+        ranked = df[(df["p_cal"] >= P_MIN) & ~df["b2b_out"]].sort_values(["p_cal", "p_raw"], ascending=False)
     else:
         df["selection"] = "edge"
         ranked = df[df["why_not"] == ""].sort_values(["edge_mult", "p_cal"], ascending=False)
@@ -449,11 +453,15 @@ def main():
     live["injury_status"] = live["athlete_id"].map(status_map)
     log(f"predicted {len(live)} players; top: " + ", ".join(
         f"{r.athlete_display_name} {r.p_cal:.2f}" for r in live.sort_values("p_cal", ascending=False).head(6).itertuples()), t0)
+    if EXCLUDE_B2B:
+        b2b_teams = sorted(live.loc[on_back_to_back(live), "team_abbreviation"].dropna().unique())
+        log("second night of a back-to-back, left out of the five and the picks: "
+            + (", ".join(b2b_teams) if b2b_teams else "no team"), t0)
     if args.dry_run:
         gs = [c for c in spec["features"] if c.startswith("gs_")]
         cover = {c: round(float(live[c].notna().mean()), 3) for c in gs}
         log(f"dry run: {len(live)} players scored with {len(spec['features'])} features; game-state coverage {cover}", t0)
-        show = ["athlete_display_name", "team_abbreviation", "p_cal"] + gs
+        show = ["athlete_display_name", "team_abbreviation", "p_cal", "team_b2b", "b2b"] + gs
         print(live.sort_values("p_cal", ascending=False)[show].head(12).round(3).to_string(index=False))
         log("dry run: nothing written", t0)
         return
@@ -501,7 +509,7 @@ def main():
             board[c] = np.nan
     board_cols = [c for c in PICK_COLUMNS if c not in ("rank", "stake", "status")] + \
                  ["why_not", "pick", "fair_mult_min", "fair_mult_max", "twoway_hold_mean", "n_books_yes", "books_yes",
-                  "yes_quotes", "no_quotes"]
+                  "yes_quotes", "no_quotes", "team_b2b", "b2b"]
     for c in board_cols:
         if c not in board:
             board[c] = np.nan
