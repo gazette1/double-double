@@ -3843,3 +3843,156 @@ snapshot_et,snapshot_kind,game_date,event_id,away,home,commence_time,book,market
 2026-11-04 15:53,open,2026-11-04,72c786e70ad9360fdc41e4c2a50fa788,Miami Heat,Los Angeles Clippers,2026-11-05T03:40:00Z,betmgm,player_double_double,2026-11-04T20:52:54Z,Davion Mitchell,Yes,450,0.1818
 2026-11-04 15:53,open,2026-11-04,72c786e70ad9360fdc41e4c2a50fa788,Miami Heat,Los Angeles Clippers,2026-11-05T03:40:00Z,betmgm,player_double_double,2026-11-04T20:52:54Z,Brook Lopez,Yes,1250,0.0741
 2026-11-04 15:53,open,2026-11-04,72c786e70ad9360fdc41e4c2a50fa788,Miami Heat,Los Angeles Clippers,2026-11-05T03:40:00Z,betmgm,player_double_double,2026-11-04T20:52:54Z,Darius Garland,Yes,340,0.2273
+2026-11-05 16:03,open,2026-11-05,2a76b31e02d1416de069a995589515fc,Orlando Magic,Phoenix Suns,2026-11-06T02:10:00Z,fanduel,player_double_double,2026-11-05T21:02:32Z,Wendell Carter Jr,Yes,172,0.3676
+2026-11-05 16:03,open,2026-11-05,2a76b31e02d1416de069a995589515fc,Orlando Magic,Phoenix Suns,2026-11-06T02:10:00Z,fanduel,player_double_double,2026-11-05T21:02:32Z,Franz Wagner,Yes,255,0.2817
+2026-11-05 16:03,open,2026-11-05,2a76b31e02d1416de069a995589515fc,Orlando Magic,Phoenix Suns,2026-11-06T02:10:00Z,fanduel,player_double_double,2026-11-05T21:02:32Z,Miles Bridges,Yes,490,0.1695
+2026-11-05 16:03,open,2026-11-05,2a76b31e02d1416de069a995589515fc,Orlando Magic,Phoenix Suns,2026-11-06T02:10:00Z,fanduel,player_double_double,2026-11-05T21:02:32Z,Anthony Black,Yes,800,0.1111
+2026-11-05 16:03,open,2026-11-05,2a76b31e02d1416de069a995589515fc,Orlando Magic,Phoenix Suns,2026-11-06T02:10:00Z,fanduel,player_double_double,2026-11-05T21:02:32Z,Devin Booker,Yes,1000,0.0909
+2026-11-05 16:03,open,2026-11-05,2a76b31e02d1416de069a995589515fc,Orlando Magic,Phoenix Suns,2026-11-06T02:10:00Z,fanduel,player_double_double,2026-11-05T21:02:32Z,Khaman Maluach,Yes,1200,0.0769
+2026-11-05 16:03,open,2026-11-05,2a76b31e02d1416de069a995589515fc,Orlando Magic,Phoenix Suns,2026-11-06T02:10:00Z,fanduel,player_double_double,2026-11-05T21:02:32Z,Oso Ighodaro,Yes,1400,0.0667
+2026-11-05 16:03,open,2026-11-05,2a76b31e02d1416de069a995589515fc,Orlando Magic,Phoenix Suns,2026-11-06T02:10:00Z,fanduel,player_double_double,2026-11-05T21:02:32Z,Desmond Bane,Yes,1700,0.0556
+2026-11-05 16:03,open,2026-11-05,2a76b31e02d1416de069a995589515fc,Orlando Magic,Phoenix Suns,2026-11-06T02:10:00Z,fanduel,player_double_double,2026-11-05T21:02:32Z,Tristan da Silva,Yes,2800,0.0345
+2026-11-05 16:03,open,2026-11-05,2a76b31e02d1416de069a995589515fc,Orlando Magic,Phoenix Suns,2026-11-06T02:10:00Z,fanduel,player_double_double,2026-11-05T21:02:32Z,Dillon Brooks,Yes,2800,0.0345
+2026-11-05 16:03,open,2026-11-05,2a76b31e02d1416de069a995589515fc,Orlando Magic,Phoenix Suns,2026-11-06T02:10:00Z,fanduel,player_double_double,2026-11-05T21:02:32Z,Collin Gillespie,Yes,3500,0.0278
+2026-11-05 16:03,open,2026-11-05,2a76b31e02d1416de069a995589515fc,Orlando Magic,Phoenix Suns,2026-11-06T02:10:00Z,fanduel,player_double_double,2026-11-05T21:02:32Z,Jalen Green,Yes,4000,0.0244
+2026-11-05 16:03,open,2026-11-05,2a76b31e02d1416de069a995589515fc,Orlando Magic,Phoenix Suns,2026-11-06T02:10:00Z,novig,player_double_double,2026-11-05T21:03:26Z,Anthony Black,Yes,900,0.1
+2026-11-05 16:03,open,2026-11-05,2a76b31e02d1416de069a995589515fc,Orlando Magic,Phoenix Suns,2026-11-06T02:10:00Z,novig,player_double_double,2026-11-05T21:03:26Z,Tristan da Silva,Yes,2757,0.035
+2026-11-05 16:03,open,2026-11-05,2a76b31e02d1416de069a995589515fc,Orlando Magic,Phoenix Suns,2026-11-06T02:10:00Z,novig,player_double_double,2026-11-05T21:03:26Z,Wendell Carter Jr,Yes,178,0.3597
+2026-11-05 16:03,open,2026-11-05,2a76b31e02d1416de069a995589515fc,Orlando Magic,Phoenix Suns,2026-11-06T02:10:00Z,novig,player_double_double,2026-11-05T21:03:26Z,Wendell Carter Jr,No,-251,0.7151
+2026-11-05 16:03,open,2026-11-05,2a76b31e02d1416de069a995589515fc,Orlando Magic,Phoenix Suns,2026-11-06T02:10:00Z,novig,player_double_double,2026-11-05T21:03:26Z,Devin Booker,Yes,900,0.1
+2026-11-05 16:03,open,2026-11-05,2a76b31e02d1416de069a995589515fc,Orlando Magic,Phoenix Suns,2026-11-06T02:10:00Z,novig,player_double_double,2026-11-05T21:03:26Z,Devin Booker,No,-2173,0.956
+2026-11-05 16:03,open,2026-11-05,2a76b31e02d1416de069a995589515fc,Orlando Magic,Phoenix Suns,2026-11-06T02:10:00Z,novig,player_double_double,2026-11-05T21:03:26Z,Desmond Bane,Yes,1718,0.055
+2026-11-05 16:03,open,2026-11-05,2a76b31e02d1416de069a995589515fc,Orlando Magic,Phoenix Suns,2026-11-06T02:10:00Z,novig,player_double_double,2026-11-05T21:03:26Z,Franz Wagner,Yes,251,0.2849
+2026-11-05 16:03,open,2026-11-05,2a76b31e02d1416de069a995589515fc,Orlando Magic,Phoenix Suns,2026-11-06T02:10:00Z,novig,player_double_double,2026-11-05T21:03:26Z,Dillon Brooks,Yes,2678,0.036
+2026-11-05 16:03,open,2026-11-05,2a76b31e02d1416de069a995589515fc,Orlando Magic,Phoenix Suns,2026-11-06T02:10:00Z,novig,player_double_double,2026-11-05T21:03:26Z,Miles Bridges,Yes,545,0.155
+2026-11-05 16:03,open,2026-11-05,2a76b31e02d1416de069a995589515fc,Orlando Magic,Phoenix Suns,2026-11-06T02:10:00Z,novig,player_double_double,2026-11-05T21:03:26Z,Khaman Maluach,Yes,1438,0.065
+2026-11-05 16:03,open,2026-11-05,2a76b31e02d1416de069a995589515fc,Orlando Magic,Phoenix Suns,2026-11-06T02:10:00Z,novig,player_double_double,2026-11-05T21:03:26Z,Khaman Maluach,No,-9900,0.99
+2026-11-05 16:03,open,2026-11-05,2a76b31e02d1416de069a995589515fc,Orlando Magic,Phoenix Suns,2026-11-06T02:10:00Z,novig,player_double_double,2026-11-05T21:03:26Z,Jalen Green,Yes,3746,0.026
+2026-11-05 16:03,open,2026-11-05,2a76b31e02d1416de069a995589515fc,Orlando Magic,Phoenix Suns,2026-11-06T02:10:00Z,novig,player_double_double,2026-11-05T21:03:26Z,Oso Ighodaro,Yes,1438,0.065
+2026-11-05 16:03,open,2026-11-05,2a76b31e02d1416de069a995589515fc,Orlando Magic,Phoenix Suns,2026-11-06T02:10:00Z,novig,player_double_double,2026-11-05T21:03:26Z,Collin Gillespie,Yes,3025,0.032
+2026-11-05 16:03,open,2026-11-05,2a76b31e02d1416de069a995589515fc,Orlando Magic,Phoenix Suns,2026-11-06T02:10:00Z,draftkings,player_double_double,2026-11-05T21:02:19Z,Wendell Carter Jr,Yes,164,0.3788
+2026-11-05 16:03,open,2026-11-05,2a76b31e02d1416de069a995589515fc,Orlando Magic,Phoenix Suns,2026-11-06T02:10:00Z,draftkings,player_double_double,2026-11-05T21:02:19Z,Franz Wagner,Yes,201,0.3322
+2026-11-05 16:03,open,2026-11-05,2a76b31e02d1416de069a995589515fc,Orlando Magic,Phoenix Suns,2026-11-06T02:10:00Z,draftkings,player_double_double,2026-11-05T21:02:19Z,Miles Bridges,Yes,559,0.1517
+2026-11-05 16:03,open,2026-11-05,2a76b31e02d1416de069a995589515fc,Orlando Magic,Phoenix Suns,2026-11-06T02:10:00Z,draftkings,player_double_double,2026-11-05T21:02:19Z,Anthony Black,Yes,920,0.098
+2026-11-05 16:03,open,2026-11-05,2a76b31e02d1416de069a995589515fc,Orlando Magic,Phoenix Suns,2026-11-06T02:10:00Z,draftkings,player_double_double,2026-11-05T21:02:19Z,Devin Booker,Yes,940,0.0962
+2026-11-05 16:03,open,2026-11-05,2a76b31e02d1416de069a995589515fc,Orlando Magic,Phoenix Suns,2026-11-06T02:10:00Z,draftkings,player_double_double,2026-11-05T21:02:19Z,Oso Ighodaro,Yes,1560,0.0602
+2026-11-05 16:03,open,2026-11-05,2a76b31e02d1416de069a995589515fc,Orlando Magic,Phoenix Suns,2026-11-06T02:10:00Z,draftkings,player_double_double,2026-11-05T21:02:19Z,Desmond Bane,Yes,1780,0.0532
+2026-11-05 16:03,open,2026-11-05,2a76b31e02d1416de069a995589515fc,Orlando Magic,Phoenix Suns,2026-11-06T02:10:00Z,draftkings,player_double_double,2026-11-05T21:02:19Z,Khaman Maluach,Yes,1780,0.0532
+2026-11-05 16:03,open,2026-11-05,2a76b31e02d1416de069a995589515fc,Orlando Magic,Phoenix Suns,2026-11-06T02:10:00Z,draftkings,player_double_double,2026-11-05T21:02:19Z,Tristan da Silva,Yes,2600,0.037
+2026-11-05 16:03,open,2026-11-05,2a76b31e02d1416de069a995589515fc,Orlando Magic,Phoenix Suns,2026-11-06T02:10:00Z,draftkings,player_double_double,2026-11-05T21:02:19Z,Dillon Brooks,Yes,3000,0.0323
+2026-11-05 16:03,open,2026-11-05,2a76b31e02d1416de069a995589515fc,Orlando Magic,Phoenix Suns,2026-11-06T02:10:00Z,draftkings,player_double_double,2026-11-05T21:02:19Z,Jalen Green,Yes,3700,0.0263
+2026-11-05 16:03,open,2026-11-05,2a76b31e02d1416de069a995589515fc,Orlando Magic,Phoenix Suns,2026-11-06T02:10:00Z,draftkings,player_double_double,2026-11-05T21:02:19Z,Collin Gillespie,Yes,5000,0.0196
+2026-11-05 16:03,open,2026-11-05,2a76b31e02d1416de069a995589515fc,Orlando Magic,Phoenix Suns,2026-11-06T02:10:00Z,espnbet,player_double_double,2026-11-05T21:03:23Z,Anthony Black,Yes,700,0.125
+2026-11-05 16:03,open,2026-11-05,2a76b31e02d1416de069a995589515fc,Orlando Magic,Phoenix Suns,2026-11-06T02:10:00Z,espnbet,player_double_double,2026-11-05T21:03:23Z,Anthony Black,No,-2500,0.9615
+2026-11-05 16:03,open,2026-11-05,2a76b31e02d1416de069a995589515fc,Orlando Magic,Phoenix Suns,2026-11-06T02:10:00Z,espnbet,player_double_double,2026-11-05T21:03:23Z,Devin Booker,Yes,700,0.125
+2026-11-05 16:03,open,2026-11-05,2a76b31e02d1416de069a995589515fc,Orlando Magic,Phoenix Suns,2026-11-06T02:10:00Z,espnbet,player_double_double,2026-11-05T21:03:23Z,Devin Booker,No,-2500,0.9615
+2026-11-05 16:03,open,2026-11-05,2a76b31e02d1416de069a995589515fc,Orlando Magic,Phoenix Suns,2026-11-06T02:10:00Z,espnbet,player_double_double,2026-11-05T21:03:23Z,Franz Wagner,Yes,220,0.3125
+2026-11-05 16:03,open,2026-11-05,2a76b31e02d1416de069a995589515fc,Orlando Magic,Phoenix Suns,2026-11-06T02:10:00Z,espnbet,player_double_double,2026-11-05T21:03:23Z,Franz Wagner,No,-330,0.7674
+2026-11-05 16:03,open,2026-11-05,2a76b31e02d1416de069a995589515fc,Orlando Magic,Phoenix Suns,2026-11-06T02:10:00Z,espnbet,player_double_double,2026-11-05T21:03:23Z,Khaman Maluach,Yes,900,0.1
+2026-11-05 16:03,open,2026-11-05,2a76b31e02d1416de069a995589515fc,Orlando Magic,Phoenix Suns,2026-11-06T02:10:00Z,espnbet,player_double_double,2026-11-05T21:03:23Z,Khaman Maluach,No,-3500,0.9722
+2026-11-05 16:03,open,2026-11-05,2a76b31e02d1416de069a995589515fc,Orlando Magic,Phoenix Suns,2026-11-06T02:10:00Z,espnbet,player_double_double,2026-11-05T21:03:23Z,Miles Bridges,Yes,400,0.2
+2026-11-05 16:03,open,2026-11-05,2a76b31e02d1416de069a995589515fc,Orlando Magic,Phoenix Suns,2026-11-06T02:10:00Z,espnbet,player_double_double,2026-11-05T21:03:23Z,Miles Bridges,No,-800,0.8889
+2026-11-05 16:03,open,2026-11-05,2a76b31e02d1416de069a995589515fc,Orlando Magic,Phoenix Suns,2026-11-06T02:10:00Z,espnbet,player_double_double,2026-11-05T21:03:23Z,Wendell Carter Jr,Yes,170,0.3704
+2026-11-05 16:03,open,2026-11-05,2a76b31e02d1416de069a995589515fc,Orlando Magic,Phoenix Suns,2026-11-06T02:10:00Z,espnbet,player_double_double,2026-11-05T21:03:23Z,Wendell Carter Jr,No,-235,0.7015
+2026-11-05 16:03,open,2026-11-05,2a76b31e02d1416de069a995589515fc,Orlando Magic,Phoenix Suns,2026-11-06T02:10:00Z,ballybet,player_double_double,2026-11-05T21:03:17Z,Devin Booker,Yes,950,0.0952
+2026-11-05 16:03,open,2026-11-05,2a76b31e02d1416de069a995589515fc,Orlando Magic,Phoenix Suns,2026-11-06T02:10:00Z,ballybet,player_double_double,2026-11-05T21:03:17Z,Wendell Carter Jr,Yes,180,0.3571
+2026-11-05 16:03,open,2026-11-05,2a76b31e02d1416de069a995589515fc,Orlando Magic,Phoenix Suns,2026-11-06T02:10:00Z,ballybet,player_double_double,2026-11-05T21:03:17Z,Khaman Maluach,Yes,1000,0.0909
+2026-11-05 16:03,open,2026-11-05,2a76b31e02d1416de069a995589515fc,Orlando Magic,Phoenix Suns,2026-11-06T02:10:00Z,ballybet,player_double_double,2026-11-05T21:03:17Z,Franz Wagner,Yes,230,0.303
+2026-11-05 16:03,open,2026-11-05,2a76b31e02d1416de069a995589515fc,Orlando Magic,Phoenix Suns,2026-11-06T02:10:00Z,ballybet,player_double_double,2026-11-05T21:03:17Z,Desmond Bane,Yes,1500,0.0625
+2026-11-05 16:03,open,2026-11-05,2a76b31e02d1416de069a995589515fc,Orlando Magic,Phoenix Suns,2026-11-06T02:10:00Z,ballybet,player_double_double,2026-11-05T21:03:17Z,Miles Bridges,Yes,450,0.1818
+2026-11-05 16:03,open,2026-11-05,2a76b31e02d1416de069a995589515fc,Orlando Magic,Phoenix Suns,2026-11-06T02:10:00Z,ballybet,player_double_double,2026-11-05T21:03:17Z,Dillon Brooks,Yes,2200,0.0435
+2026-11-05 16:03,open,2026-11-05,2a76b31e02d1416de069a995589515fc,Orlando Magic,Phoenix Suns,2026-11-06T02:10:00Z,ballybet,player_double_double,2026-11-05T21:03:17Z,Tristan da Silva,Yes,2000,0.0476
+2026-11-05 16:03,open,2026-11-05,2a76b31e02d1416de069a995589515fc,Orlando Magic,Phoenix Suns,2026-11-06T02:10:00Z,ballybet,player_double_double,2026-11-05T21:03:17Z,Anthony Black,Yes,1050,0.087
+2026-11-05 16:03,open,2026-11-05,2a76b31e02d1416de069a995589515fc,Orlando Magic,Phoenix Suns,2026-11-06T02:10:00Z,ballybet,player_double_double,2026-11-05T21:03:17Z,Oso Ighodaro,Yes,1400,0.0667
+2026-11-05 16:03,open,2026-11-05,2a76b31e02d1416de069a995589515fc,Orlando Magic,Phoenix Suns,2026-11-06T02:10:00Z,betmgm,player_double_double,2026-11-05T21:02:20Z,Wendell Carter Jr,Yes,210,0.3226
+2026-11-05 16:03,open,2026-11-05,2a76b31e02d1416de069a995589515fc,Orlando Magic,Phoenix Suns,2026-11-06T02:10:00Z,betmgm,player_double_double,2026-11-05T21:02:20Z,Jase Richardson,Yes,1900,0.05
+2026-11-05 16:03,open,2026-11-05,2a76b31e02d1416de069a995589515fc,Orlando Magic,Phoenix Suns,2026-11-06T02:10:00Z,betmgm,player_double_double,2026-11-05T21:02:20Z,Desmond Bane,Yes,1300,0.0714
+2026-11-05 16:03,open,2026-11-05,2a76b31e02d1416de069a995589515fc,Orlando Magic,Phoenix Suns,2026-11-06T02:10:00Z,betmgm,player_double_double,2026-11-05T21:02:20Z,Devin Booker,Yes,900,0.1
+2026-11-05 16:03,open,2026-11-05,2a76b31e02d1416de069a995589515fc,Orlando Magic,Phoenix Suns,2026-11-06T02:10:00Z,betmgm,player_double_double,2026-11-05T21:02:20Z,Miles Bridges,Yes,500,0.1667
+2026-11-05 16:03,open,2026-11-05,2a76b31e02d1416de069a995589515fc,Orlando Magic,Phoenix Suns,2026-11-06T02:10:00Z,betmgm,player_double_double,2026-11-05T21:02:20Z,Dillon Brooks,Yes,1550,0.0606
+2026-11-05 16:03,open,2026-11-05,2a76b31e02d1416de069a995589515fc,Orlando Magic,Phoenix Suns,2026-11-06T02:10:00Z,betmgm,player_double_double,2026-11-05T21:02:20Z,Jalen Green,Yes,1700,0.0556
+2026-11-05 16:03,open,2026-11-05,2a76b31e02d1416de069a995589515fc,Orlando Magic,Phoenix Suns,2026-11-06T02:10:00Z,betmgm,player_double_double,2026-11-05T21:02:20Z,Anthony Black,Yes,1050,0.087
+2026-11-05 16:03,open,2026-11-05,2a76b31e02d1416de069a995589515fc,Orlando Magic,Phoenix Suns,2026-11-06T02:10:00Z,betmgm,player_double_double,2026-11-05T21:02:20Z,Franz Wagner,Yes,250,0.2857
+2026-11-05 16:03,open,2026-11-05,2a76b31e02d1416de069a995589515fc,Orlando Magic,Phoenix Suns,2026-11-06T02:10:00Z,betmgm,player_double_double,2026-11-05T21:02:20Z,Collin Gillespie,Yes,1700,0.0556
+2026-11-05 16:03,open,2026-11-05,2a76b31e02d1416de069a995589515fc,Orlando Magic,Phoenix Suns,2026-11-06T02:10:00Z,betmgm,player_double_double,2026-11-05T21:02:20Z,Oso Ighodaro,Yes,1300,0.0714
+2026-11-05 16:03,open,2026-11-05,2a76b31e02d1416de069a995589515fc,Orlando Magic,Phoenix Suns,2026-11-06T02:10:00Z,hardrockbet,player_double_double,2026-11-05T21:01:54Z,Anthony Black,Yes,850,0.1053
+2026-11-05 16:03,open,2026-11-05,2a76b31e02d1416de069a995589515fc,Orlando Magic,Phoenix Suns,2026-11-06T02:10:00Z,hardrockbet,player_double_double,2026-11-05T21:01:54Z,Tristan da Silva,Yes,2250,0.0426
+2026-11-05 16:03,open,2026-11-05,2a76b31e02d1416de069a995589515fc,Orlando Magic,Phoenix Suns,2026-11-06T02:10:00Z,hardrockbet,player_double_double,2026-11-05T21:01:54Z,Franz Wagner,Yes,250,0.2857
+2026-11-05 16:03,open,2026-11-05,2a76b31e02d1416de069a995589515fc,Orlando Magic,Phoenix Suns,2026-11-06T02:10:00Z,hardrockbet,player_double_double,2026-11-05T21:01:54Z,Devin Booker,Yes,800,0.1111
+2026-11-05 16:03,open,2026-11-05,2a76b31e02d1416de069a995589515fc,Orlando Magic,Phoenix Suns,2026-11-06T02:10:00Z,hardrockbet,player_double_double,2026-11-05T21:01:54Z,Miles Bridges,Yes,500,0.1667
+2026-11-05 16:03,open,2026-11-05,2a76b31e02d1416de069a995589515fc,Orlando Magic,Phoenix Suns,2026-11-06T02:10:00Z,hardrockbet,player_double_double,2026-11-05T21:01:54Z,Desmond Bane,Yes,2000,0.0476
+2026-11-05 16:03,open,2026-11-05,2a76b31e02d1416de069a995589515fc,Orlando Magic,Phoenix Suns,2026-11-06T02:10:00Z,hardrockbet,player_double_double,2026-11-05T21:01:54Z,Dillon Brooks,Yes,2250,0.0426
+2026-11-05 16:03,open,2026-11-05,2a76b31e02d1416de069a995589515fc,Orlando Magic,Phoenix Suns,2026-11-06T02:10:00Z,hardrockbet,player_double_double,2026-11-05T21:01:54Z,Jalen Green,Yes,4000,0.0244
+2026-11-05 16:03,open,2026-11-05,2a76b31e02d1416de069a995589515fc,Orlando Magic,Phoenix Suns,2026-11-06T02:10:00Z,hardrockbet,player_double_double,2026-11-05T21:01:54Z,Wendell Carter Jr,Yes,185,0.3509
+2026-11-05 16:03,open,2026-11-05,2a76b31e02d1416de069a995589515fc,Orlando Magic,Phoenix Suns,2026-11-06T02:10:00Z,hardrockbet,player_double_double,2026-11-05T21:01:54Z,Collin Gillespie,Yes,2500,0.0385
+2026-11-05 16:03,open,2026-11-05,2a76b31e02d1416de069a995589515fc,Orlando Magic,Phoenix Suns,2026-11-06T02:10:00Z,hardrockbet,player_double_double,2026-11-05T21:01:54Z,Oso Ighodaro,Yes,1600,0.0588
+2026-11-05 16:03,open,2026-11-05,2a76b31e02d1416de069a995589515fc,Orlando Magic,Phoenix Suns,2026-11-06T02:10:00Z,hardrockbet,player_double_double,2026-11-05T21:01:54Z,Khaman Maluach,Yes,1100,0.0833
+2026-11-05 16:03,open,2026-11-05,ac38449dd3dfbe1c9b48164b6a41aa83,Miami Heat,Golden State Warriors,2026-11-06T03:10:00Z,draftkings,player_double_double,2026-11-05T21:01:01Z,Giannis Antetokounmpo,Yes,-239,0.705
+2026-11-05 16:03,open,2026-11-05,ac38449dd3dfbe1c9b48164b6a41aa83,Miami Heat,Golden State Warriors,2026-11-06T03:10:00Z,draftkings,player_double_double,2026-11-05T21:01:01Z,Bam Adebayo,Yes,100,0.5
+2026-11-05 16:03,open,2026-11-05,ac38449dd3dfbe1c9b48164b6a41aa83,Miami Heat,Golden State Warriors,2026-11-06T03:10:00Z,draftkings,player_double_double,2026-11-05T21:01:01Z,Yaxel Lendeborg,Yes,263,0.2755
+2026-11-05 16:03,open,2026-11-05,ac38449dd3dfbe1c9b48164b6a41aa83,Miami Heat,Golden State Warriors,2026-11-06T03:10:00Z,draftkings,player_double_double,2026-11-05T21:01:01Z,Davion Mitchell,Yes,388,0.2049
+2026-11-05 16:03,open,2026-11-05,ac38449dd3dfbe1c9b48164b6a41aa83,Miami Heat,Golden State Warriors,2026-11-06T03:10:00Z,draftkings,player_double_double,2026-11-05T21:01:01Z,Brandin Podziemski,Yes,960,0.0943
+2026-11-05 16:03,open,2026-11-05,ac38449dd3dfbe1c9b48164b6a41aa83,Miami Heat,Golden State Warriors,2026-11-06T03:10:00Z,draftkings,player_double_double,2026-11-05T21:01:01Z,Draymond Green,Yes,1360,0.0685
+2026-11-05 16:03,open,2026-11-05,ac38449dd3dfbe1c9b48164b6a41aa83,Miami Heat,Golden State Warriors,2026-11-06T03:10:00Z,draftkings,player_double_double,2026-11-05T21:01:01Z,Stephen Curry,Yes,1520,0.0617
+2026-11-05 16:03,open,2026-11-05,ac38449dd3dfbe1c9b48164b6a41aa83,Miami Heat,Golden State Warriors,2026-11-06T03:10:00Z,draftkings,player_double_double,2026-11-05T21:01:01Z,Pelle Larsson,Yes,3400,0.0286
+2026-11-05 16:03,open,2026-11-05,ac38449dd3dfbe1c9b48164b6a41aa83,Miami Heat,Golden State Warriors,2026-11-06T03:10:00Z,draftkings,player_double_double,2026-11-05T21:01:01Z,De'Anthony Melton,Yes,3800,0.0256
+2026-11-05 16:03,open,2026-11-05,ac38449dd3dfbe1c9b48164b6a41aa83,Miami Heat,Golden State Warriors,2026-11-06T03:10:00Z,draftkings,player_double_double,2026-11-05T21:01:01Z,Andrew Wiggins,Yes,5300,0.0185
+2026-11-05 16:03,open,2026-11-05,ac38449dd3dfbe1c9b48164b6a41aa83,Miami Heat,Golden State Warriors,2026-11-06T03:10:00Z,novig,player_double_double,2026-11-05T21:02:42Z,Brandin Podziemski,Yes,809,0.11
+2026-11-05 16:03,open,2026-11-05,ac38449dd3dfbe1c9b48164b6a41aa83,Miami Heat,Golden State Warriors,2026-11-06T03:10:00Z,novig,player_double_double,2026-11-05T21:02:42Z,Yaxel Lendeborg,Yes,264,0.2747
+2026-11-05 16:03,open,2026-11-05,ac38449dd3dfbe1c9b48164b6a41aa83,Miami Heat,Golden State Warriors,2026-11-06T03:10:00Z,novig,player_double_double,2026-11-05T21:02:42Z,Stephen Curry,Yes,1329,0.07
+2026-11-05 16:03,open,2026-11-05,ac38449dd3dfbe1c9b48164b6a41aa83,Miami Heat,Golden State Warriors,2026-11-06T03:10:00Z,novig,player_double_double,2026-11-05T21:02:42Z,Giannis Antetokounmpo,Yes,-245,0.7101
+2026-11-05 16:03,open,2026-11-05,ac38449dd3dfbe1c9b48164b6a41aa83,Miami Heat,Golden State Warriors,2026-11-06T03:10:00Z,novig,player_double_double,2026-11-05T21:02:42Z,Bam Adebayo,Yes,117,0.4608
+2026-11-05 16:03,open,2026-11-05,ac38449dd3dfbe1c9b48164b6a41aa83,Miami Heat,Golden State Warriors,2026-11-06T03:10:00Z,novig,player_double_double,2026-11-05T21:02:42Z,Draymond Green,Yes,1233,0.075
+2026-11-05 16:03,open,2026-11-05,ac38449dd3dfbe1c9b48164b6a41aa83,Miami Heat,Golden State Warriors,2026-11-06T03:10:00Z,novig,player_double_double,2026-11-05T21:02:42Z,Davion Mitchell,Yes,488,0.1701
+2026-11-05 16:03,open,2026-11-05,ac38449dd3dfbe1c9b48164b6a41aa83,Miami Heat,Golden State Warriors,2026-11-06T03:10:00Z,novig,player_double_double,2026-11-05T21:02:42Z,Pelle Larsson,Yes,1941,0.049
+2026-11-05 16:03,open,2026-11-05,ac38449dd3dfbe1c9b48164b6a41aa83,Miami Heat,Golden State Warriors,2026-11-06T03:10:00Z,novig,player_double_double,2026-11-05T21:02:42Z,Andrew Wiggins,Yes,3126,0.031
+2026-11-05 16:03,open,2026-11-05,ac38449dd3dfbe1c9b48164b6a41aa83,Miami Heat,Golden State Warriors,2026-11-06T03:10:00Z,novig,player_double_double,2026-11-05T21:02:42Z,De'Anthony Melton,Yes,3746,0.026
+2026-11-05 16:03,open,2026-11-05,ac38449dd3dfbe1c9b48164b6a41aa83,Miami Heat,Golden State Warriors,2026-11-06T03:10:00Z,fanduel,player_double_double,2026-11-05T21:03:03Z,Giannis Antetokounmpo,Yes,-260,0.7222
+2026-11-05 16:03,open,2026-11-05,ac38449dd3dfbe1c9b48164b6a41aa83,Miami Heat,Golden State Warriors,2026-11-06T03:10:00Z,fanduel,player_double_double,2026-11-05T21:03:03Z,Bam Adebayo,Yes,118,0.4587
+2026-11-05 16:03,open,2026-11-05,ac38449dd3dfbe1c9b48164b6a41aa83,Miami Heat,Golden State Warriors,2026-11-06T03:10:00Z,fanduel,player_double_double,2026-11-05T21:03:03Z,Yaxel Lendeborg,Yes,265,0.274
+2026-11-05 16:03,open,2026-11-05,ac38449dd3dfbe1c9b48164b6a41aa83,Miami Heat,Golden State Warriors,2026-11-06T03:10:00Z,fanduel,player_double_double,2026-11-05T21:03:03Z,Davion Mitchell,Yes,520,0.1613
+2026-11-05 16:03,open,2026-11-05,ac38449dd3dfbe1c9b48164b6a41aa83,Miami Heat,Golden State Warriors,2026-11-06T03:10:00Z,fanduel,player_double_double,2026-11-05T21:03:03Z,Brandin Podziemski,Yes,750,0.1176
+2026-11-05 16:03,open,2026-11-05,ac38449dd3dfbe1c9b48164b6a41aa83,Miami Heat,Golden State Warriors,2026-11-06T03:10:00Z,fanduel,player_double_double,2026-11-05T21:03:03Z,Bobby Portis,Yes,1100,0.0833
+2026-11-05 16:03,open,2026-11-05,ac38449dd3dfbe1c9b48164b6a41aa83,Miami Heat,Golden State Warriors,2026-11-06T03:10:00Z,fanduel,player_double_double,2026-11-05T21:03:03Z,Draymond Green,Yes,1200,0.0769
+2026-11-05 16:03,open,2026-11-05,ac38449dd3dfbe1c9b48164b6a41aa83,Miami Heat,Golden State Warriors,2026-11-06T03:10:00Z,fanduel,player_double_double,2026-11-05T21:03:03Z,Stephen Curry,Yes,1260,0.0735
+2026-11-05 16:03,open,2026-11-05,ac38449dd3dfbe1c9b48164b6a41aa83,Miami Heat,Golden State Warriors,2026-11-06T03:10:00Z,fanduel,player_double_double,2026-11-05T21:03:03Z,Pelle Larsson,Yes,2800,0.0345
+2026-11-05 16:03,open,2026-11-05,ac38449dd3dfbe1c9b48164b6a41aa83,Miami Heat,Golden State Warriors,2026-11-06T03:10:00Z,fanduel,player_double_double,2026-11-05T21:03:03Z,De'Anthony Melton,Yes,4000,0.0244
+2026-11-05 16:03,open,2026-11-05,ac38449dd3dfbe1c9b48164b6a41aa83,Miami Heat,Golden State Warriors,2026-11-06T03:10:00Z,ballybet,player_double_double,2026-11-05T21:02:38Z,Yaxel Lendeborg,Yes,260,0.2778
+2026-11-05 16:03,open,2026-11-05,ac38449dd3dfbe1c9b48164b6a41aa83,Miami Heat,Golden State Warriors,2026-11-06T03:10:00Z,ballybet,player_double_double,2026-11-05T21:02:38Z,Draymond Green,Yes,850,0.1053
+2026-11-05 16:03,open,2026-11-05,ac38449dd3dfbe1c9b48164b6a41aa83,Miami Heat,Golden State Warriors,2026-11-06T03:10:00Z,ballybet,player_double_double,2026-11-05T21:02:38Z,Bam Adebayo,Yes,102,0.495
+2026-11-05 16:03,open,2026-11-05,ac38449dd3dfbe1c9b48164b6a41aa83,Miami Heat,Golden State Warriors,2026-11-06T03:10:00Z,ballybet,player_double_double,2026-11-05T21:02:38Z,Davion Mitchell,Yes,430,0.1887
+2026-11-05 16:03,open,2026-11-05,ac38449dd3dfbe1c9b48164b6a41aa83,Miami Heat,Golden State Warriors,2026-11-06T03:10:00Z,ballybet,player_double_double,2026-11-05T21:02:38Z,Giannis Antetokounmpo,Yes,-250,0.7143
+2026-11-05 16:03,open,2026-11-05,ac38449dd3dfbe1c9b48164b6a41aa83,Miami Heat,Golden State Warriors,2026-11-06T03:10:00Z,ballybet,player_double_double,2026-11-05T21:02:38Z,Stephen Curry,Yes,1200,0.0769
+2026-11-05 16:03,open,2026-11-05,ac38449dd3dfbe1c9b48164b6a41aa83,Miami Heat,Golden State Warriors,2026-11-06T03:10:00Z,ballybet,player_double_double,2026-11-05T21:02:38Z,Brandin Podziemski,Yes,750,0.1176
+2026-11-05 16:03,open,2026-11-05,ac38449dd3dfbe1c9b48164b6a41aa83,Miami Heat,Golden State Warriors,2026-11-06T03:10:00Z,espnbet,player_double_double,2026-11-05T21:02:46Z,Bam Adebayo,Yes,105,0.4878
+2026-11-05 16:03,open,2026-11-05,ac38449dd3dfbe1c9b48164b6a41aa83,Miami Heat,Golden State Warriors,2026-11-06T03:10:00Z,espnbet,player_double_double,2026-11-05T21:02:46Z,Bam Adebayo,No,-135,0.5745
+2026-11-05 16:03,open,2026-11-05,ac38449dd3dfbe1c9b48164b6a41aa83,Miami Heat,Golden State Warriors,2026-11-06T03:10:00Z,espnbet,player_double_double,2026-11-05T21:02:46Z,Brandin Podziemski,Yes,650,0.1333
+2026-11-05 16:03,open,2026-11-05,ac38449dd3dfbe1c9b48164b6a41aa83,Miami Heat,Golden State Warriors,2026-11-06T03:10:00Z,espnbet,player_double_double,2026-11-05T21:02:46Z,Brandin Podziemski,No,-2000,0.9524
+2026-11-05 16:03,open,2026-11-05,ac38449dd3dfbe1c9b48164b6a41aa83,Miami Heat,Golden State Warriors,2026-11-06T03:10:00Z,espnbet,player_double_double,2026-11-05T21:02:46Z,Davion Mitchell,Yes,360,0.2174
+2026-11-05 16:03,open,2026-11-05,ac38449dd3dfbe1c9b48164b6a41aa83,Miami Heat,Golden State Warriors,2026-11-06T03:10:00Z,espnbet,player_double_double,2026-11-05T21:02:46Z,Davion Mitchell,No,-700,0.875
+2026-11-05 16:03,open,2026-11-05,ac38449dd3dfbe1c9b48164b6a41aa83,Miami Heat,Golden State Warriors,2026-11-06T03:10:00Z,espnbet,player_double_double,2026-11-05T21:02:46Z,Draymond Green,Yes,900,0.1
+2026-11-05 16:03,open,2026-11-05,ac38449dd3dfbe1c9b48164b6a41aa83,Miami Heat,Golden State Warriors,2026-11-06T03:10:00Z,espnbet,player_double_double,2026-11-05T21:02:46Z,Draymond Green,No,-3500,0.9722
+2026-11-05 16:03,open,2026-11-05,ac38449dd3dfbe1c9b48164b6a41aa83,Miami Heat,Golden State Warriors,2026-11-06T03:10:00Z,espnbet,player_double_double,2026-11-05T21:02:46Z,Giannis Antetokounmpo,Yes,-235,0.7015
+2026-11-05 16:03,open,2026-11-05,ac38449dd3dfbe1c9b48164b6a41aa83,Miami Heat,Golden State Warriors,2026-11-06T03:10:00Z,espnbet,player_double_double,2026-11-05T21:02:46Z,Giannis Antetokounmpo,No,170,0.3704
+2026-11-05 16:03,open,2026-11-05,ac38449dd3dfbe1c9b48164b6a41aa83,Miami Heat,Golden State Warriors,2026-11-06T03:10:00Z,espnbet,player_double_double,2026-11-05T21:02:46Z,Stephen Curry,Yes,900,0.1
+2026-11-05 16:03,open,2026-11-05,ac38449dd3dfbe1c9b48164b6a41aa83,Miami Heat,Golden State Warriors,2026-11-06T03:10:00Z,espnbet,player_double_double,2026-11-05T21:02:46Z,Stephen Curry,No,-3500,0.9722
+2026-11-05 16:03,open,2026-11-05,ac38449dd3dfbe1c9b48164b6a41aa83,Miami Heat,Golden State Warriors,2026-11-06T03:10:00Z,espnbet,player_double_double,2026-11-05T21:02:46Z,Yaxel Lendeborg,Yes,250,0.2857
+2026-11-05 16:03,open,2026-11-05,ac38449dd3dfbe1c9b48164b6a41aa83,Miami Heat,Golden State Warriors,2026-11-06T03:10:00Z,espnbet,player_double_double,2026-11-05T21:02:46Z,Yaxel Lendeborg,No,-400,0.8
+2026-11-05 16:03,open,2026-11-05,ac38449dd3dfbe1c9b48164b6a41aa83,Miami Heat,Golden State Warriors,2026-11-06T03:10:00Z,betmgm,player_double_double,2026-11-05T21:02:22Z,Andrew Wiggins,Yes,1800,0.0526
+2026-11-05 16:03,open,2026-11-05,ac38449dd3dfbe1c9b48164b6a41aa83,Miami Heat,Golden State Warriors,2026-11-06T03:10:00Z,betmgm,player_double_double,2026-11-05T21:02:22Z,Draymond Green,Yes,1250,0.0741
+2026-11-05 16:03,open,2026-11-05,ac38449dd3dfbe1c9b48164b6a41aa83,Miami Heat,Golden State Warriors,2026-11-06T03:10:00Z,betmgm,player_double_double,2026-11-05T21:02:22Z,Stephen Curry,Yes,1200,0.0769
+2026-11-05 16:03,open,2026-11-05,ac38449dd3dfbe1c9b48164b6a41aa83,Miami Heat,Golden State Warriors,2026-11-06T03:10:00Z,betmgm,player_double_double,2026-11-05T21:02:22Z,Yaxel Lendeborg,Yes,340,0.2273
+2026-11-05 16:03,open,2026-11-05,ac38449dd3dfbe1c9b48164b6a41aa83,Miami Heat,Golden State Warriors,2026-11-06T03:10:00Z,betmgm,player_double_double,2026-11-05T21:02:22Z,Bam Adebayo,Yes,105,0.4878
+2026-11-05 16:03,open,2026-11-05,ac38449dd3dfbe1c9b48164b6a41aa83,Miami Heat,Golden State Warriors,2026-11-06T03:10:00Z,betmgm,player_double_double,2026-11-05T21:02:22Z,Giannis Antetokounmpo,Yes,-300,0.75
+2026-11-05 16:03,open,2026-11-05,ac38449dd3dfbe1c9b48164b6a41aa83,Miami Heat,Golden State Warriors,2026-11-06T03:10:00Z,betmgm,player_double_double,2026-11-05T21:02:22Z,Brandin Podziemski,Yes,950,0.0952
+2026-11-05 16:03,open,2026-11-05,ac38449dd3dfbe1c9b48164b6a41aa83,Miami Heat,Golden State Warriors,2026-11-06T03:10:00Z,betmgm,player_double_double,2026-11-05T21:02:22Z,Davion Mitchell,Yes,525,0.16
+2026-11-05 16:03,open,2026-11-05,ac38449dd3dfbe1c9b48164b6a41aa83,Miami Heat,Golden State Warriors,2026-11-06T03:10:00Z,betmgm,player_double_double,2026-11-05T21:02:22Z,Pelle Larsson,Yes,1700,0.0556
+2026-11-05 16:03,open,2026-11-05,ac38449dd3dfbe1c9b48164b6a41aa83,Miami Heat,Golden State Warriors,2026-11-06T03:10:00Z,hardrockbet,player_double_double,2026-11-05T21:02:33Z,Stephen Curry,Yes,1300,0.0714
+2026-11-05 16:03,open,2026-11-05,ac38449dd3dfbe1c9b48164b6a41aa83,Miami Heat,Golden State Warriors,2026-11-06T03:10:00Z,hardrockbet,player_double_double,2026-11-05T21:02:33Z,Brandin Podziemski,Yes,750,0.1176
+2026-11-05 16:03,open,2026-11-05,ac38449dd3dfbe1c9b48164b6a41aa83,Miami Heat,Golden State Warriors,2026-11-06T03:10:00Z,hardrockbet,player_double_double,2026-11-05T21:02:33Z,Yaxel Lendeborg,Yes,275,0.2667
+2026-11-05 16:03,open,2026-11-05,ac38449dd3dfbe1c9b48164b6a41aa83,Miami Heat,Golden State Warriors,2026-11-06T03:10:00Z,hardrockbet,player_double_double,2026-11-05T21:02:33Z,Giannis Antetokounmpo,Yes,-230,0.697
+2026-11-05 16:03,open,2026-11-05,ac38449dd3dfbe1c9b48164b6a41aa83,Miami Heat,Golden State Warriors,2026-11-06T03:10:00Z,hardrockbet,player_double_double,2026-11-05T21:02:33Z,Bam Adebayo,Yes,115,0.4651
+2026-11-05 16:03,open,2026-11-05,ac38449dd3dfbe1c9b48164b6a41aa83,Miami Heat,Golden State Warriors,2026-11-06T03:10:00Z,hardrockbet,player_double_double,2026-11-05T21:02:33Z,De'Anthony Melton,Yes,4000,0.0244
+2026-11-05 16:03,open,2026-11-05,ac38449dd3dfbe1c9b48164b6a41aa83,Miami Heat,Golden State Warriors,2026-11-06T03:10:00Z,hardrockbet,player_double_double,2026-11-05T21:02:33Z,Davion Mitchell,Yes,425,0.1905
+2026-11-05 16:03,open,2026-11-05,ac38449dd3dfbe1c9b48164b6a41aa83,Miami Heat,Golden State Warriors,2026-11-06T03:10:00Z,hardrockbet,player_double_double,2026-11-05T21:02:33Z,Pelle Larsson,Yes,2500,0.0385
+2026-11-05 16:03,open,2026-11-05,ac38449dd3dfbe1c9b48164b6a41aa83,Miami Heat,Golden State Warriors,2026-11-06T03:10:00Z,hardrockbet,player_double_double,2026-11-05T21:02:33Z,Draymond Green,Yes,1200,0.0769

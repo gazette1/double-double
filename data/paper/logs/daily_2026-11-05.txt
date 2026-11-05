@@ -1,0 +1,35 @@
+----- daily 2026-11-05, started 2026-11-05 16:03 ET -----
+[   0.0s] daily run for 2026-11-05 (live)
+[   0.4s] hoopR player_box_2027: 0.1 MB
+[   0.8s] hoopR team_box_2027: 0.0 MB
+[   1.3s] hoopR schedule_2027: 0.1 MB
+[   1.3s] production model trained 2026-10-30 17:45 (cutoff 2026-10-29, 5 days old)
+[   1.7s] slate: 2 games: ORL at PHX 21:00 (PHX -1.5), MIA at GS 22:00 (GS -4.5)
+[   2.6s] history through 2026-11-04: 302425 player rows
+[   4.6s] rosters: 69 players on 4 teams; injury report 91 players league-wide, 12 of tonight's players Out or Doubtful
+[   4.7s] pending rows 57 for 2 games
+[   4.9s] played rows 247421
+[   5.9s] player form done
+[   6.0s] history and schedule done
+[   6.6s] team context done (team-games 23328, 4 from player box sums, 12 without box stats)
+[   8.9s] rank, share, and absence features done
+[   9.2s] live rows 55 of 57 pending players (2 with fewer than 5 prior games skipped; 0 without any box-score history)
+[   9.2s] skipped (fewer than 5 prior games): Tre Donaldson (MIA, 0), Koa Peat (PHX, 3)
+[   9.2s] predicted 55 players; top: Giannis Antetokounmpo 0.60, Bam Adebayo 0.38, Wendell Carter Jr. 0.22, Franz Wagner 0.21, Yaxel Lendeborg 0.17, Davion Mitchell 0.14
+[   9.2s] second night of a back-to-back, left out of the five and the picks: MIA, PHX
+2 NBA games on 2026-11-05 (ET) in this snapshot (open)
+153 price rows logged; credits used this run 2; credits remaining 461
+[  10.4s] prices: 22 scored players with a FanDuel quote, 13 with a two-way quote; books in the snapshot: ['ballybet', 'betmgm', 'draftkings', 'espnbet', 'fanduel', 'hardrockbet', 'novig']
+
+🏀 DD picks: 2026-11-05 (2 games, 55 players scored)
+
+No plays tonight. Closest by edge against the fair price, with the blocking rule:
+• Khaman Maluach (PHX) model 0.08, fair 0.08 / 0.03, FD +1200, edge -0.001 / +0.049: second night of a back-to-back; p below 0.35; edge -0.001/+0.049 below bar 0.030; price edge -0.001 below 0.02
+• Anthony Black (ORL) model 0.08, fair 0.12 / 0.05, FD +800, edge -0.036 / +0.025: p below 0.35; edge -0.036/+0.025 below bar 0.030; price edge -0.032 below 0.02
+• Draymond Green (GS) model 0.05, fair 0.09 / 0.04, FD +1200, edge -0.048 / +0.006: p below 0.35; edge -0.048/+0.006 below bar 0.030; price edge -0.032 below 0.02
+
+_Bar: edge above 0.030 under both de-vig methods (0.060 in a team's first 5 games, doubled for near-locks in 10-point spreads); FanDuel one-sided margin tonight 0.011 on players with fair at least 0.20, floor 0.03; p at least 0.35; price edge at least 0.02 at the book._
+_Passed on the favorites: Giannis Antetokounmpo p 0.60, FD -260, fair 0.65._
+_Credits used 2, remaining 461. Paper stakes only, 1 unit per pick. Model trained 2026-10-30 17:45 through 2026-10-29._
+
+[  10.5s] wrote picks_2026-11-05.csv (0 picks), board_2026-11-05.csv (55 rows), discord_2026-11-05.md
