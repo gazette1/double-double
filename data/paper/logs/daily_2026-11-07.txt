@@ -1,0 +1,38 @@
+----- daily 2026-11-07, started 2026-11-07 15:08 ET -----
+[   0.0s] daily run for 2026-11-07 (live)
+[   0.5s] hoopR player_box_2027: 0.1 MB
+[   0.9s] hoopR team_box_2027: 0.0 MB
+[   1.3s] hoopR schedule_2027: 0.1 MB
+[   1.3s] production model trained 2026-10-30 17:45 (cutoff 2026-10-29, 7 days old)
+[   1.3s] retraining the production model (weekly schedule)
+[  38.5s] slate: 7 games: DEN at IND 17:00 (DEN -7.5), BKN at ATL 19:30 (ATL -6.5), NY at CLE 20:00 (NY -5.5), WSH at OKC 20:00 (OKC -11.5), ORL at GS 20:30 (GS -6.5), HOU at PHX 21:00 (HOU -6.5), SA at POR 22:00 (SA -4.5)
+[  39.2s] history through 2026-11-06: 302713 player rows
+[  44.3s] rosters: 240 players on 14 teams; injury report 90 players league-wide, 42 of tonight's players Out or Doubtful
+[  44.4s] pending rows 198 for 7 games
+[  44.6s] played rows 247814
+[  45.4s] player form done
+[  45.5s] history and schedule done
+[  45.9s] team context done (team-games 23360, 14 from player box sums, 12 without box stats)
+[  47.9s] rank, share, and absence features done
+[  48.1s] live rows 186 of 198 pending players (12 with fewer than 5 prior games skipped; 0 without any box-score history)
+[  48.1s] skipped (fewer than 5 prior games): Alpha Diallo (DEN, 3), Jaden Akins (NY, 1), Quadir Copeland (HOU, 0), Grant Nelson (BKN, 4), Tyler Nickel (NY, 0), Joshua Jefferson (BKN, 1), Koa Peat (PHX, 4), Maliq Brown (SA, 1), Tyler Bilodeau (BKN, 0), Felix Okpara (WSH, 2), Ernest Udeh Jr. (CLE, 0), Ja'Kobi Gillespie (SA, 2)
+[  48.1s] predicted 186 players; top: Nikola Jokic 0.79, Karl-Anthony Towns 0.75, Victor Wembanyama 0.68, Alperen Sengun 0.52, Anthony Davis 0.43, Donovan Clingan 0.39
+[  48.2s] second night of a back-to-back, left out of the five and the picks: ATL, CLE, OKC, POR, SA, WSH
+7 NBA games on 2026-11-07 (ET) in this snapshot (open)
+506 price rows logged; credits used this run 7; credits remaining 445
+[  51.2s] prices: 68 scored players with a FanDuel quote, 46 with a two-way quote; books in the snapshot: ['ballybet', 'betmgm', 'draftkings', 'espnbet', 'fanduel', 'hardrockbet', 'novig']
+[  51.3s] 1 priced players without a model row (no history, fewer than 5 games, or Out) saved to priced_unscored_2026-11-07.csv
+
+🏀 DD picks: 2026-11-07 (7 games, 186 players scored)
+
+No plays tonight. Closest by edge against the fair price, with the blocking rule:
+• Victor Wembanyama (SA) model 0.68, fair 0.67 / 0.69, FD -275, edge +0.009 / -0.012: second night of a back-to-back; edge +0.009/-0.012 below bar 0.030; price edge -0.055 below 0.02
+• Karl-Anthony Towns (NY) model 0.75, fair 0.74 / 0.77, FD -450, edge +0.008 / -0.026: edge +0.008/-0.026 below bar 0.030; price edge -0.069 below 0.02
+• Dyson Daniels (ATL) model 0.20, fair 0.20 / 0.15, FD +400, edge +0.003 / +0.050: second night of a back-to-back; p below 0.35; edge +0.003/+0.050 below bar 0.030; price edge +0.002 below 0.02
+
+_Bar: edge above 0.030 under both de-vig methods (0.060 in a team's first 5 games, doubled for near-locks in 10-point spreads); FanDuel one-sided margin tonight 0.023 on players with fair at least 0.20, floor 0.03; p at least 0.35; price edge at least 0.02 at the book._
+_Priced but not scored (fewer than 5 prior games, no history, or listed out): Jalen Johnson (FD -144, fair 0.55)._
+_Passed on the favorites: Nikola Jokic p 0.79, FD -650, fair 0.81; Karl-Anthony Towns p 0.75, FD -450, fair 0.74; Victor Wembanyama p 0.68, FD -275, fair 0.67._
+_Credits used 7, remaining 445. Paper stakes only, 1 unit per pick. Model trained 2026-11-07 15:09 through 2026-11-06._
+
+[  51.3s] wrote picks_2026-11-07.csv (0 picks), board_2026-11-07.csv (186 rows), discord_2026-11-07.md
