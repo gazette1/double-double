@@ -23,6 +23,7 @@ def fetch(kind, year, force=False):
     r = requests.get(url, timeout=180)
     if r.status_code != 200:
         return None, f"HTTP {r.status_code}"
+    dest.parent.mkdir(parents=True, exist_ok=True)  # a fresh checkout (the Action) has no data/raw folder
     dest.write_bytes(r.content)
     return dest, f"{len(r.content)/1e6:.1f} MB"
 
