@@ -2,7 +2,7 @@ name: Daily DD paper trade and Discord post
 
 # Russ, 2026-10-29: post the first lines of the daily summary to the StrikeOut Discord every day at 3 PM Eastern.
 # Russ, 2026-11-08: it has to run every day without the Claude app open, like the StrikeOut bot's Action.
-# GitHub starts scheduled runs late: this repository's runs on the hour started 5 to 8 hours late and the
+# GitHub starts scheduled runs late: this repository's runs on the hour started 5 to 9 hours late and the
 # StrikeOut repository's 13:00 UTC run starts 3 to 9 hours late, so the earlier guard (the exact New York hour)
 # skipped every run and this Action never posted. Now ten crons off the hour mark cover two windows, and
 # tools/ci_gate.py decides from the New York clock and from what the checkout already holds: the first run inside

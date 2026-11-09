@@ -4,7 +4,7 @@ the dependencies are installed and a run outside every window ends in seconds.
 
 Replaces ny_hour_guard.py. Russ, 2026-11-08: "this shouldnt rely on claude coder being open to run it should run
 everyday like how the strikeout did". GitHub starts scheduled runs late: this repository's crons on the hour
-(19:00 and 20:00 UTC) started 5 to 8 hours late and the StrikeOut repository's 13:00 UTC cron starts 3 to 9 hours
+(19:00 and 20:00 UTC) started 5 to 9 hours late and the StrikeOut repository's 13:00 UTC cron starts 3 to 9 hours
 late, while crons off the hour mark started within minutes to an hour. The old guard asked whether the New York
 hour was exactly 15, so every late run did nothing and the Action never posted. This gate asks whether the New
 York clock is inside the step's window and whether the checkout already shows the step done today. Several crons
