@@ -1,0 +1,38 @@
+----- daily 2026-11-08, started 2026-11-08 20:31 ET -----
+[   0.0s] daily run for 2026-11-08 (live)
+[   0.5s] hoopR player_box_2027: 0.1 MB
+[   0.9s] hoopR team_box_2027: 0.0 MB
+[   1.4s] hoopR schedule_2027: 0.1 MB
+[   1.4s] production model trained 2026-11-07 15:09 (cutoff 2026-11-06, 1 days old)
+[   1.8s] games already started or finished, left out: PHI at CHI (STATUS_FINAL), LAL at DET (STATUS_IN_PROGRESS), UTAH at MIN (STATUS_IN_PROGRESS), BKN at DAL (STATUS_IN_PROGRESS), BOS at MIL (STATUS_IN_PROGRESS)
+[   1.8s] slate: 2 games: NO at LAC 21:00 (NO -1.5), MIA at SAC 21:00 (MIA -11.5)
+[   2.8s] history through 2026-11-07: 302893 player rows
+[   6.9s] rosters: 70 players on 4 teams; injury report 93 players league-wide, 9 of tonight's players Out or Doubtful
+[   7.0s] pending rows 61 for 2 games
+[   7.4s] played rows 247829
+[   8.6s] player form done
+[   8.8s] history and schedule done
+[   9.5s] team context done (team-games 23364, 4 from player box sums, 12 without box stats)
+[  11.8s] rank, share, and absence features done
+[  12.1s] live rows 57 of 61 pending players (4 with fewer than 5 prior games skipped; 0 without any box-score history)
+[  12.1s] skipped (fewer than 5 prior games): Jaron Pierre Jr. (NO, 0), Malik Dia (NO, 0), Tre Donaldson (MIA, 0), Nick Martinelli (LAC, 4)
+[  12.1s] predicted 57 players; top: Giannis Antetokounmpo 0.71, Bam Adebayo 0.47, Darius Acuff Jr. 0.27, Precious Achiuwa 0.22, Davion Mitchell 0.19, Derik Queen 0.15
+[  12.1s] second night of a back-to-back, left out of the five and the picks: no team
+6 NBA games on 2026-11-08 (ET) in this snapshot (open)
+256 price rows logged; credits used this run 6; credits remaining 439
+[  20.4s] prices: 23 scored players with a FanDuel quote, 11 with a two-way quote; books in the snapshot: ['ballybet', 'betmgm', 'draftkings', 'espnbet', 'fanduel', 'hardrockbet', 'novig']
+[  20.4s] 37 priced players without a model row (no history, fewer than 5 games, or Out) saved to priced_unscored_2026-11-08.csv
+
+🏀 DD picks: 2026-11-08 (2 games, 57 players scored)
+
+No plays tonight. Closest by edge against the fair price, with the blocking rule:
+• Darius Acuff Jr. (SAC) model 0.27, fair 0.24 / 0.16, FD +290, edge +0.029 / +0.104: p below 0.35; edge +0.029/+0.104 below bar 0.038; price edge +0.011 below 0.02
+• Giannis Antetokounmpo (MIA) model 0.71, fair 0.72 / 0.76, FD -470, edge -0.002 / -0.044: edge -0.002/-0.044 below bar 0.038; price edge -0.111 below 0.02
+• Bam Adebayo (MIA) model 0.47, fair 0.48 / 0.47, FD -118, edge -0.005 / +0.003: edge -0.005/+0.003 below bar 0.038; price edge -0.066 below 0.02
+
+_Bar: edge above 0.038 under both de-vig methods (0.068 in a team's first 5 games, doubled for near-locks in 10-point spreads); FanDuel one-sided margin tonight 0.038 on players with fair at least 0.20, floor 0.03; p at least 0.35; price edge at least 0.02 at the book._
+_Priced but not scored (fewer than 5 prior games, no history, or listed out): Ausar Thompson (FD +1200); Cade Cunningham (DK +3500); Paul Reed Jr (DK +450); Keyonte George (FD -550); Rudy Gobert (FD +250); Jaden McDaniels (FD +370); LaMelo Ball (FD +390); Darryn Peterson (FD +1280); Jaxson Hayes (FD +1280); Trey Lyles (FD +1260); Ace Bailey (FD +4000); Ayo Dosunmu (FD +3500); Jonathan Kuminga (DK +5500); Cooper Flagg (FD +220, fair 0.36); Michael Porter Jr (FD +260, fair 0.33); Julius Randle (FD +1000, fair 0.12); P.J. Washington (FD +1400, fair 0.08); Daniel Gafford (FD +1700); Day'Ron Sharpe (FD +2000, fair 0.06); Kyrie Irving (FD +4000); Naji Marshall (FD +5000); Nolan Traore (DK +5000); Danny Wolf (DK +3000); Myles Turner (FD +470, fair 0.19); Mitchell Robinson (FD +580, fair 0.18); Neemias Queta (FD +800, fair 0.12); Kel'el Ware (FD +1100, fair 0.09); Brayden Burries (FD +1260, fair 0.09); Paul George (FD +1400, fair 0.08); Jaime Jaquez Jr (FD +1700); Ryan Rollins (FD +2800); Derrick White (DK +4500); Kyle Kuzma (DK +4500); Tyler Herro (DK +4500); Payton Pritchard (DK +4000); Jayson Tatum (DK +115, fair 0.47); Domantas Sabonis (DK n/a, fair 0.61)._
+_Passed on the favorites: Giannis Antetokounmpo p 0.71, FD -470, fair 0.72._
+_Credits used 6, remaining 439. Paper stakes only, 1 unit per pick. Model trained 2026-11-07 15:09 through 2026-11-06._
+
+[  20.5s] wrote picks_2026-11-08.csv (0 picks), board_2026-11-08.csv (57 rows), discord_2026-11-08.md
