@@ -1,7 +1,8 @@
 # Local data stays out of the repository. Committed: code, docs, research notes, reports, the price log,
 # the paper-trade ledger and the production model the daily Action needs.
 data/raw/
-data/features/
+data/features/*
+!data/features/dataset_v1_features.json
 data/models/*
 !data/models/production/
 data/eval/**/*.parquet
