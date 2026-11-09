@@ -1,20 +1,33 @@
 name: Daily DD paper trade and Discord post
 
 # Russ, 2026-10-29: post the first lines of the daily summary to the StrikeOut Discord every day at 3 PM Eastern.
-# Two crons per step so one of them lands on the Eastern hour on either side of the clock change; the guard
-# step (tools/ny_hour_guard.py) picks the step from the America/New_York hour and the other run does nothing.
+# Russ, 2026-11-08: it has to run every day without the Claude app open, like the StrikeOut bot's Action.
+# GitHub starts scheduled runs late: this repository's runs on the hour started 5 to 8 hours late and the
+# StrikeOut repository's 13:00 UTC run starts 3 to 9 hours late, so the earlier guard (the exact New York hour)
+# skipped every run and this Action never posted. Now ten crons off the hour mark cover two windows, and
+# tools/ci_gate.py decides from the New York clock and from what the checkout already holds: the first run inside
+# a window does the step, later runs find it done and stop within seconds. Times are UTC and cover both sides of
+# the clock change (3 PM Eastern is 20:00 UTC in standard time, 19:00 UTC in daylight time).
 # Secrets: ODDS_API_KEY, DISCORD_WEBHOOK_URL. Outputs are committed back to the repository as the strikeout
 # bot's Action does. Paper stakes only.
 on:
   schedule:
-    - cron: "0 19 * * *"    # 3 PM Eastern during daylight time: grade, daily run, post
-    - cron: "0 20 * * *"    # 3 PM Eastern during standard time
-    - cron: "40 22 * * *"   # 6:40 PM Eastern during daylight time: pre-tip snapshot of the picked games
-    - cron: "40 23 * * *"   # 6:40 PM Eastern during standard time
+    # daily window, 2:50 to 7:00 PM Eastern: grade yesterday, daily run, post
+    - cron: "53 18 * * *"
+    - cron: "23 19 * * *"
+    - cron: "53 19 * * *"
+    - cron: "23 20 * * *"
+    - cron: "53 20 * * *"
+    - cron: "23 21 * * *"
+    # pre-tip window, 6:30 to 7:30 PM Eastern: closing snapshot of the picked games
+    - cron: "41 22 * * *"
+    - cron: "11 23 * * *"
+    - cron: "41 23 * * *"
+    - cron: "11 0 * * *"
   workflow_dispatch:
     inputs:
       step:
-        description: "auto (by New York hour), daily, pretip, or post_test (dry chain, then one labeled test post)"
+        description: "auto (New York clock and today's run log), daily, post, pretip, none, or post_test (chain, then one labeled test post)"
         required: false
         default: "auto"
 
@@ -35,49 +48,55 @@ jobs:
       DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
       STEP: ${{ github.event.inputs.step || 'auto' }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           fetch-depth: 0
 
-      - uses: actions/setup-python@v5
+      - name: Which step (New York clock and today's run log)
+        id: gate
+        run: python3 tools/ci_gate.py
+
+      - uses: actions/setup-python@v6
+        if: steps.gate.outputs.step != 'none'
         with:
           python-version: "3.13"
           cache: pip
           cache-dependency-path: requirements-ci.txt
 
       - name: Install
+        if: steps.gate.outputs.step != 'none'
         run: pip install -r requirements-ci.txt
 
-      - name: Which step (New York hour)
-        id: guard
-        run: python tools/ny_hour_guard.py
-
       - name: Grade yesterday
-        if: steps.guard.outputs.step == 'daily' || steps.guard.outputs.step == 'post_test'
-        run: python tools/grade.py
+        if: steps.gate.outputs.step == 'daily' || steps.gate.outputs.step == 'post_test'
+        run: python tools/grade.py || echo "::warning::grade.py failed, the daily run goes on without it"
 
       - name: Daily run (features, prices, edge picks)
-        if: steps.guard.outputs.step == 'daily' || steps.guard.outputs.step == 'post_test'
+        if: steps.gate.outputs.step == 'daily' || steps.gate.outputs.step == 'post_test'
         run: python tools/daily_run.py
 
       - name: Post the five most likely double-doubles to Discord
-        if: steps.guard.outputs.step == 'daily'
+        if: steps.gate.outputs.step == 'daily' || steps.gate.outputs.step == 'post'
         run: |
-          python tools/top_post.py
-          python tools/post_discord.py --kind top --post --once
+          if [ -f "data/paper/board_${{ steps.gate.outputs.date }}.csv" ]; then
+            python tools/top_post.py
+            python tools/post_discord.py --kind top --post --once
+          else
+            echo "no board for ${{ steps.gate.outputs.date }}: no games left to price, nothing to post"
+          fi
 
       - name: One labeled test post
-        if: steps.guard.outputs.step == 'post_test'
+        if: steps.gate.outputs.step == 'post_test'
         run: |
           python tools/top_post.py
           python tools/post_discord.py --kind top --post --label test
 
       - name: Pre-tip snapshot of the picked games
-        if: steps.guard.outputs.step == 'pretip'
+        if: steps.gate.outputs.step == 'pretip'
         run: python tools/pretip_snapshot.py
 
       - name: Commit outputs
-        if: steps.guard.outputs.step != 'none'
+        if: always() && steps.gate.outputs.step != 'none' && steps.gate.outputs.step != ''
         run: |
           git config user.name "dd-bot"
           git config user.email "actions@users.noreply.github.com"
@@ -85,7 +104,7 @@ jobs:
           if git diff --cached --quiet; then
             echo "nothing to commit"
           else
-            git commit -m "paper trade $(date -u +%F) ${{ steps.guard.outputs.step }}"
+            git commit -m "paper trade ${{ steps.gate.outputs.date }} ${{ steps.gate.outputs.step }}"
             git pull --rebase
             git push
           fi

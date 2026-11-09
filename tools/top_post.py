@@ -16,7 +16,10 @@ data/paper:
 post_discord.py --kind top sends the post. The edge-rule picks file and board are unchanged, so the price log
 and the 100-pick gate keep running underneath.
 
-Run: PYTHONUTF8=1 python tools/top_post.py [--date YYYY-MM-DD] [--n 5]
+A date whose post is already in the run log is left alone (the files stay as posted, so grade.py grades the five
+that went out); --force rebuilds them.
+
+Run: PYTHONUTF8=1 python tools/top_post.py [--date YYYY-MM-DD] [--n 5] [--force]
 """
 import argparse
 import sys
@@ -26,6 +29,7 @@ import pandas as pd
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from paper_common import EXCLUDE_B2B, PAPER_DIR, on_back_to_back, today_et  # noqa: E402
+from post_discord import posted_in_run_log  # noqa: E402
 
 SKIP_STATUS = {"out", "doubtful"}
 TOP_LEDGER = PAPER_DIR / "ledger_top.csv"
@@ -109,8 +113,12 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--date", default=None)
     ap.add_argument("--n", type=int, default=5)
+    ap.add_argument("--force", action="store_true", help="rebuild the files even when today's post is already sent")
     args = ap.parse_args()
     date = args.date or today_et()
+    if not args.force and posted_in_run_log(date, "top"):
+        print(f"the post for {date} is already in the run log; files left as posted (--force rebuilds them)")
+        return
     path = PAPER_DIR / f"board_{date}.csv"
     if not path.exists():
         sys.exit(f"no board for {date}: {path}")

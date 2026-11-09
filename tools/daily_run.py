@@ -429,7 +429,10 @@ def main():
         write_text(summary_path(date), f"🏀 DD picks: {date}\n\nNo NBA games left to price on this date.\n")
         picks_path(date).parent.mkdir(parents=True, exist_ok=True)
         pd.DataFrame(columns=PICK_COLUMNS).to_csv(picks_path(date), index=False)
-        log("no games to price; empty picks file and summary written", t0)
+        append_run_log({"run_et": now_et().strftime("%Y-%m-%d %H:%M"), "date": date,
+                        "mode": "live" if live_mode else "backfill", "games": 0, "pending_players": 0, "scored": 0,
+                        "picks": 0, "seconds": round(time.time() - t0, 1)})
+        log("no games to price; empty picks file, summary and a zero-games run-log row written", t0)
         return
     log(f"slate: {len(games)} games: " + ", ".join(f"{g['away_abbr']} at {g['home_abbr']} "
         f"{g['tip_et'].strftime('%H:%M')} ({g['spread_detail']})" for g in games), t0)
