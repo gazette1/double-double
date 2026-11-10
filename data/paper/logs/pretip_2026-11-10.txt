@@ -1,0 +1,11 @@
+----- pretip 2026-11-10, started 2026-11-10 18:47 ET -----
+1 NBA games on 2026-11-10 (ET) in this snapshot (pretip)
+82 price rows logged; credits used this run 1; credits remaining 418
+[   0.7s] closing quotes matched for 1 of 1 picks (FanDuel), 1 with two-way quotes
+
+🏀 DD pre-tip check: 2026-11-10
+
+🟢 **Bam Adebayo** (MIA vs UTAH) stands · close FD +124 (open +122), fair close 0.41 / 0.40, game pre
+
+_Credits used 1, remaining 418._
+
