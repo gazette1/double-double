@@ -1,0 +1,33 @@
+----- daily 2026-11-10, started 2026-11-10 15:08 ET -----
+[   0.0s] daily run for 2026-11-10 (live)
+[   0.4s] hoopR player_box_2027: 0.1 MB
+[   0.8s] hoopR team_box_2027: 0.0 MB
+[   1.2s] hoopR schedule_2027: 0.1 MB
+[   1.2s] production model trained 2026-11-07 15:09 (cutoff 2026-11-06, 2 days old)
+[   1.6s] slate: 6 games: MIL at NY 19:30 (NY -15.5), BOS at PHI 20:00 (BOS -1.5), LAC at PHX 21:00 (PHX -3.5), MIA at UTAH 21:00 (MIA -9.5), ORL at SAC 22:00 (ORL -6.5), OKC at POR 23:00 (OKC -1.5)
+[   2.5s] history through 2026-11-09: 303289 player rows
+[   7.1s] rosters: 207 players on 12 teams; injury report 95 players league-wide, 28 of tonight's players Out or Doubtful
+[   7.2s] pending rows 179 for 6 games
+[   7.4s] played rows 248293
+[   8.3s] player form done
+[   8.4s] history and schedule done
+[   8.9s] team context done (team-games 23402, 12 from player box sums, 12 without box stats)
+[  11.1s] rank, share, and absence features done
+[  11.3s] live rows 174 of 179 pending players (5 with fewer than 5 prior games skipped; 0 without any box-score history)
+[  11.4s] skipped (fewer than 5 prior games): Jaden Akins (NY, 1), Tre Donaldson (MIA, 0), Tyler Nickel (NY, 0), Dillon Mitchell (BOS, 1), Bogoljub Markovic (MIL, 1)
+[  11.4s] predicted 174 players; top: Karl-Anthony Towns 0.82, Giannis Antetokounmpo 0.70, Domantas Sabonis 0.70, Bam Adebayo 0.51, Donovan Clingan 0.39, Joel Embiid 0.38
+[  11.4s] second night of a back-to-back, left out of the five and the picks: PHX
+6 NBA games on 2026-11-10 (ET) in this snapshot (open)
+448 price rows logged; credits used this run 6; credits remaining 419
+[  14.1s] prices: 61 scored players with a FanDuel quote, 42 with a two-way quote; books in the snapshot: ['ballybet', 'betmgm', 'draftkings', 'espnbet', 'fanduel', 'hardrockbet', 'novig']
+
+🏀 DD picks: 2026-11-10 (6 games, 174 players scored)
+
+🟢 **Bam Adebayo** (MIA at UTAH) Yes **+122** FD
+   model **0.51** · fair 0.42 / 0.42 · edge **+0.084** / +0.092 · FD edge +0.059 · spread MIA -9.5
+
+_Bar: edge above 0.042 under both de-vig methods (0.072 in a team's first 5 games, doubled for near-locks in 10-point spreads); FanDuel one-sided margin tonight 0.042 on players with fair at least 0.20, floor 0.03; p at least 0.35; price edge at least 0.02 at the book._
+_Passed on the favorites: Karl-Anthony Towns p 0.82, FD -550, fair 0.69; Giannis Antetokounmpo p 0.70, FD -490, fair 0.77; Domantas Sabonis p 0.70, FD -250, fair 0.64._
+_Credits used 6, remaining 419. Paper stakes only, 1 unit per pick. Model trained 2026-11-07 15:09 through 2026-11-06._
+
+[  14.2s] wrote picks_2026-11-10.csv (1 picks), board_2026-11-10.csv (174 rows), discord_2026-11-10.md
