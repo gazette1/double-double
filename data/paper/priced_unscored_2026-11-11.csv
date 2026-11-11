@@ -1,0 +1,2 @@
+event_id,player,away,home,commence_time,snapshot_et,n_books_yes,books_yes,fd_price,fd_implied,dk_price,dk_implied,best_price,best_implied,best_book,n_twoway,twoway_books,fair_mult,fair_power,fair_mult_min,fair_mult_max,twoway_hold_mean,yes_quotes,no_quotes,game_id,athlete_id
+095441822e3b9b1b84bff9e482b9057a,Jaylon Tyson,Cleveland Cavaliers,New York Knicks,2026-11-12T00:10:00Z,2026-11-11 18:24,2,"draftkings,hardrockbet",,,4300.0,0.022727272727272728,4300.0,0.022727272727272728,draftkings,0,,,,,,,"{""draftkings"": 4300.0, ""hardrockbet"": 4000.0}",{},401909967,4683747.0

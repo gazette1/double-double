@@ -1,0 +1,37 @@
+----- daily 2026-11-11, started 2026-11-11 18:24 ET -----
+[   0.0s] daily run for 2026-11-11 (live)
+[   0.6s] hoopR player_box_2027: 0.1 MB
+[   1.0s] hoopR team_box_2027: 0.0 MB
+[   1.5s] hoopR schedule_2027: 0.1 MB
+[   1.6s] production model trained 2026-11-07 15:09 (cutoff 2026-11-06, 4 days old)
+[   2.0s] slate: 10 games: WSH at IND 19:00 (IND -3.5), CLE at NY 19:00 (NY -4.5), BOS at TOR 19:00 (BOS -5.5), SA at CHI 20:00 (SA -15.5), DEN at MEM 20:00 (DEN -4.5), LAL at MIL 20:00 (LAL -14.5), BKN at NO 20:00 (NO -2.5), ORL at UTAH 21:00 (ORL -4.5), GS at HOU 21:30 (HOU -6.5), OKC at POR 22:00 (POR -2.5)
+[   3.1s] history through 2026-11-10: 303443 player rows
+[  11.6s] rosters: 348 players on 20 teams; injury report 96 players league-wide, 53 of tonight's players Out or Doubtful
+[  11.7s] pending rows 295 for 10 games
+[  11.9s] played rows 248550
+[  12.8s] player form done
+[  12.9s] history and schedule done
+[  13.3s] team context done (team-games 23422, 20 from player box sums, 12 without box stats)
+[  15.5s] rank, share, and absence features done
+[  15.8s] live rows 273 of 295 pending players (22 with fewer than 5 prior games skipped; 0 without any box-score history)
+[  15.8s] skipped (fewer than 5 prior games): Alpha Diallo (DEN, 4), Arthur Kaluma (LAL, 0), Jaden Akins (NY, 1), Quadir Copeland (HOU, 0), Grant Nelson (BKN, 4), Jaron Pierre Jr. (NO, 0), Malik Dia (NO, 0), Tyler Nickel (NY, 0), Dailyn Swain (CHI, 2), Joshua Jefferson (BKN, 1), Maliq Brown (SA, 1), Tyler Bilodeau (BKN, 0), Carson Cooper (LAL, 1), Felix Okpara (WSH, 3), Ernest Udeh Jr. (CLE, 0), Dillon Mitchell (BOS, 1), Ja'Kobi Gillespie (SA, 2), Cameron Carr (LAL, 4), AK Okereke (LAL, 0), Chris Cenac Jr. (BOS, 3), Bogoljub Markovic (MIL, 2), Karim Lopez (MEM, 3)
+[  15.8s] predicted 273 players; top: Nikola Jokic 0.81, Karl-Anthony Towns 0.76, Victor Wembanyama 0.69, Alperen Sengun 0.52, Walker Kessler 0.52, Anthony Davis 0.50
+[  15.8s] second night of a back-to-back, left out of the five and the picks: BOS, MIL, NY, OKC, ORL, POR, UTAH
+10 NBA games on 2026-11-11 (ET) in this snapshot (open)
+686 price rows logged; credits used this run 10; credits remaining 408
+[  20.3s] prices: 103 scored players with a FanDuel quote, 63 with a two-way quote; books in the snapshot: ['ballybet', 'betmgm', 'draftkings', 'espnbet', 'fanduel', 'hardrockbet', 'novig']
+[  20.3s] 1 priced players without a model row (no history, fewer than 5 games, or Out) saved to priced_unscored_2026-11-11.csv
+
+🏀 DD picks: 2026-11-11 (10 games, 273 players scored)
+
+No plays tonight. Closest by edge against the fair price, with the blocking rule:
+• Karl-Anthony Towns (NY) model 0.76, fair 0.70 / 0.73, FD -400, edge +0.060 / +0.037: second night of a back-to-back; price edge -0.036 below 0.02
+• Nikola Jokic (DEN) model 0.81, fair 0.76 / 0.81, FD -600, edge +0.049 / -0.001: edge +0.049/-0.001 below bar 0.030; price edge -0.051 below 0.02
+• Victor Wembanyama (SA) model 0.69, fair 0.65 / 0.68, FD -290, edge +0.034 / +0.002: edge +0.034/+0.002 below bar 0.030; price edge -0.057 below 0.02
+
+_Bar: edge above 0.030 under both de-vig methods (0.060 in a team's first 5 games, doubled for near-locks in 10-point spreads); FanDuel one-sided margin tonight 0.026 on players with fair at least 0.20, floor 0.03; p at least 0.35; price edge at least 0.02 at the book._
+_Priced but not scored (fewer than 5 prior games, no history, or listed out): Jaylon Tyson (DK +4300)._
+_Passed on the favorites: Nikola Jokic p 0.81, FD -600, fair 0.76; Karl-Anthony Towns p 0.76, FD -400, fair 0.70; Victor Wembanyama p 0.69, FD -290, fair 0.65._
+_Credits used 10, remaining 408. Paper stakes only, 1 unit per pick. Model trained 2026-11-07 15:09 through 2026-11-06._
+
+[  20.4s] wrote picks_2026-11-11.csv (0 picks), board_2026-11-11.csv (273 rows), discord_2026-11-11.md
