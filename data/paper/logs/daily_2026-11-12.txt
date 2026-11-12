@@ -1,0 +1,34 @@
+----- daily 2026-11-12, started 2026-11-12 15:08 ET -----
+[   0.0s] daily run for 2026-11-12 (live)
+[   0.5s] hoopR player_box_2027: 0.1 MB
+[   1.0s] hoopR team_box_2027: 0.0 MB
+[   1.6s] hoopR schedule_2027: 0.1 MB
+[   1.6s] production model trained 2026-11-07 15:09 (cutoff 2026-11-06, 4 days old)
+[   2.1s] slate: 4 games: TOR at PHI 19:00 (PHI -6.5), DET at WSH 19:00 (DET -9.5), DAL at MIN 20:00 (MIN -5.5), CHA at PHX 21:00 (PHX -6.5)
+[   3.2s] history through 2026-11-11: 303710 player rows
+[   6.6s] rosters: 137 players on 8 teams; injury report 98 players league-wide, 23 of tonight's players Out or Doubtful
+[   6.6s] pending rows 114 for 4 games
+[   6.9s] played rows 248592
+[   7.9s] player form done
+[   8.0s] history and schedule done
+[   8.6s] team context done (team-games 23430, 8 from player box sums, 12 without box stats)
+[  11.0s] rank, share, and absence features done
+[  11.3s] live rows 110 of 114 pending players (4 with fewer than 5 prior games skipped; 0 without any box-score history)
+[  11.3s] skipped (fewer than 5 prior games): Kylan Boswell (CHA, 0), Ugonna Onyenso (DET, 0), Felix Okpara (WSH, 3), Michael Ajayi (CHA, 0)
+[  11.3s] predicted 110 players; top: Anthony Davis 0.44, Naz Reid 0.34, Moussa Diabate 0.32, Cooper Flagg 0.32, Joel Embiid 0.31, Rudy Gobert 0.31
+[  11.3s] second night of a back-to-back, left out of the five and the picks: TOR, WSH
+4 NBA games on 2026-11-12 (ET) in this snapshot (open)
+317 price rows logged; credits used this run 4; credits remaining 404
+[  13.3s] prices: 40 scored players with a FanDuel quote, 29 with a two-way quote; books in the snapshot: ['ballybet', 'betmgm', 'draftkings', 'espnbet', 'fanduel', 'hardrockbet', 'novig']
+
+🏀 DD picks: 2026-11-12 (4 games, 110 players scored)
+
+No plays tonight. Closest by edge against the fair price, with the blocking rule:
+• Moussa Diabate (CHA) model 0.32, fair 0.23 / 0.20, FD +280, edge +0.090 / +0.126: p below 0.35
+• Cooper Flagg (DAL) model 0.32, fair 0.25 / 0.20, FD +270, edge +0.073 / +0.120: p below 0.35
+• Naz Reid (CHA) model 0.34, fair 0.33 / 0.31, FD +174, edge +0.015 / +0.038: p below 0.35; edge +0.015/+0.038 below bar 0.032; price edge -0.021 below 0.02
+
+_Bar: edge above 0.032 under both de-vig methods (0.062 in a team's first 5 games, doubled for near-locks in 10-point spreads); FanDuel one-sided margin tonight 0.032 on players with fair at least 0.20, floor 0.03; p at least 0.35; price edge at least 0.02 at the book._
+_Credits used 4, remaining 404. Paper stakes only, 1 unit per pick. Model trained 2026-11-07 15:09 through 2026-11-06._
+
+[  13.4s] wrote picks_2026-11-12.csv (0 picks), board_2026-11-12.csv (110 rows), discord_2026-11-12.md
