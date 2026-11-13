@@ -1,0 +1,62 @@
+----- daily 2026-11-13, started 2026-11-13 18:57 ET -----
+[   0.0s] daily run for 2026-11-13 (live)
+[   0.2s] hoopR player_box_2018: 0.7 MB
+[   0.4s] hoopR team_box_2018: 0.1 MB
+[   0.6s] hoopR schedule_2018: 0.1 MB
+[   1.1s] hoopR player_box_2019: 0.7 MB
+[   1.4s] hoopR team_box_2019: 0.2 MB
+[   1.7s] hoopR schedule_2019: 0.1 MB
+[   1.9s] hoopR player_box_2020: 0.6 MB
+[   2.1s] hoopR team_box_2020: 0.1 MB
+[   2.3s] hoopR schedule_2020: 0.1 MB
+[   2.6s] hoopR player_box_2021: 0.5 MB
+[   2.8s] hoopR team_box_2021: 0.1 MB
+[   3.0s] hoopR schedule_2021: 0.1 MB
+[   3.2s] hoopR player_box_2022: 0.6 MB
+[   3.6s] hoopR team_box_2022: 0.1 MB
+[   3.9s] hoopR schedule_2022: 0.1 MB
+[   4.0s] hoopR player_box_2023: 0.6 MB
+[   4.2s] hoopR team_box_2023: 0.1 MB
+[   4.4s] hoopR schedule_2023: 0.1 MB
+[   4.8s] hoopR player_box_2024: 0.6 MB
+[   5.0s] hoopR team_box_2024: 0.1 MB
+[   5.3s] hoopR schedule_2024: 0.1 MB
+[   5.7s] hoopR player_box_2025: 0.6 MB
+[   6.0s] hoopR team_box_2025: 0.1 MB
+[   6.4s] hoopR schedule_2025: 0.2 MB
+[   6.6s] hoopR player_box_2026: 0.6 MB
+[   6.9s] hoopR team_box_2026: 0.1 MB
+[   7.6s] hoopR schedule_2026: 0.5 MB
+[   7.7s] hoopR player_box_2027: 0.1 MB
+[   7.9s] hoopR team_box_2027: 0.0 MB
+[   8.0s] hoopR schedule_2027: 0.1 MB
+[   8.0s] production model trained 2026-11-07 15:09 (cutoff 2026-11-06, 6 days old)
+[   8.1s] slate: 9 games: NY at IND 19:00 (NY -7.5), MIL at ORL 19:00 (ORL -9.5), CLE at MIA 20:00 (MIA -2.5), ATL at CHI 20:00 (ATL -6.5), MEM at NO 20:00 (MEM -3.5), UTAH at HOU 20:30 (HOU -15.5), GS at SA 21:30 (SA -12.5), POR at SAC 22:00 (POR -10.5), OKC at LAC 22:30 (OKC -7.5)
+[   8.7s] history through 2026-11-12: 303814 player rows
+[  10.7s] rosters: 315 players on 18 teams; injury report 100 players league-wide, 56 of tonight's players Out or Doubtful
+[  10.8s] pending rows 259 for 9 games
+[  11.0s] played rows 248827
+[  11.8s] player form done
+[  11.8s] history and schedule done
+[  12.0s] team context done (team-games 23448, 18 from player box sums, 12 without box stats)
+[  13.4s] rank, share, and absence features done
+[  13.5s] live rows 246 of 259 pending players (13 with fewer than 5 prior games skipped; 0 without any box-score history)
+[  13.5s] skipped (fewer than 5 prior games): Jaden Akins (NY, 1), Quadir Copeland (HOU, 0), Jaron Pierre Jr. (NO, 1), Malik Dia (NO, 0), Tre Donaldson (MIA, 0), Tyler Nickel (NY, 0), Dailyn Swain (CHI, 2), Khalifa Diop (CLE, 0), Maliq Brown (SA, 1), Ernest Udeh Jr. (CLE, 0), Ja'Kobi Gillespie (SA, 2), Bogoljub Markovic (MIL, 3), Karim Lopez (MEM, 3)
+[  13.5s] predicted 246 players; top: Karl-Anthony Towns 0.78, Giannis Antetokounmpo 0.69, Victor Wembanyama 0.64, Domantas Sabonis 0.56, Jalen Johnson 0.54, Alperen Sengun 0.53
+[  13.5s] second night of a back-to-back, left out of the five and the picks: no team
+9 NBA games on 2026-11-13 (ET) in this snapshot (open)
+715 price rows logged; credits used this run 9; credits remaining 395
+[  15.9s] prices: 93 scored players with a FanDuel quote, 67 with a two-way quote; books in the snapshot: ['ballybet', 'betmgm', 'draftkings', 'espnbet', 'fanduel', 'hardrockbet', 'novig']
+
+🏀 DD picks: 2026-11-13 (9 games, 246 players scored)
+
+🟢 **Onyeka Okongwu** (ATL at CHI) Yes **+200** FD
+   model **0.35** · fair 0.29 / 0.26 · edge **+0.062** / +0.093 · FD edge +0.020 · spread ATL -6.5
+🟢 **Bam Adebayo** (MIA vs CLE) Yes **+124** FD
+   model **0.47** · fair 0.41 / 0.40 · edge **+0.057** / +0.069 · FD edge +0.023 · spread MIA -2.5
+
+_Bar: edge above 0.037 under both de-vig methods (0.067 in a team's first 5 games, doubled for near-locks in 10-point spreads); FanDuel one-sided margin tonight 0.037 on players with fair at least 0.20, floor 0.03; p at least 0.35; price edge at least 0.02 at the book._
+_Passed on the favorites: Karl-Anthony Towns p 0.78, FD -490, fair 0.74; Giannis Antetokounmpo p 0.69, FD -440, fair 0.74; Victor Wembanyama p 0.64, FD -320, fair 0.70; Domantas Sabonis p 0.56, FD -174, fair 0.59._
+_Credits used 9, remaining 395. Paper stakes only, 1 unit per pick. Model trained 2026-11-07 15:09 through 2026-11-06._
+
+[  15.9s] wrote picks_2026-11-13.csv (2 picks), board_2026-11-13.csv (246 rows), discord_2026-11-13.md
