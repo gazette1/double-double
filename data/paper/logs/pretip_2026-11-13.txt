@@ -1,0 +1,12 @@
+----- pretip 2026-11-13, started 2026-11-13 19:22 ET -----
+2 NBA games on 2026-11-13 (ET) in this snapshot (pretip)
+160 price rows logged; credits used this run 2; credits remaining 393
+[   0.8s] closing quotes matched for 2 of 2 picks (FanDuel), 2 with two-way quotes
+
+🏀 DD pre-tip check: 2026-11-13
+
+🟢 **Onyeka Okongwu** (ATL vs CHI) stands · close FD +200 (open +200), fair close 0.30 / 0.26, game pre
+🟢 **Bam Adebayo** (MIA vs CLE) stands · close FD +126 (open +124), fair close 0.42 / 0.41, game pre
+
+_Credits used 2, remaining 393._
+
