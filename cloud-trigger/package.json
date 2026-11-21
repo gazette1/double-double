@@ -1,0 +1,15 @@
+{
+  "name": "dd-bot-trigger",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Cloudflare Worker whose cron triggers dispatch the Double Double Bot GitHub Action on time.",
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "tail": "wrangler tail",
+    "test": "node test-worker.mjs"
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  }
+}
