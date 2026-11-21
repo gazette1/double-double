@@ -1,0 +1,16 @@
+----- grade 2026-11-20, started 2026-11-21 15:08 ET -----
+[   0.5s] hoopR player_box_2027: 0.1 MB
+[   1.0s] hoopR team_box_2027: 0.0 MB
+[   1.5s] hoopR schedule_2027: 0.2 MB
+[   4.1s] top five 2026-11-20: 3-2 against 2.50 expected hits, 0 pending, -0.25 units at FanDuel prices; ledger_top.csv now 110 rows
+[   4.1s] five-name record to date: 58-49, expected 54.6 hits, z +0.72 (luck against model bias; a z beyond 2 for a run of 100 legs means the model, not the dice)
+
+🏀 DD results: 2026-11-20
+
+**0-1** (0%) · -1.00u at the open price
+❌ **Walker Kessler** (LAL vs SAC) Yes -112 · model 0.56 · 15 pts 7 reb 2 ast
+
+📈 **Season:** 1-6 (14%) · -4.76u at the open price on 7 priced picks · fair CLV mean -0.036 / -0.055 on 3 picks with a two-way close
+_Gate: 97 more picks with a two-way close needed before the CLV test reads. Backfill picks without prices, not counted: 3-0._
+
+[   4.1s] ledger ledger.csv now 11 rows; wrote discord_grade_2026-11-20.md
