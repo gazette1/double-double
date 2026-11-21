@@ -1,0 +1,11 @@
+----- pretip 2026-11-21, started 2026-11-21 18:36 ET -----
+1 NBA games on 2026-11-21 (ET) in this snapshot (pretip)
+83 price rows logged; credits used this run 1; credits remaining 336
+[   1.1s] closing quotes matched for 1 of 1 picks (FanDuel), 1 with two-way quotes
+
+🏀 DD pre-tip check: 2026-11-21
+
+🟢 **Victor Wembanyama** (SA vs NO) stands · close FD -245 (open -280), fair close 0.66 / 0.67, game pre
+
+_Credits used 1, remaining 336._
+
