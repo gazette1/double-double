@@ -12009,3 +12009,512 @@ snapshot_et,snapshot_kind,game_date,event_id,away,home,commence_time,book,market
 2026-11-21 18:36,pretip,2026-11-21,1139ffb82856378723c5465df4e13d96,New Orleans Pelicans,San Antonio Spurs,2026-11-22T01:10:00Z,hardrockbet,player_double_double,2026-11-21T23:34:10Z,Saddiq Bey,Yes,1100,0.0833
 2026-11-21 18:36,pretip,2026-11-21,1139ffb82856378723c5465df4e13d96,New Orleans Pelicans,San Antonio Spurs,2026-11-22T01:10:00Z,hardrockbet,player_double_double,2026-11-21T23:34:10Z,Herb Jones,Yes,5000,0.0196
 2026-11-21 18:36,pretip,2026-11-21,1139ffb82856378723c5465df4e13d96,New Orleans Pelicans,San Antonio Spurs,2026-11-22T01:10:00Z,hardrockbet,player_double_double,2026-11-21T23:34:10Z,Derik Queen,Yes,650,0.1333
+2026-11-22 15:08,open,2026-11-22,222a2887819bb18d9b9572aef63d9b9e,Detroit Pistons,Atlanta Hawks,2026-11-22T20:40:00Z,fanduel,player_double_double,2026-11-22T20:08:22Z,Jalen Johnson,Yes,-128,0.5614
+2026-11-22 15:08,open,2026-11-22,222a2887819bb18d9b9572aef63d9b9e,Detroit Pistons,Atlanta Hawks,2026-11-22T20:40:00Z,fanduel,player_double_double,2026-11-22T20:08:22Z,Cade Cunningham,Yes,118,0.4587
+2026-11-22 15:08,open,2026-11-22,222a2887819bb18d9b9572aef63d9b9e,Detroit Pistons,Atlanta Hawks,2026-11-22T20:40:00Z,fanduel,player_double_double,2026-11-22T20:08:22Z,Onyeka Okongwu,Yes,225,0.3077
+2026-11-22 15:08,open,2026-11-22,222a2887819bb18d9b9572aef63d9b9e,Detroit Pistons,Atlanta Hawks,2026-11-22T20:40:00Z,fanduel,player_double_double,2026-11-22T20:08:22Z,Ausar Thompson,Yes,320,0.2381
+2026-11-22 15:08,open,2026-11-22,222a2887819bb18d9b9572aef63d9b9e,Detroit Pistons,Atlanta Hawks,2026-11-22T20:40:00Z,fanduel,player_double_double,2026-11-22T20:08:22Z,Paul Reed Jr,Yes,350,0.2222
+2026-11-22 15:08,open,2026-11-22,222a2887819bb18d9b9572aef63d9b9e,Detroit Pistons,Atlanta Hawks,2026-11-22T20:40:00Z,fanduel,player_double_double,2026-11-22T20:08:22Z,Dyson Daniels,Yes,360,0.2174
+2026-11-22 15:08,open,2026-11-22,222a2887819bb18d9b9572aef63d9b9e,Detroit Pistons,Atlanta Hawks,2026-11-22T20:40:00Z,fanduel,player_double_double,2026-11-22T20:08:22Z,John Collins,Yes,850,0.1053
+2026-11-22 15:08,open,2026-11-22,222a2887819bb18d9b9572aef63d9b9e,Detroit Pistons,Atlanta Hawks,2026-11-22T20:40:00Z,fanduel,player_double_double,2026-11-22T20:08:22Z,Daniss Jenkins,Yes,920,0.098
+2026-11-22 15:08,open,2026-11-22,222a2887819bb18d9b9572aef63d9b9e,Detroit Pistons,Atlanta Hawks,2026-11-22T20:40:00Z,fanduel,player_double_double,2026-11-22T20:08:22Z,Kevin Huerter,Yes,2800,0.0345
+2026-11-22 15:08,open,2026-11-22,222a2887819bb18d9b9572aef63d9b9e,Detroit Pistons,Atlanta Hawks,2026-11-22T20:40:00Z,novig,player_double_double,2026-11-22T20:07:58Z,Aaron Wiggins,Yes,4067,0.024
+2026-11-22 15:08,open,2026-11-22,222a2887819bb18d9b9572aef63d9b9e,Detroit Pistons,Atlanta Hawks,2026-11-22T20:40:00Z,novig,player_double_double,2026-11-22T20:07:58Z,Paul Reed Jr,Yes,413,0.1949
+2026-11-22 15:08,open,2026-11-22,222a2887819bb18d9b9572aef63d9b9e,Detroit Pistons,Atlanta Hawks,2026-11-22T20:40:00Z,novig,player_double_double,2026-11-22T20:07:58Z,Paul Reed Jr,No,-852,0.895
+2026-11-22 15:08,open,2026-11-22,222a2887819bb18d9b9572aef63d9b9e,Detroit Pistons,Atlanta Hawks,2026-11-22T20:40:00Z,novig,player_double_double,2026-11-22T20:07:58Z,Kevin Huerter,Yes,3126,0.031
+2026-11-22 15:08,open,2026-11-22,222a2887819bb18d9b9572aef63d9b9e,Detroit Pistons,Atlanta Hawks,2026-11-22T20:40:00Z,novig,player_double_double,2026-11-22T20:07:58Z,Daniss Jenkins,Yes,1329,0.07
+2026-11-22 15:08,open,2026-11-22,222a2887819bb18d9b9572aef63d9b9e,Detroit Pistons,Atlanta Hawks,2026-11-22T20:40:00Z,novig,player_double_double,2026-11-22T20:07:58Z,Ausar Thompson,Yes,441,0.1848
+2026-11-22 15:08,open,2026-11-22,222a2887819bb18d9b9572aef63d9b9e,Detroit Pistons,Atlanta Hawks,2026-11-22T20:40:00Z,novig,player_double_double,2026-11-22T20:07:58Z,Ausar Thompson,No,-525,0.84
+2026-11-22 15:08,open,2026-11-22,222a2887819bb18d9b9572aef63d9b9e,Detroit Pistons,Atlanta Hawks,2026-11-22T20:40:00Z,novig,player_double_double,2026-11-22T20:07:58Z,John Collins,Yes,1011,0.09
+2026-11-22 15:08,open,2026-11-22,222a2887819bb18d9b9572aef63d9b9e,Detroit Pistons,Atlanta Hawks,2026-11-22T20:40:00Z,novig,player_double_double,2026-11-22T20:07:58Z,Jalen Johnson,Yes,106,0.4854
+2026-11-22 15:08,open,2026-11-22,222a2887819bb18d9b9572aef63d9b9e,Detroit Pistons,Atlanta Hawks,2026-11-22T20:40:00Z,novig,player_double_double,2026-11-22T20:07:58Z,Jalen Johnson,No,-130,0.5652
+2026-11-22 15:08,open,2026-11-22,222a2887819bb18d9b9572aef63d9b9e,Detroit Pistons,Atlanta Hawks,2026-11-22T20:40:00Z,novig,player_double_double,2026-11-22T20:07:58Z,Cade Cunningham,Yes,153,0.3953
+2026-11-22 15:08,open,2026-11-22,222a2887819bb18d9b9572aef63d9b9e,Detroit Pistons,Atlanta Hawks,2026-11-22T20:40:00Z,novig,player_double_double,2026-11-22T20:07:58Z,Cade Cunningham,No,-199,0.6656
+2026-11-22 15:08,open,2026-11-22,222a2887819bb18d9b9572aef63d9b9e,Detroit Pistons,Atlanta Hawks,2026-11-22T20:40:00Z,novig,player_double_double,2026-11-22T20:07:58Z,Dyson Daniels,Yes,441,0.1848
+2026-11-22 15:08,open,2026-11-22,222a2887819bb18d9b9572aef63d9b9e,Detroit Pistons,Atlanta Hawks,2026-11-22T20:40:00Z,novig,player_double_double,2026-11-22T20:07:58Z,Dyson Daniels,No,-2841,0.966
+2026-11-22 15:08,open,2026-11-22,222a2887819bb18d9b9572aef63d9b9e,Detroit Pistons,Atlanta Hawks,2026-11-22T20:40:00Z,novig,player_double_double,2026-11-22T20:07:58Z,Nickeil Alexander-Walker,Yes,3746,0.026
+2026-11-22 15:08,open,2026-11-22,222a2887819bb18d9b9572aef63d9b9e,Detroit Pistons,Atlanta Hawks,2026-11-22T20:40:00Z,novig,player_double_double,2026-11-22T20:07:58Z,Onyeka Okongwu,Yes,257,0.2801
+2026-11-22 15:08,open,2026-11-22,222a2887819bb18d9b9572aef63d9b9e,Detroit Pistons,Atlanta Hawks,2026-11-22T20:40:00Z,novig,player_double_double,2026-11-22T20:07:58Z,Onyeka Okongwu,No,-344,0.7748
+2026-11-22 15:08,open,2026-11-22,222a2887819bb18d9b9572aef63d9b9e,Detroit Pistons,Atlanta Hawks,2026-11-22T20:40:00Z,novig,player_double_double,2026-11-22T20:07:58Z,Kingston Flemings,Yes,4248,0.023
+2026-11-22 15:08,open,2026-11-22,222a2887819bb18d9b9572aef63d9b9e,Detroit Pistons,Atlanta Hawks,2026-11-22T20:40:00Z,draftkings,player_double_double,2026-11-22T20:08:26Z,Jalen Johnson,Yes,-112,0.5283
+2026-11-22 15:08,open,2026-11-22,222a2887819bb18d9b9572aef63d9b9e,Detroit Pistons,Atlanta Hawks,2026-11-22T20:40:00Z,draftkings,player_double_double,2026-11-22T20:08:26Z,Cade Cunningham,Yes,139,0.4184
+2026-11-22 15:08,open,2026-11-22,222a2887819bb18d9b9572aef63d9b9e,Detroit Pistons,Atlanta Hawks,2026-11-22T20:40:00Z,draftkings,player_double_double,2026-11-22T20:08:26Z,Onyeka Okongwu,Yes,238,0.2959
+2026-11-22 15:08,open,2026-11-22,222a2887819bb18d9b9572aef63d9b9e,Detroit Pistons,Atlanta Hawks,2026-11-22T20:40:00Z,draftkings,player_double_double,2026-11-22T20:08:26Z,Ausar Thompson,Yes,331,0.232
+2026-11-22 15:08,open,2026-11-22,222a2887819bb18d9b9572aef63d9b9e,Detroit Pistons,Atlanta Hawks,2026-11-22T20:40:00Z,draftkings,player_double_double,2026-11-22T20:08:26Z,Paul Reed Jr,Yes,363,0.216
+2026-11-22 15:08,open,2026-11-22,222a2887819bb18d9b9572aef63d9b9e,Detroit Pistons,Atlanta Hawks,2026-11-22T20:40:00Z,draftkings,player_double_double,2026-11-22T20:08:26Z,Dyson Daniels,Yes,393,0.2028
+2026-11-22 15:08,open,2026-11-22,222a2887819bb18d9b9572aef63d9b9e,Detroit Pistons,Atlanta Hawks,2026-11-22T20:40:00Z,draftkings,player_double_double,2026-11-22T20:08:26Z,John Collins,Yes,990,0.0917
+2026-11-22 15:08,open,2026-11-22,222a2887819bb18d9b9572aef63d9b9e,Detroit Pistons,Atlanta Hawks,2026-11-22T20:40:00Z,draftkings,player_double_double,2026-11-22T20:08:26Z,Daniss Jenkins,Yes,1540,0.061
+2026-11-22 15:08,open,2026-11-22,222a2887819bb18d9b9572aef63d9b9e,Detroit Pistons,Atlanta Hawks,2026-11-22T20:40:00Z,draftkings,player_double_double,2026-11-22T20:08:26Z,Kevin Huerter,Yes,3800,0.0256
+2026-11-22 15:08,open,2026-11-22,222a2887819bb18d9b9572aef63d9b9e,Detroit Pistons,Atlanta Hawks,2026-11-22T20:40:00Z,draftkings,player_double_double,2026-11-22T20:08:26Z,Aaron Wiggins,Yes,4800,0.0204
+2026-11-22 15:08,open,2026-11-22,222a2887819bb18d9b9572aef63d9b9e,Detroit Pistons,Atlanta Hawks,2026-11-22T20:40:00Z,draftkings,player_double_double,2026-11-22T20:08:26Z,Nickeil Alexander-Walker,Yes,4900,0.02
+2026-11-22 15:08,open,2026-11-22,222a2887819bb18d9b9572aef63d9b9e,Detroit Pistons,Atlanta Hawks,2026-11-22T20:40:00Z,draftkings,player_double_double,2026-11-22T20:08:26Z,Kingston Flemings,Yes,5200,0.0189
+2026-11-22 15:08,open,2026-11-22,222a2887819bb18d9b9572aef63d9b9e,Detroit Pistons,Atlanta Hawks,2026-11-22T20:40:00Z,betmgm,player_double_double,2026-11-22T20:07:41Z,Dyson Daniels,Yes,325,0.2353
+2026-11-22 15:08,open,2026-11-22,222a2887819bb18d9b9572aef63d9b9e,Detroit Pistons,Atlanta Hawks,2026-11-22T20:40:00Z,betmgm,player_double_double,2026-11-22T20:07:41Z,Jalen Johnson,Yes,-120,0.5455
+2026-11-22 15:08,open,2026-11-22,222a2887819bb18d9b9572aef63d9b9e,Detroit Pistons,Atlanta Hawks,2026-11-22T20:40:00Z,betmgm,player_double_double,2026-11-22T20:07:41Z,Nickeil Alexander-Walker,Yes,1650,0.0571
+2026-11-22 15:08,open,2026-11-22,222a2887819bb18d9b9572aef63d9b9e,Detroit Pistons,Atlanta Hawks,2026-11-22T20:40:00Z,betmgm,player_double_double,2026-11-22T20:07:41Z,Onyeka Okongwu,Yes,230,0.303
+2026-11-22 15:08,open,2026-11-22,222a2887819bb18d9b9572aef63d9b9e,Detroit Pistons,Atlanta Hawks,2026-11-22T20:40:00Z,betmgm,player_double_double,2026-11-22T20:07:41Z,Kevin Huerter,Yes,1600,0.0588
+2026-11-22 15:08,open,2026-11-22,222a2887819bb18d9b9572aef63d9b9e,Detroit Pistons,Atlanta Hawks,2026-11-22T20:40:00Z,betmgm,player_double_double,2026-11-22T20:07:41Z,Cade Cunningham,Yes,135,0.4255
+2026-11-22 15:08,open,2026-11-22,222a2887819bb18d9b9572aef63d9b9e,Detroit Pistons,Atlanta Hawks,2026-11-22T20:40:00Z,betmgm,player_double_double,2026-11-22T20:07:41Z,Daniss Jenkins,Yes,1050,0.087
+2026-11-22 15:08,open,2026-11-22,222a2887819bb18d9b9572aef63d9b9e,Detroit Pistons,Atlanta Hawks,2026-11-22T20:40:00Z,betmgm,player_double_double,2026-11-22T20:07:41Z,Kingston Flemings,Yes,1800,0.0526
+2026-11-22 15:08,open,2026-11-22,222a2887819bb18d9b9572aef63d9b9e,Detroit Pistons,Atlanta Hawks,2026-11-22T20:40:00Z,betmgm,player_double_double,2026-11-22T20:07:41Z,Paul Reed Jr,Yes,390,0.2041
+2026-11-22 15:08,open,2026-11-22,222a2887819bb18d9b9572aef63d9b9e,Detroit Pistons,Atlanta Hawks,2026-11-22T20:40:00Z,ballybet,player_double_double,2026-11-22T20:08:04Z,Onyeka Okongwu,Yes,230,0.303
+2026-11-22 15:08,open,2026-11-22,222a2887819bb18d9b9572aef63d9b9e,Detroit Pistons,Atlanta Hawks,2026-11-22T20:40:00Z,ballybet,player_double_double,2026-11-22T20:08:04Z,John Collins,Yes,650,0.1333
+2026-11-22 15:08,open,2026-11-22,222a2887819bb18d9b9572aef63d9b9e,Detroit Pistons,Atlanta Hawks,2026-11-22T20:40:00Z,ballybet,player_double_double,2026-11-22T20:08:04Z,Cade Cunningham,Yes,150,0.4
+2026-11-22 15:08,open,2026-11-22,222a2887819bb18d9b9572aef63d9b9e,Detroit Pistons,Atlanta Hawks,2026-11-22T20:40:00Z,ballybet,player_double_double,2026-11-22T20:08:04Z,Daniss Jenkins,Yes,950,0.0952
+2026-11-22 15:08,open,2026-11-22,222a2887819bb18d9b9572aef63d9b9e,Detroit Pistons,Atlanta Hawks,2026-11-22T20:40:00Z,ballybet,player_double_double,2026-11-22T20:08:04Z,Ausar Thompson,Yes,265,0.274
+2026-11-22 15:08,open,2026-11-22,222a2887819bb18d9b9572aef63d9b9e,Detroit Pistons,Atlanta Hawks,2026-11-22T20:40:00Z,ballybet,player_double_double,2026-11-22T20:08:04Z,Paul Reed Jr,Yes,310,0.2439
+2026-11-22 15:08,open,2026-11-22,222a2887819bb18d9b9572aef63d9b9e,Detroit Pistons,Atlanta Hawks,2026-11-22T20:40:00Z,ballybet,player_double_double,2026-11-22T20:08:04Z,Dyson Daniels,Yes,310,0.2439
+2026-11-22 15:08,open,2026-11-22,222a2887819bb18d9b9572aef63d9b9e,Detroit Pistons,Atlanta Hawks,2026-11-22T20:40:00Z,ballybet,player_double_double,2026-11-22T20:08:04Z,Jalen Johnson,Yes,-121,0.5475
+2026-11-22 15:08,open,2026-11-22,222a2887819bb18d9b9572aef63d9b9e,Detroit Pistons,Atlanta Hawks,2026-11-22T20:40:00Z,espnbet,player_double_double,2026-11-22T20:07:51Z,Ausar Thompson,Yes,300,0.25
+2026-11-22 15:08,open,2026-11-22,222a2887819bb18d9b9572aef63d9b9e,Detroit Pistons,Atlanta Hawks,2026-11-22T20:40:00Z,espnbet,player_double_double,2026-11-22T20:07:51Z,Ausar Thompson,No,-500,0.8333
+2026-11-22 15:08,open,2026-11-22,222a2887819bb18d9b9572aef63d9b9e,Detroit Pistons,Atlanta Hawks,2026-11-22T20:40:00Z,espnbet,player_double_double,2026-11-22T20:07:51Z,Cade Cunningham,Yes,135,0.4255
+2026-11-22 15:08,open,2026-11-22,222a2887819bb18d9b9572aef63d9b9e,Detroit Pistons,Atlanta Hawks,2026-11-22T20:40:00Z,espnbet,player_double_double,2026-11-22T20:07:51Z,Cade Cunningham,No,-180,0.6429
+2026-11-22 15:08,open,2026-11-22,222a2887819bb18d9b9572aef63d9b9e,Detroit Pistons,Atlanta Hawks,2026-11-22T20:40:00Z,espnbet,player_double_double,2026-11-22T20:07:51Z,Daniss Jenkins,Yes,700,0.125
+2026-11-22 15:08,open,2026-11-22,222a2887819bb18d9b9572aef63d9b9e,Detroit Pistons,Atlanta Hawks,2026-11-22T20:40:00Z,espnbet,player_double_double,2026-11-22T20:07:51Z,Daniss Jenkins,No,-2500,0.9615
+2026-11-22 15:08,open,2026-11-22,222a2887819bb18d9b9572aef63d9b9e,Detroit Pistons,Atlanta Hawks,2026-11-22T20:40:00Z,espnbet,player_double_double,2026-11-22T20:07:51Z,Dyson Daniels,Yes,320,0.2381
+2026-11-22 15:08,open,2026-11-22,222a2887819bb18d9b9572aef63d9b9e,Detroit Pistons,Atlanta Hawks,2026-11-22T20:40:00Z,espnbet,player_double_double,2026-11-22T20:07:51Z,Dyson Daniels,No,-600,0.8571
+2026-11-22 15:08,open,2026-11-22,222a2887819bb18d9b9572aef63d9b9e,Detroit Pistons,Atlanta Hawks,2026-11-22T20:40:00Z,espnbet,player_double_double,2026-11-22T20:07:51Z,Jalen Johnson,Yes,-125,0.5556
+2026-11-22 15:08,open,2026-11-22,222a2887819bb18d9b9572aef63d9b9e,Detroit Pistons,Atlanta Hawks,2026-11-22T20:40:00Z,espnbet,player_double_double,2026-11-22T20:07:51Z,Jalen Johnson,No,-105,0.5122
+2026-11-22 15:08,open,2026-11-22,222a2887819bb18d9b9572aef63d9b9e,Detroit Pistons,Atlanta Hawks,2026-11-22T20:40:00Z,espnbet,player_double_double,2026-11-22T20:07:51Z,John Collins,Yes,650,0.1333
+2026-11-22 15:08,open,2026-11-22,222a2887819bb18d9b9572aef63d9b9e,Detroit Pistons,Atlanta Hawks,2026-11-22T20:40:00Z,espnbet,player_double_double,2026-11-22T20:07:51Z,John Collins,No,-2000,0.9524
+2026-11-22 15:08,open,2026-11-22,222a2887819bb18d9b9572aef63d9b9e,Detroit Pistons,Atlanta Hawks,2026-11-22T20:40:00Z,espnbet,player_double_double,2026-11-22T20:07:51Z,Onyeka Okongwu,Yes,220,0.3125
+2026-11-22 15:08,open,2026-11-22,222a2887819bb18d9b9572aef63d9b9e,Detroit Pistons,Atlanta Hawks,2026-11-22T20:40:00Z,espnbet,player_double_double,2026-11-22T20:07:51Z,Onyeka Okongwu,No,-330,0.7674
+2026-11-22 15:08,open,2026-11-22,222a2887819bb18d9b9572aef63d9b9e,Detroit Pistons,Atlanta Hawks,2026-11-22T20:40:00Z,espnbet,player_double_double,2026-11-22T20:07:51Z,Paul Reed Jr,Yes,320,0.2381
+2026-11-22 15:08,open,2026-11-22,222a2887819bb18d9b9572aef63d9b9e,Detroit Pistons,Atlanta Hawks,2026-11-22T20:40:00Z,espnbet,player_double_double,2026-11-22T20:07:51Z,Paul Reed Jr,No,-600,0.8571
+2026-11-22 15:08,open,2026-11-22,222a2887819bb18d9b9572aef63d9b9e,Detroit Pistons,Atlanta Hawks,2026-11-22T20:40:00Z,hardrockbet,player_double_double,2026-11-22T20:08:15Z,Ausar Thompson,Yes,300,0.25
+2026-11-22 15:08,open,2026-11-22,222a2887819bb18d9b9572aef63d9b9e,Detroit Pistons,Atlanta Hawks,2026-11-22T20:40:00Z,hardrockbet,player_double_double,2026-11-22T20:08:15Z,Cade Cunningham,Yes,135,0.4255
+2026-11-22 15:08,open,2026-11-22,222a2887819bb18d9b9572aef63d9b9e,Detroit Pistons,Atlanta Hawks,2026-11-22T20:40:00Z,hardrockbet,player_double_double,2026-11-22T20:08:15Z,Daniss Jenkins,Yes,1000,0.0909
+2026-11-22 15:08,open,2026-11-22,222a2887819bb18d9b9572aef63d9b9e,Detroit Pistons,Atlanta Hawks,2026-11-22T20:40:00Z,hardrockbet,player_double_double,2026-11-22T20:08:15Z,Paul Reed Jr,Yes,375,0.2105
+2026-11-22 15:08,open,2026-11-22,222a2887819bb18d9b9572aef63d9b9e,Detroit Pistons,Atlanta Hawks,2026-11-22T20:40:00Z,hardrockbet,player_double_double,2026-11-22T20:08:15Z,Kevin Huerter,Yes,2500,0.0385
+2026-11-22 15:08,open,2026-11-22,222a2887819bb18d9b9572aef63d9b9e,Detroit Pistons,Atlanta Hawks,2026-11-22T20:40:00Z,hardrockbet,player_double_double,2026-11-22T20:08:15Z,Onyeka Okongwu,Yes,225,0.3077
+2026-11-22 15:08,open,2026-11-22,222a2887819bb18d9b9572aef63d9b9e,Detroit Pistons,Atlanta Hawks,2026-11-22T20:40:00Z,hardrockbet,player_double_double,2026-11-22T20:08:15Z,Nickeil Alexander-Walker,Yes,3000,0.0323
+2026-11-22 15:08,open,2026-11-22,222a2887819bb18d9b9572aef63d9b9e,Detroit Pistons,Atlanta Hawks,2026-11-22T20:40:00Z,hardrockbet,player_double_double,2026-11-22T20:08:15Z,Jalen Johnson,Yes,-125,0.5556
+2026-11-22 15:08,open,2026-11-22,222a2887819bb18d9b9572aef63d9b9e,Detroit Pistons,Atlanta Hawks,2026-11-22T20:40:00Z,hardrockbet,player_double_double,2026-11-22T20:08:15Z,Dyson Daniels,Yes,350,0.2222
+2026-11-22 15:08,open,2026-11-22,222a2887819bb18d9b9572aef63d9b9e,Detroit Pistons,Atlanta Hawks,2026-11-22T20:40:00Z,hardrockbet,player_double_double,2026-11-22T20:08:15Z,Kingston Flemings,Yes,4000,0.0244
+2026-11-22 15:08,open,2026-11-22,222a2887819bb18d9b9572aef63d9b9e,Detroit Pistons,Atlanta Hawks,2026-11-22T20:40:00Z,hardrockbet,player_double_double,2026-11-22T20:08:15Z,Aaron Wiggins,Yes,4000,0.0244
+2026-11-22 15:08,open,2026-11-22,90da1cde4144fac00d41f2c0db2cc921,Oklahoma City Thunder,Miami Heat,2026-11-22T23:10:00Z,fanduel,player_double_double,2026-11-22T20:07:41Z,Giannis Antetokounmpo,Yes,-470,0.8246
+2026-11-22 15:08,open,2026-11-22,90da1cde4144fac00d41f2c0db2cc921,Oklahoma City Thunder,Miami Heat,2026-11-22T23:10:00Z,fanduel,player_double_double,2026-11-22T20:07:41Z,Bam Adebayo,Yes,124,0.4464
+2026-11-22 15:08,open,2026-11-22,90da1cde4144fac00d41f2c0db2cc921,Oklahoma City Thunder,Miami Heat,2026-11-22T23:10:00Z,fanduel,player_double_double,2026-11-22T20:07:41Z,Isaiah Hartenstein,Yes,168,0.3731
+2026-11-22 15:08,open,2026-11-22,90da1cde4144fac00d41f2c0db2cc921,Oklahoma City Thunder,Miami Heat,2026-11-22T23:10:00Z,fanduel,player_double_double,2026-11-22T20:07:41Z,Aday Mara,Yes,205,0.3279
+2026-11-22 15:08,open,2026-11-22,90da1cde4144fac00d41f2c0db2cc921,Oklahoma City Thunder,Miami Heat,2026-11-22T23:10:00Z,fanduel,player_double_double,2026-11-22T20:07:41Z,Davion Mitchell,Yes,225,0.3077
+2026-11-22 15:08,open,2026-11-22,90da1cde4144fac00d41f2c0db2cc921,Oklahoma City Thunder,Miami Heat,2026-11-22T23:10:00Z,fanduel,player_double_double,2026-11-22T20:07:41Z,Shai Gilgeous-Alexander,Yes,640,0.1351
+2026-11-22 15:08,open,2026-11-22,90da1cde4144fac00d41f2c0db2cc921,Oklahoma City Thunder,Miami Heat,2026-11-22T23:10:00Z,fanduel,player_double_double,2026-11-22T20:07:41Z,Ajay Mitchell,Yes,1100,0.0833
+2026-11-22 15:08,open,2026-11-22,90da1cde4144fac00d41f2c0db2cc921,Oklahoma City Thunder,Miami Heat,2026-11-22T23:10:00Z,fanduel,player_double_double,2026-11-22T20:07:41Z,Bobby Portis,Yes,1100,0.0833
+2026-11-22 15:08,open,2026-11-22,90da1cde4144fac00d41f2c0db2cc921,Oklahoma City Thunder,Miami Heat,2026-11-22T23:10:00Z,fanduel,player_double_double,2026-11-22T20:07:41Z,Jared McCain,Yes,2800,0.0345
+2026-11-22 15:08,open,2026-11-22,90da1cde4144fac00d41f2c0db2cc921,Oklahoma City Thunder,Miami Heat,2026-11-22T23:10:00Z,fanduel,player_double_double,2026-11-22T20:07:41Z,Pelle Larsson,Yes,3000,0.0323
+2026-11-22 15:08,open,2026-11-22,90da1cde4144fac00d41f2c0db2cc921,Oklahoma City Thunder,Miami Heat,2026-11-22T23:10:00Z,novig,player_double_double,2026-11-22T20:08:13Z,Shai Gilgeous-Alexander,Yes,700,0.125
+2026-11-22 15:08,open,2026-11-22,90da1cde4144fac00d41f2c0db2cc921,Oklahoma City Thunder,Miami Heat,2026-11-22T23:10:00Z,novig,player_double_double,2026-11-22T20:08:13Z,Bam Adebayo,Yes,147,0.4049
+2026-11-22 15:08,open,2026-11-22,90da1cde4144fac00d41f2c0db2cc921,Oklahoma City Thunder,Miami Heat,2026-11-22T23:10:00Z,novig,player_double_double,2026-11-22T20:08:13Z,Bam Adebayo,No,-182,0.6454
+2026-11-22 15:08,open,2026-11-22,90da1cde4144fac00d41f2c0db2cc921,Oklahoma City Thunder,Miami Heat,2026-11-22T23:10:00Z,novig,player_double_double,2026-11-22T20:08:13Z,Aday Mara,Yes,217,0.3155
+2026-11-22 15:08,open,2026-11-22,90da1cde4144fac00d41f2c0db2cc921,Oklahoma City Thunder,Miami Heat,2026-11-22T23:10:00Z,novig,player_double_double,2026-11-22T20:08:13Z,Aday Mara,No,-308,0.7549
+2026-11-22 15:08,open,2026-11-22,90da1cde4144fac00d41f2c0db2cc921,Oklahoma City Thunder,Miami Heat,2026-11-22T23:10:00Z,novig,player_double_double,2026-11-22T20:08:13Z,Davion Mitchell,Yes,228,0.3049
+2026-11-22 15:08,open,2026-11-22,90da1cde4144fac00d41f2c0db2cc921,Oklahoma City Thunder,Miami Heat,2026-11-22T23:10:00Z,novig,player_double_double,2026-11-22T20:08:13Z,Davion Mitchell,No,-300,0.75
+2026-11-22 15:08,open,2026-11-22,90da1cde4144fac00d41f2c0db2cc921,Oklahoma City Thunder,Miami Heat,2026-11-22T23:10:00Z,novig,player_double_double,2026-11-22T20:08:13Z,Giannis Antetokounmpo,Yes,-426,0.8099
+2026-11-22 15:08,open,2026-11-22,90da1cde4144fac00d41f2c0db2cc921,Oklahoma City Thunder,Miami Heat,2026-11-22T23:10:00Z,novig,player_double_double,2026-11-22T20:08:13Z,Giannis Antetokounmpo,No,277,0.2653
+2026-11-22 15:08,open,2026-11-22,90da1cde4144fac00d41f2c0db2cc921,Oklahoma City Thunder,Miami Heat,2026-11-22T23:10:00Z,novig,player_double_double,2026-11-22T20:08:13Z,Isaiah Hartenstein,Yes,170,0.3704
+2026-11-22 15:08,open,2026-11-22,90da1cde4144fac00d41f2c0db2cc921,Oklahoma City Thunder,Miami Heat,2026-11-22T23:10:00Z,novig,player_double_double,2026-11-22T20:08:13Z,Isaiah Hartenstein,No,-264,0.7253
+2026-11-22 15:08,open,2026-11-22,90da1cde4144fac00d41f2c0db2cc921,Oklahoma City Thunder,Miami Heat,2026-11-22T23:10:00Z,novig,player_double_double,2026-11-22T20:08:13Z,Jared McCain,Yes,3348,0.029
+2026-11-22 15:08,open,2026-11-22,90da1cde4144fac00d41f2c0db2cc921,Oklahoma City Thunder,Miami Heat,2026-11-22T23:10:00Z,novig,player_double_double,2026-11-22T20:08:13Z,Pelle Larsson,Yes,2464,0.039
+2026-11-22 15:08,open,2026-11-22,90da1cde4144fac00d41f2c0db2cc921,Oklahoma City Thunder,Miami Heat,2026-11-22T23:10:00Z,novig,player_double_double,2026-11-22T20:08:13Z,Ajay Mitchell,Yes,1329,0.07
+2026-11-22 15:08,open,2026-11-22,90da1cde4144fac00d41f2c0db2cc921,Oklahoma City Thunder,Miami Heat,2026-11-22T23:10:00Z,novig,player_double_double,2026-11-22T20:08:13Z,Bobby Portis,Yes,1150,0.08
+2026-11-22 15:08,open,2026-11-22,90da1cde4144fac00d41f2c0db2cc921,Oklahoma City Thunder,Miami Heat,2026-11-22T23:10:00Z,ballybet,player_double_double,2026-11-22T20:07:45Z,Shai Gilgeous-Alexander,Yes,800,0.1111
+2026-11-22 15:08,open,2026-11-22,90da1cde4144fac00d41f2c0db2cc921,Oklahoma City Thunder,Miami Heat,2026-11-22T23:10:00Z,ballybet,player_double_double,2026-11-22T20:07:45Z,Giannis Antetokounmpo,Yes,-360,0.7826
+2026-11-22 15:08,open,2026-11-22,90da1cde4144fac00d41f2c0db2cc921,Oklahoma City Thunder,Miami Heat,2026-11-22T23:10:00Z,ballybet,player_double_double,2026-11-22T20:07:45Z,Ajay Mitchell,Yes,1200,0.0769
+2026-11-22 15:08,open,2026-11-22,90da1cde4144fac00d41f2c0db2cc921,Oklahoma City Thunder,Miami Heat,2026-11-22T23:10:00Z,ballybet,player_double_double,2026-11-22T20:07:45Z,Davion Mitchell,Yes,200,0.3333
+2026-11-22 15:08,open,2026-11-22,90da1cde4144fac00d41f2c0db2cc921,Oklahoma City Thunder,Miami Heat,2026-11-22T23:10:00Z,ballybet,player_double_double,2026-11-22T20:07:45Z,Aday Mara,Yes,220,0.3125
+2026-11-22 15:08,open,2026-11-22,90da1cde4144fac00d41f2c0db2cc921,Oklahoma City Thunder,Miami Heat,2026-11-22T23:10:00Z,ballybet,player_double_double,2026-11-22T20:07:45Z,Isaiah Hartenstein,Yes,155,0.3922
+2026-11-22 15:08,open,2026-11-22,90da1cde4144fac00d41f2c0db2cc921,Oklahoma City Thunder,Miami Heat,2026-11-22T23:10:00Z,ballybet,player_double_double,2026-11-22T20:07:45Z,Bam Adebayo,Yes,132,0.431
+2026-11-22 15:08,open,2026-11-22,90da1cde4144fac00d41f2c0db2cc921,Oklahoma City Thunder,Miami Heat,2026-11-22T23:10:00Z,draftkings,player_double_double,2026-11-22T20:08:01Z,Giannis Antetokounmpo,Yes,-394,0.7976
+2026-11-22 15:08,open,2026-11-22,90da1cde4144fac00d41f2c0db2cc921,Oklahoma City Thunder,Miami Heat,2026-11-22T23:10:00Z,draftkings,player_double_double,2026-11-22T20:08:01Z,Bam Adebayo,Yes,119,0.4566
+2026-11-22 15:08,open,2026-11-22,90da1cde4144fac00d41f2c0db2cc921,Oklahoma City Thunder,Miami Heat,2026-11-22T23:10:00Z,draftkings,player_double_double,2026-11-22T20:08:01Z,Isaiah Hartenstein,Yes,151,0.3984
+2026-11-22 15:08,open,2026-11-22,90da1cde4144fac00d41f2c0db2cc921,Oklahoma City Thunder,Miami Heat,2026-11-22T23:10:00Z,draftkings,player_double_double,2026-11-22T20:08:01Z,Davion Mitchell,Yes,195,0.339
+2026-11-22 15:08,open,2026-11-22,90da1cde4144fac00d41f2c0db2cc921,Oklahoma City Thunder,Miami Heat,2026-11-22T23:10:00Z,draftkings,player_double_double,2026-11-22T20:08:01Z,Aday Mara,Yes,210,0.3226
+2026-11-22 15:08,open,2026-11-22,90da1cde4144fac00d41f2c0db2cc921,Oklahoma City Thunder,Miami Heat,2026-11-22T23:10:00Z,draftkings,player_double_double,2026-11-22T20:08:01Z,Shai Gilgeous-Alexander,Yes,810,0.1099
+2026-11-22 15:08,open,2026-11-22,90da1cde4144fac00d41f2c0db2cc921,Oklahoma City Thunder,Miami Heat,2026-11-22T23:10:00Z,draftkings,player_double_double,2026-11-22T20:08:01Z,Ajay Mitchell,Yes,1340,0.0694
+2026-11-22 15:08,open,2026-11-22,90da1cde4144fac00d41f2c0db2cc921,Oklahoma City Thunder,Miami Heat,2026-11-22T23:10:00Z,draftkings,player_double_double,2026-11-22T20:08:01Z,Bobby Portis,Yes,1340,0.0694
+2026-11-22 15:08,open,2026-11-22,90da1cde4144fac00d41f2c0db2cc921,Oklahoma City Thunder,Miami Heat,2026-11-22T23:10:00Z,draftkings,player_double_double,2026-11-22T20:08:01Z,Pelle Larsson,Yes,3300,0.0294
+2026-11-22 15:08,open,2026-11-22,90da1cde4144fac00d41f2c0db2cc921,Oklahoma City Thunder,Miami Heat,2026-11-22T23:10:00Z,draftkings,player_double_double,2026-11-22T20:08:01Z,Jared McCain,Yes,5600,0.0175
+2026-11-22 15:08,open,2026-11-22,90da1cde4144fac00d41f2c0db2cc921,Oklahoma City Thunder,Miami Heat,2026-11-22T23:10:00Z,betmgm,player_double_double,2026-11-22T20:07:57Z,Davion Mitchell,Yes,195,0.339
+2026-11-22 15:08,open,2026-11-22,90da1cde4144fac00d41f2c0db2cc921,Oklahoma City Thunder,Miami Heat,2026-11-22T23:10:00Z,betmgm,player_double_double,2026-11-22T20:07:57Z,Pelle Larsson,Yes,1700,0.0556
+2026-11-22 15:08,open,2026-11-22,90da1cde4144fac00d41f2c0db2cc921,Oklahoma City Thunder,Miami Heat,2026-11-22T23:10:00Z,betmgm,player_double_double,2026-11-22T20:07:57Z,Giannis Antetokounmpo,Yes,-450,0.8182
+2026-11-22 15:08,open,2026-11-22,90da1cde4144fac00d41f2c0db2cc921,Oklahoma City Thunder,Miami Heat,2026-11-22T23:10:00Z,betmgm,player_double_double,2026-11-22T20:07:57Z,Bam Adebayo,Yes,120,0.4545
+2026-11-22 15:08,open,2026-11-22,90da1cde4144fac00d41f2c0db2cc921,Oklahoma City Thunder,Miami Heat,2026-11-22T23:10:00Z,betmgm,player_double_double,2026-11-22T20:07:57Z,Shai Gilgeous-Alexander,Yes,850,0.1053
+2026-11-22 15:08,open,2026-11-22,90da1cde4144fac00d41f2c0db2cc921,Oklahoma City Thunder,Miami Heat,2026-11-22T23:10:00Z,betmgm,player_double_double,2026-11-22T20:07:57Z,Jared McCain,Yes,1750,0.0541
+2026-11-22 15:08,open,2026-11-22,90da1cde4144fac00d41f2c0db2cc921,Oklahoma City Thunder,Miami Heat,2026-11-22T23:10:00Z,betmgm,player_double_double,2026-11-22T20:07:57Z,Aday Mara,Yes,250,0.2857
+2026-11-22 15:08,open,2026-11-22,90da1cde4144fac00d41f2c0db2cc921,Oklahoma City Thunder,Miami Heat,2026-11-22T23:10:00Z,betmgm,player_double_double,2026-11-22T20:07:57Z,Ajay Mitchell,Yes,950,0.0952
+2026-11-22 15:08,open,2026-11-22,90da1cde4144fac00d41f2c0db2cc921,Oklahoma City Thunder,Miami Heat,2026-11-22T23:10:00Z,betmgm,player_double_double,2026-11-22T20:07:57Z,Isaiah Hartenstein,Yes,160,0.3846
+2026-11-22 15:08,open,2026-11-22,90da1cde4144fac00d41f2c0db2cc921,Oklahoma City Thunder,Miami Heat,2026-11-22T23:10:00Z,hardrockbet,player_double_double,2026-11-22T20:07:45Z,Giannis Antetokounmpo,Yes,-450,0.8182
+2026-11-22 15:08,open,2026-11-22,90da1cde4144fac00d41f2c0db2cc921,Oklahoma City Thunder,Miami Heat,2026-11-22T23:10:00Z,hardrockbet,player_double_double,2026-11-22T20:07:45Z,Aday Mara,Yes,210,0.3226
+2026-11-22 15:08,open,2026-11-22,90da1cde4144fac00d41f2c0db2cc921,Oklahoma City Thunder,Miami Heat,2026-11-22T23:10:00Z,hardrockbet,player_double_double,2026-11-22T20:07:45Z,Jared McCain,Yes,3000,0.0323
+2026-11-22 15:08,open,2026-11-22,90da1cde4144fac00d41f2c0db2cc921,Oklahoma City Thunder,Miami Heat,2026-11-22T23:10:00Z,hardrockbet,player_double_double,2026-11-22T20:07:45Z,Isaiah Hartenstein,Yes,165,0.3774
+2026-11-22 15:08,open,2026-11-22,90da1cde4144fac00d41f2c0db2cc921,Oklahoma City Thunder,Miami Heat,2026-11-22T23:10:00Z,hardrockbet,player_double_double,2026-11-22T20:07:45Z,Ajay Mitchell,Yes,1200,0.0769
+2026-11-22 15:08,open,2026-11-22,90da1cde4144fac00d41f2c0db2cc921,Oklahoma City Thunder,Miami Heat,2026-11-22T23:10:00Z,hardrockbet,player_double_double,2026-11-22T20:07:45Z,Davion Mitchell,Yes,210,0.3226
+2026-11-22 15:08,open,2026-11-22,90da1cde4144fac00d41f2c0db2cc921,Oklahoma City Thunder,Miami Heat,2026-11-22T23:10:00Z,hardrockbet,player_double_double,2026-11-22T20:07:45Z,Shai Gilgeous-Alexander,Yes,700,0.125
+2026-11-22 15:08,open,2026-11-22,90da1cde4144fac00d41f2c0db2cc921,Oklahoma City Thunder,Miami Heat,2026-11-22T23:10:00Z,hardrockbet,player_double_double,2026-11-22T20:07:45Z,Bam Adebayo,Yes,125,0.4444
+2026-11-22 15:08,open,2026-11-22,90da1cde4144fac00d41f2c0db2cc921,Oklahoma City Thunder,Miami Heat,2026-11-22T23:10:00Z,hardrockbet,player_double_double,2026-11-22T20:07:45Z,Pelle Larsson,Yes,2500,0.0385
+2026-11-22 15:08,open,2026-11-22,90da1cde4144fac00d41f2c0db2cc921,Oklahoma City Thunder,Miami Heat,2026-11-22T23:10:00Z,espnbet,player_double_double,2026-11-22T20:07:36Z,Aday Mara,Yes,200,0.3333
+2026-11-22 15:08,open,2026-11-22,90da1cde4144fac00d41f2c0db2cc921,Oklahoma City Thunder,Miami Heat,2026-11-22T23:10:00Z,espnbet,player_double_double,2026-11-22T20:07:36Z,Aday Mara,No,-285,0.7403
+2026-11-22 15:08,open,2026-11-22,90da1cde4144fac00d41f2c0db2cc921,Oklahoma City Thunder,Miami Heat,2026-11-22T23:10:00Z,espnbet,player_double_double,2026-11-22T20:07:36Z,Ajay Mitchell,Yes,750,0.1176
+2026-11-22 15:08,open,2026-11-22,90da1cde4144fac00d41f2c0db2cc921,Oklahoma City Thunder,Miami Heat,2026-11-22T23:10:00Z,espnbet,player_double_double,2026-11-22T20:07:36Z,Ajay Mitchell,No,-3000,0.9677
+2026-11-22 15:08,open,2026-11-22,90da1cde4144fac00d41f2c0db2cc921,Oklahoma City Thunder,Miami Heat,2026-11-22T23:10:00Z,espnbet,player_double_double,2026-11-22T20:07:36Z,Bam Adebayo,Yes,120,0.4545
+2026-11-22 15:08,open,2026-11-22,90da1cde4144fac00d41f2c0db2cc921,Oklahoma City Thunder,Miami Heat,2026-11-22T23:10:00Z,espnbet,player_double_double,2026-11-22T20:07:36Z,Bam Adebayo,No,-160,0.6154
+2026-11-22 15:08,open,2026-11-22,90da1cde4144fac00d41f2c0db2cc921,Oklahoma City Thunder,Miami Heat,2026-11-22T23:10:00Z,espnbet,player_double_double,2026-11-22T20:07:36Z,Bobby Portis,Yes,900,0.1
+2026-11-22 15:08,open,2026-11-22,90da1cde4144fac00d41f2c0db2cc921,Oklahoma City Thunder,Miami Heat,2026-11-22T23:10:00Z,espnbet,player_double_double,2026-11-22T20:07:36Z,Bobby Portis,No,-3500,0.9722
+2026-11-22 15:08,open,2026-11-22,90da1cde4144fac00d41f2c0db2cc921,Oklahoma City Thunder,Miami Heat,2026-11-22T23:10:00Z,espnbet,player_double_double,2026-11-22T20:07:36Z,Davion Mitchell,Yes,200,0.3333
+2026-11-22 15:08,open,2026-11-22,90da1cde4144fac00d41f2c0db2cc921,Oklahoma City Thunder,Miami Heat,2026-11-22T23:10:00Z,espnbet,player_double_double,2026-11-22T20:07:36Z,Davion Mitchell,No,-285,0.7403
+2026-11-22 15:08,open,2026-11-22,90da1cde4144fac00d41f2c0db2cc921,Oklahoma City Thunder,Miami Heat,2026-11-22T23:10:00Z,espnbet,player_double_double,2026-11-22T20:07:36Z,Giannis Antetokounmpo,Yes,-450,0.8182
+2026-11-22 15:08,open,2026-11-22,90da1cde4144fac00d41f2c0db2cc921,Oklahoma City Thunder,Miami Heat,2026-11-22T23:10:00Z,espnbet,player_double_double,2026-11-22T20:07:36Z,Giannis Antetokounmpo,No,280,0.2632
+2026-11-22 15:08,open,2026-11-22,90da1cde4144fac00d41f2c0db2cc921,Oklahoma City Thunder,Miami Heat,2026-11-22T23:10:00Z,espnbet,player_double_double,2026-11-22T20:07:36Z,Isaiah Hartenstein,Yes,165,0.3774
+2026-11-22 15:08,open,2026-11-22,90da1cde4144fac00d41f2c0db2cc921,Oklahoma City Thunder,Miami Heat,2026-11-22T23:10:00Z,espnbet,player_double_double,2026-11-22T20:07:36Z,Isaiah Hartenstein,No,-225,0.6923
+2026-11-22 15:08,open,2026-11-22,90da1cde4144fac00d41f2c0db2cc921,Oklahoma City Thunder,Miami Heat,2026-11-22T23:10:00Z,espnbet,player_double_double,2026-11-22T20:07:36Z,Shai Gilgeous-Alexander,Yes,550,0.1538
+2026-11-22 15:08,open,2026-11-22,90da1cde4144fac00d41f2c0db2cc921,Oklahoma City Thunder,Miami Heat,2026-11-22T23:10:00Z,espnbet,player_double_double,2026-11-22T20:07:36Z,Shai Gilgeous-Alexander,No,-1400,0.9333
+2026-11-22 15:08,open,2026-11-22,15a079f55e23d26237844224f258c972,Denver Nuggets,Chicago Bulls,2026-11-23T00:10:00Z,fanduel,player_double_double,2026-11-22T20:06:57Z,Nikola Jokic,Yes,-700,0.875
+2026-11-22 15:08,open,2026-11-22,15a079f55e23d26237844224f258c972,Denver Nuggets,Chicago Bulls,2026-11-23T00:10:00Z,fanduel,player_double_double,2026-11-22T20:06:57Z,Josh Giddey,Yes,178,0.3597
+2026-11-22 15:08,open,2026-11-22,15a079f55e23d26237844224f258c972,Denver Nuggets,Chicago Bulls,2026-11-23T00:10:00Z,fanduel,player_double_double,2026-11-22T20:06:57Z,Jalen Smith,Yes,188,0.3472
+2026-11-22 15:08,open,2026-11-22,15a079f55e23d26237844224f258c972,Denver Nuggets,Chicago Bulls,2026-11-23T00:10:00Z,fanduel,player_double_double,2026-11-22T20:06:57Z,Jamal Murray,Yes,450,0.1818
+2026-11-22 15:08,open,2026-11-22,15a079f55e23d26237844224f258c972,Denver Nuggets,Chicago Bulls,2026-11-23T00:10:00Z,fanduel,player_double_double,2026-11-22T20:06:57Z,Matas Buzelis,Yes,680,0.1282
+2026-11-22 15:08,open,2026-11-22,15a079f55e23d26237844224f258c972,Denver Nuggets,Chicago Bulls,2026-11-23T00:10:00Z,fanduel,player_double_double,2026-11-22T20:06:57Z,Aaron Gordon,Yes,1000,0.0909
+2026-11-22 15:08,open,2026-11-22,15a079f55e23d26237844224f258c972,Denver Nuggets,Chicago Bulls,2026-11-23T00:10:00Z,fanduel,player_double_double,2026-11-22T20:06:57Z,Tre Jones,Yes,1280,0.0725
+2026-11-22 15:08,open,2026-11-22,15a079f55e23d26237844224f258c972,Denver Nuggets,Chicago Bulls,2026-11-23T00:10:00Z,fanduel,player_double_double,2026-11-22T20:06:57Z,Christian Braun,Yes,1400,0.0667
+2026-11-22 15:08,open,2026-11-22,15a079f55e23d26237844224f258c972,Denver Nuggets,Chicago Bulls,2026-11-23T00:10:00Z,fanduel,player_double_double,2026-11-22T20:06:57Z,Cameron Johnson,Yes,3500,0.0278
+2026-11-22 15:08,open,2026-11-22,15a079f55e23d26237844224f258c972,Denver Nuggets,Chicago Bulls,2026-11-23T00:10:00Z,novig,player_double_double,2026-11-22T20:08:31Z,Patrick Williams,Yes,1567,0.06
+2026-11-22 15:08,open,2026-11-22,15a079f55e23d26237844224f258c972,Denver Nuggets,Chicago Bulls,2026-11-23T00:10:00Z,novig,player_double_double,2026-11-22T20:08:31Z,Buddy Hield,Yes,3900,0.025
+2026-11-22 15:08,open,2026-11-22,15a079f55e23d26237844224f258c972,Denver Nuggets,Chicago Bulls,2026-11-23T00:10:00Z,novig,player_double_double,2026-11-22T20:08:31Z,Jamal Murray,Yes,506,0.165
+2026-11-22 15:08,open,2026-11-22,15a079f55e23d26237844224f258c972,Denver Nuggets,Chicago Bulls,2026-11-23T00:10:00Z,novig,player_double_double,2026-11-22T20:08:31Z,Jamal Murray,No,-733,0.88
+2026-11-22 15:08,open,2026-11-22,15a079f55e23d26237844224f258c972,Denver Nuggets,Chicago Bulls,2026-11-23T00:10:00Z,novig,player_double_double,2026-11-22T20:08:31Z,Christian Braun,Yes,1567,0.06
+2026-11-22 15:08,open,2026-11-22,15a079f55e23d26237844224f258c972,Denver Nuggets,Chicago Bulls,2026-11-23T00:10:00Z,novig,player_double_double,2026-11-22T20:08:31Z,Josh Giddey,Yes,174,0.365
+2026-11-22 15:08,open,2026-11-22,15a079f55e23d26237844224f258c972,Denver Nuggets,Chicago Bulls,2026-11-23T00:10:00Z,novig,player_double_double,2026-11-22T20:08:31Z,Josh Giddey,No,-223,0.6904
+2026-11-22 15:08,open,2026-11-22,15a079f55e23d26237844224f258c972,Denver Nuggets,Chicago Bulls,2026-11-23T00:10:00Z,novig,player_double_double,2026-11-22T20:08:31Z,Aaron Gordon,Yes,1076,0.085
+2026-11-22 15:08,open,2026-11-22,15a079f55e23d26237844224f258c972,Denver Nuggets,Chicago Bulls,2026-11-23T00:10:00Z,novig,player_double_double,2026-11-22T20:08:31Z,Nikola Jokic,Yes,-590,0.8551
+2026-11-22 15:08,open,2026-11-22,15a079f55e23d26237844224f258c972,Denver Nuggets,Chicago Bulls,2026-11-23T00:10:00Z,novig,player_double_double,2026-11-22T20:08:31Z,Nikola Jokic,No,400,0.2
+2026-11-22 15:08,open,2026-11-22,15a079f55e23d26237844224f258c972,Denver Nuggets,Chicago Bulls,2026-11-23T00:10:00Z,novig,player_double_double,2026-11-22T20:08:31Z,Matas Buzelis,Yes,733,0.12
+2026-11-22 15:08,open,2026-11-22,15a079f55e23d26237844224f258c972,Denver Nuggets,Chicago Bulls,2026-11-23T00:10:00Z,novig,player_double_double,2026-11-22T20:08:31Z,Jalen Smith,Yes,223,0.3096
+2026-11-22 15:08,open,2026-11-22,15a079f55e23d26237844224f258c972,Denver Nuggets,Chicago Bulls,2026-11-23T00:10:00Z,novig,player_double_double,2026-11-22T20:08:31Z,Jalen Smith,No,-326,0.7653
+2026-11-22 15:08,open,2026-11-22,15a079f55e23d26237844224f258c972,Denver Nuggets,Chicago Bulls,2026-11-23T00:10:00Z,novig,player_double_double,2026-11-22T20:08:31Z,Cameron Johnson,Yes,3348,0.029
+2026-11-22 15:08,open,2026-11-22,15a079f55e23d26237844224f258c972,Denver Nuggets,Chicago Bulls,2026-11-23T00:10:00Z,novig,player_double_double,2026-11-22T20:08:31Z,Tre Jones,Yes,1150,0.08
+2026-11-22 15:08,open,2026-11-22,15a079f55e23d26237844224f258c972,Denver Nuggets,Chicago Bulls,2026-11-23T00:10:00Z,draftkings,player_double_double,2026-11-22T20:08:17Z,Nikola Jokic,Yes,-557,0.8478
+2026-11-22 15:08,open,2026-11-22,15a079f55e23d26237844224f258c972,Denver Nuggets,Chicago Bulls,2026-11-23T00:10:00Z,draftkings,player_double_double,2026-11-22T20:08:17Z,Josh Giddey,Yes,169,0.3717
+2026-11-22 15:08,open,2026-11-22,15a079f55e23d26237844224f258c972,Denver Nuggets,Chicago Bulls,2026-11-23T00:10:00Z,draftkings,player_double_double,2026-11-22T20:08:17Z,Jalen Smith,Yes,221,0.3115
+2026-11-22 15:08,open,2026-11-22,15a079f55e23d26237844224f258c972,Denver Nuggets,Chicago Bulls,2026-11-23T00:10:00Z,draftkings,player_double_double,2026-11-22T20:08:17Z,Jamal Murray,Yes,549,0.1541
+2026-11-22 15:08,open,2026-11-22,15a079f55e23d26237844224f258c972,Denver Nuggets,Chicago Bulls,2026-11-23T00:10:00Z,draftkings,player_double_double,2026-11-22T20:08:17Z,Matas Buzelis,Yes,870,0.1031
+2026-11-22 15:08,open,2026-11-22,15a079f55e23d26237844224f258c972,Denver Nuggets,Chicago Bulls,2026-11-23T00:10:00Z,draftkings,player_double_double,2026-11-22T20:08:17Z,Aaron Gordon,Yes,1320,0.0704
+2026-11-22 15:08,open,2026-11-22,15a079f55e23d26237844224f258c972,Denver Nuggets,Chicago Bulls,2026-11-23T00:10:00Z,draftkings,player_double_double,2026-11-22T20:08:17Z,Tre Jones,Yes,1640,0.0575
+2026-11-22 15:08,open,2026-11-22,15a079f55e23d26237844224f258c972,Denver Nuggets,Chicago Bulls,2026-11-23T00:10:00Z,draftkings,player_double_double,2026-11-22T20:08:17Z,Christian Braun,Yes,1940,0.049
+2026-11-22 15:08,open,2026-11-22,15a079f55e23d26237844224f258c972,Denver Nuggets,Chicago Bulls,2026-11-23T00:10:00Z,draftkings,player_double_double,2026-11-22T20:08:17Z,Cameron Johnson,Yes,4200,0.0233
+2026-11-22 15:08,open,2026-11-22,15a079f55e23d26237844224f258c972,Denver Nuggets,Chicago Bulls,2026-11-23T00:10:00Z,draftkings,player_double_double,2026-11-22T20:08:17Z,Patrick Williams,Yes,5300,0.0185
+2026-11-22 15:08,open,2026-11-22,15a079f55e23d26237844224f258c972,Denver Nuggets,Chicago Bulls,2026-11-23T00:10:00Z,draftkings,player_double_double,2026-11-22T20:08:17Z,Buddy Hield,Yes,5400,0.0182
+2026-11-22 15:08,open,2026-11-22,15a079f55e23d26237844224f258c972,Denver Nuggets,Chicago Bulls,2026-11-23T00:10:00Z,ballybet,player_double_double,2026-11-22T20:08:22Z,Jamal Murray,Yes,480,0.1724
+2026-11-22 15:08,open,2026-11-22,15a079f55e23d26237844224f258c972,Denver Nuggets,Chicago Bulls,2026-11-23T00:10:00Z,ballybet,player_double_double,2026-11-22T20:08:22Z,Jalen Smith,Yes,215,0.3175
+2026-11-22 15:08,open,2026-11-22,15a079f55e23d26237844224f258c972,Denver Nuggets,Chicago Bulls,2026-11-23T00:10:00Z,ballybet,player_double_double,2026-11-22T20:08:22Z,Aaron Gordon,Yes,900,0.1
+2026-11-22 15:08,open,2026-11-22,15a079f55e23d26237844224f258c972,Denver Nuggets,Chicago Bulls,2026-11-23T00:10:00Z,ballybet,player_double_double,2026-11-22T20:08:22Z,Christian Braun,Yes,1600,0.0588
+2026-11-22 15:08,open,2026-11-22,15a079f55e23d26237844224f258c972,Denver Nuggets,Chicago Bulls,2026-11-23T00:10:00Z,ballybet,player_double_double,2026-11-22T20:08:22Z,Matas Buzelis,Yes,600,0.1429
+2026-11-22 15:08,open,2026-11-22,15a079f55e23d26237844224f258c972,Denver Nuggets,Chicago Bulls,2026-11-23T00:10:00Z,ballybet,player_double_double,2026-11-22T20:08:22Z,Nikola Jokic,Yes,-625,0.8621
+2026-11-22 15:08,open,2026-11-22,15a079f55e23d26237844224f258c972,Denver Nuggets,Chicago Bulls,2026-11-23T00:10:00Z,ballybet,player_double_double,2026-11-22T20:08:22Z,Josh Giddey,Yes,175,0.3636
+2026-11-22 15:08,open,2026-11-22,15a079f55e23d26237844224f258c972,Denver Nuggets,Chicago Bulls,2026-11-23T00:10:00Z,espnbet,player_double_double,2026-11-22T20:07:39Z,Jalen Smith,Yes,200,0.3333
+2026-11-22 15:08,open,2026-11-22,15a079f55e23d26237844224f258c972,Denver Nuggets,Chicago Bulls,2026-11-23T00:10:00Z,espnbet,player_double_double,2026-11-22T20:07:39Z,Jalen Smith,No,-285,0.7403
+2026-11-22 15:08,open,2026-11-22,15a079f55e23d26237844224f258c972,Denver Nuggets,Chicago Bulls,2026-11-23T00:10:00Z,espnbet,player_double_double,2026-11-22T20:07:39Z,Jamal Murray,Yes,400,0.2
+2026-11-22 15:08,open,2026-11-22,15a079f55e23d26237844224f258c972,Denver Nuggets,Chicago Bulls,2026-11-23T00:10:00Z,espnbet,player_double_double,2026-11-22T20:07:39Z,Jamal Murray,No,-800,0.8889
+2026-11-22 15:08,open,2026-11-22,15a079f55e23d26237844224f258c972,Denver Nuggets,Chicago Bulls,2026-11-23T00:10:00Z,espnbet,player_double_double,2026-11-22T20:07:39Z,Josh Giddey,Yes,170,0.3704
+2026-11-22 15:08,open,2026-11-22,15a079f55e23d26237844224f258c972,Denver Nuggets,Chicago Bulls,2026-11-23T00:10:00Z,espnbet,player_double_double,2026-11-22T20:07:39Z,Josh Giddey,No,-235,0.7015
+2026-11-22 15:08,open,2026-11-22,15a079f55e23d26237844224f258c972,Denver Nuggets,Chicago Bulls,2026-11-23T00:10:00Z,espnbet,player_double_double,2026-11-22T20:07:39Z,Nikola Jokic,Yes,-700,0.875
+2026-11-22 15:08,open,2026-11-22,15a079f55e23d26237844224f258c972,Denver Nuggets,Chicago Bulls,2026-11-23T00:10:00Z,espnbet,player_double_double,2026-11-22T20:07:39Z,Nikola Jokic,No,360,0.2174
+2026-11-22 15:08,open,2026-11-22,15a079f55e23d26237844224f258c972,Denver Nuggets,Chicago Bulls,2026-11-23T00:10:00Z,betmgm,player_double_double,2026-11-22T20:07:57Z,Aaron Gordon,Yes,1050,0.087
+2026-11-22 15:08,open,2026-11-22,15a079f55e23d26237844224f258c972,Denver Nuggets,Chicago Bulls,2026-11-23T00:10:00Z,betmgm,player_double_double,2026-11-22T20:07:57Z,Christian Braun,Yes,1400,0.0667
+2026-11-22 15:08,open,2026-11-22,15a079f55e23d26237844224f258c972,Denver Nuggets,Chicago Bulls,2026-11-23T00:10:00Z,betmgm,player_double_double,2026-11-22T20:07:57Z,Jalen Smith,Yes,300,0.25
+2026-11-22 15:08,open,2026-11-22,15a079f55e23d26237844224f258c972,Denver Nuggets,Chicago Bulls,2026-11-23T00:10:00Z,betmgm,player_double_double,2026-11-22T20:07:57Z,Jamal Murray,Yes,475,0.1739
+2026-11-22 15:08,open,2026-11-22,15a079f55e23d26237844224f258c972,Denver Nuggets,Chicago Bulls,2026-11-23T00:10:00Z,betmgm,player_double_double,2026-11-22T20:07:57Z,Cameron Johnson,Yes,1700,0.0556
+2026-11-22 15:08,open,2026-11-22,15a079f55e23d26237844224f258c972,Denver Nuggets,Chicago Bulls,2026-11-23T00:10:00Z,betmgm,player_double_double,2026-11-22T20:07:57Z,Matas Buzelis,Yes,775,0.1143
+2026-11-22 15:08,open,2026-11-22,15a079f55e23d26237844224f258c972,Denver Nuggets,Chicago Bulls,2026-11-23T00:10:00Z,betmgm,player_double_double,2026-11-22T20:07:57Z,Josh Giddey,Yes,195,0.339
+2026-11-22 15:08,open,2026-11-22,15a079f55e23d26237844224f258c972,Denver Nuggets,Chicago Bulls,2026-11-23T00:10:00Z,betmgm,player_double_double,2026-11-22T20:07:57Z,Buddy Hield,Yes,1800,0.0526
+2026-11-22 15:08,open,2026-11-22,15a079f55e23d26237844224f258c972,Denver Nuggets,Chicago Bulls,2026-11-23T00:10:00Z,hardrockbet,player_double_double,2026-11-22T20:08:03Z,Nikola Jokic,Yes,-650,0.8667
+2026-11-22 15:08,open,2026-11-22,15a079f55e23d26237844224f258c972,Denver Nuggets,Chicago Bulls,2026-11-23T00:10:00Z,hardrockbet,player_double_double,2026-11-22T20:08:03Z,Christian Braun,Yes,1600,0.0588
+2026-11-22 15:08,open,2026-11-22,15a079f55e23d26237844224f258c972,Denver Nuggets,Chicago Bulls,2026-11-23T00:10:00Z,hardrockbet,player_double_double,2026-11-22T20:08:03Z,Jamal Murray,Yes,475,0.1739
+2026-11-22 15:08,open,2026-11-22,15a079f55e23d26237844224f258c972,Denver Nuggets,Chicago Bulls,2026-11-23T00:10:00Z,hardrockbet,player_double_double,2026-11-22T20:08:03Z,Josh Giddey,Yes,185,0.3509
+2026-11-22 15:08,open,2026-11-22,15a079f55e23d26237844224f258c972,Denver Nuggets,Chicago Bulls,2026-11-23T00:10:00Z,hardrockbet,player_double_double,2026-11-22T20:08:03Z,Aaron Gordon,Yes,1100,0.0833
+2026-11-22 15:08,open,2026-11-22,15a079f55e23d26237844224f258c972,Denver Nuggets,Chicago Bulls,2026-11-23T00:10:00Z,hardrockbet,player_double_double,2026-11-22T20:08:03Z,Matas Buzelis,Yes,750,0.1176
+2026-11-22 15:08,open,2026-11-22,15a079f55e23d26237844224f258c972,Denver Nuggets,Chicago Bulls,2026-11-23T00:10:00Z,hardrockbet,player_double_double,2026-11-22T20:08:03Z,Tre Jones,Yes,1200,0.0769
+2026-11-22 15:08,open,2026-11-22,1e7b9477c6c55aea5efd9c1a47039f5c,Dallas Mavericks,Utah Jazz,2026-11-23T00:10:00Z,fanduel,player_double_double,2026-11-22T20:07:46Z,Cooper Flagg,Yes,225,0.3077
+2026-11-22 15:08,open,2026-11-22,1e7b9477c6c55aea5efd9c1a47039f5c,Dallas Mavericks,Utah Jazz,2026-11-23T00:10:00Z,fanduel,player_double_double,2026-11-22T20:07:46Z,Keyonte George,Yes,225,0.3077
+2026-11-22 15:08,open,2026-11-22,1e7b9477c6c55aea5efd9c1a47039f5c,Dallas Mavericks,Utah Jazz,2026-11-23T00:10:00Z,fanduel,player_double_double,2026-11-22T20:07:46Z,Jaxson Hayes,Yes,550,0.1538
+2026-11-22 15:08,open,2026-11-22,1e7b9477c6c55aea5efd9c1a47039f5c,Dallas Mavericks,Utah Jazz,2026-11-23T00:10:00Z,fanduel,player_double_double,2026-11-22T20:07:46Z,Darryn Peterson,Yes,680,0.1282
+2026-11-22 15:08,open,2026-11-22,1e7b9477c6c55aea5efd9c1a47039f5c,Dallas Mavericks,Utah Jazz,2026-11-23T00:10:00Z,fanduel,player_double_double,2026-11-22T20:07:46Z,Daniel Gafford,Yes,700,0.125
+2026-11-22 15:08,open,2026-11-22,1e7b9477c6c55aea5efd9c1a47039f5c,Dallas Mavericks,Utah Jazz,2026-11-23T00:10:00Z,fanduel,player_double_double,2026-11-22T20:07:46Z,Ace Bailey,Yes,920,0.098
+2026-11-22 15:08,open,2026-11-22,1e7b9477c6c55aea5efd9c1a47039f5c,Dallas Mavericks,Utah Jazz,2026-11-23T00:10:00Z,fanduel,player_double_double,2026-11-22T20:07:46Z,Kyrie Irving,Yes,1100,0.0833
+2026-11-22 15:08,open,2026-11-22,1e7b9477c6c55aea5efd9c1a47039f5c,Dallas Mavericks,Utah Jazz,2026-11-23T00:10:00Z,fanduel,player_double_double,2026-11-22T20:07:46Z,Naji Marshall,Yes,1700,0.0556
+2026-11-22 15:08,open,2026-11-22,1e7b9477c6c55aea5efd9c1a47039f5c,Dallas Mavericks,Utah Jazz,2026-11-23T00:10:00Z,fanduel,player_double_double,2026-11-22T20:07:46Z,Zaccharie Risacher,Yes,1700,0.0556
+2026-11-22 15:08,open,2026-11-22,1e7b9477c6c55aea5efd9c1a47039f5c,Dallas Mavericks,Utah Jazz,2026-11-23T00:10:00Z,novig,player_double_double,2026-11-22T20:08:09Z,Darryn Peterson,Yes,1233,0.075
+2026-11-22 15:08,open,2026-11-22,1e7b9477c6c55aea5efd9c1a47039f5c,Dallas Mavericks,Utah Jazz,2026-11-23T00:10:00Z,novig,player_double_double,2026-11-22T20:08:09Z,Ace Bailey,Yes,1076,0.085
+2026-11-22 15:08,open,2026-11-22,1e7b9477c6c55aea5efd9c1a47039f5c,Dallas Mavericks,Utah Jazz,2026-11-23T00:10:00Z,novig,player_double_double,2026-11-22T20:08:09Z,Naji Marshall,Yes,2464,0.039
+2026-11-22 15:08,open,2026-11-22,1e7b9477c6c55aea5efd9c1a47039f5c,Dallas Mavericks,Utah Jazz,2026-11-23T00:10:00Z,novig,player_double_double,2026-11-22T20:08:09Z,Kyrie Irving,Yes,1438,0.065
+2026-11-22 15:08,open,2026-11-22,1e7b9477c6c55aea5efd9c1a47039f5c,Dallas Mavericks,Utah Jazz,2026-11-23T00:10:00Z,novig,player_double_double,2026-11-22T20:08:09Z,Keyonte George,Yes,292,0.2551
+2026-11-22 15:08,open,2026-11-22,1e7b9477c6c55aea5efd9c1a47039f5c,Dallas Mavericks,Utah Jazz,2026-11-23T00:10:00Z,novig,player_double_double,2026-11-22T20:08:09Z,Keyonte George,No,-413,0.8051
+2026-11-22 15:08,open,2026-11-22,1e7b9477c6c55aea5efd9c1a47039f5c,Dallas Mavericks,Utah Jazz,2026-11-23T00:10:00Z,novig,player_double_double,2026-11-22T20:08:09Z,Cooper Flagg,Yes,264,0.2747
+2026-11-22 15:08,open,2026-11-22,1e7b9477c6c55aea5efd9c1a47039f5c,Dallas Mavericks,Utah Jazz,2026-11-23T00:10:00Z,novig,player_double_double,2026-11-22T20:08:09Z,Cooper Flagg,No,-376,0.7899
+2026-11-22 15:08,open,2026-11-22,1e7b9477c6c55aea5efd9c1a47039f5c,Dallas Mavericks,Utah Jazz,2026-11-23T00:10:00Z,novig,player_double_double,2026-11-22T20:08:09Z,Daniel Gafford,Yes,809,0.11
+2026-11-22 15:08,open,2026-11-22,1e7b9477c6c55aea5efd9c1a47039f5c,Dallas Mavericks,Utah Jazz,2026-11-23T00:10:00Z,novig,player_double_double,2026-11-22T20:08:09Z,Daniel Gafford,No,-2074,0.954
+2026-11-22 15:08,open,2026-11-22,1e7b9477c6c55aea5efd9c1a47039f5c,Dallas Mavericks,Utah Jazz,2026-11-23T00:10:00Z,novig,player_double_double,2026-11-22T20:08:09Z,Jaxson Hayes,Yes,669,0.13
+2026-11-22 15:08,open,2026-11-22,1e7b9477c6c55aea5efd9c1a47039f5c,Dallas Mavericks,Utah Jazz,2026-11-23T00:10:00Z,novig,player_double_double,2026-11-22T20:08:09Z,Jaxson Hayes,No,-1150,0.92
+2026-11-22 15:08,open,2026-11-22,1e7b9477c6c55aea5efd9c1a47039f5c,Dallas Mavericks,Utah Jazz,2026-11-23T00:10:00Z,novig,player_double_double,2026-11-22T20:08:09Z,Caleb Martin,Yes,2173,0.044
+2026-11-22 15:08,open,2026-11-22,1e7b9477c6c55aea5efd9c1a47039f5c,Dallas Mavericks,Utah Jazz,2026-11-23T00:10:00Z,draftkings,player_double_double,2026-11-22T20:08:03Z,Cooper Flagg,Yes,251,0.2849
+2026-11-22 15:08,open,2026-11-22,1e7b9477c6c55aea5efd9c1a47039f5c,Dallas Mavericks,Utah Jazz,2026-11-23T00:10:00Z,draftkings,player_double_double,2026-11-22T20:08:03Z,Keyonte George,Yes,270,0.2703
+2026-11-22 15:08,open,2026-11-22,1e7b9477c6c55aea5efd9c1a47039f5c,Dallas Mavericks,Utah Jazz,2026-11-23T00:10:00Z,draftkings,player_double_double,2026-11-22T20:08:03Z,Jaxson Hayes,Yes,576,0.1479
+2026-11-22 15:08,open,2026-11-22,1e7b9477c6c55aea5efd9c1a47039f5c,Dallas Mavericks,Utah Jazz,2026-11-23T00:10:00Z,draftkings,player_double_double,2026-11-22T20:08:03Z,Daniel Gafford,Yes,860,0.1042
+2026-11-22 15:08,open,2026-11-22,1e7b9477c6c55aea5efd9c1a47039f5c,Dallas Mavericks,Utah Jazz,2026-11-23T00:10:00Z,draftkings,player_double_double,2026-11-22T20:08:03Z,Ace Bailey,Yes,1140,0.0806
+2026-11-22 15:08,open,2026-11-22,1e7b9477c6c55aea5efd9c1a47039f5c,Dallas Mavericks,Utah Jazz,2026-11-23T00:10:00Z,draftkings,player_double_double,2026-11-22T20:08:03Z,Darryn Peterson,Yes,1260,0.0735
+2026-11-22 15:08,open,2026-11-22,1e7b9477c6c55aea5efd9c1a47039f5c,Dallas Mavericks,Utah Jazz,2026-11-23T00:10:00Z,draftkings,player_double_double,2026-11-22T20:08:03Z,Kyrie Irving,Yes,1700,0.0556
+2026-11-22 15:08,open,2026-11-22,1e7b9477c6c55aea5efd9c1a47039f5c,Dallas Mavericks,Utah Jazz,2026-11-23T00:10:00Z,draftkings,player_double_double,2026-11-22T20:08:03Z,Naji Marshall,Yes,2900,0.0333
+2026-11-22 15:08,open,2026-11-22,1e7b9477c6c55aea5efd9c1a47039f5c,Dallas Mavericks,Utah Jazz,2026-11-23T00:10:00Z,draftkings,player_double_double,2026-11-22T20:08:03Z,Caleb Martin,Yes,4600,0.0213
+2026-11-22 15:08,open,2026-11-22,1e7b9477c6c55aea5efd9c1a47039f5c,Dallas Mavericks,Utah Jazz,2026-11-23T00:10:00Z,espnbet,player_double_double,2026-11-22T20:08:06Z,Ace Bailey,Yes,750,0.1176
+2026-11-22 15:08,open,2026-11-22,1e7b9477c6c55aea5efd9c1a47039f5c,Dallas Mavericks,Utah Jazz,2026-11-23T00:10:00Z,espnbet,player_double_double,2026-11-22T20:08:06Z,Ace Bailey,No,-3000,0.9677
+2026-11-22 15:08,open,2026-11-22,1e7b9477c6c55aea5efd9c1a47039f5c,Dallas Mavericks,Utah Jazz,2026-11-23T00:10:00Z,espnbet,player_double_double,2026-11-22T20:08:06Z,Cooper Flagg,Yes,230,0.303
+2026-11-22 15:08,open,2026-11-22,1e7b9477c6c55aea5efd9c1a47039f5c,Dallas Mavericks,Utah Jazz,2026-11-23T00:10:00Z,espnbet,player_double_double,2026-11-22T20:08:06Z,Cooper Flagg,No,-350,0.7778
+2026-11-22 15:08,open,2026-11-22,1e7b9477c6c55aea5efd9c1a47039f5c,Dallas Mavericks,Utah Jazz,2026-11-23T00:10:00Z,espnbet,player_double_double,2026-11-22T20:08:06Z,Daniel Gafford,Yes,600,0.1429
+2026-11-22 15:08,open,2026-11-22,1e7b9477c6c55aea5efd9c1a47039f5c,Dallas Mavericks,Utah Jazz,2026-11-23T00:10:00Z,espnbet,player_double_double,2026-11-22T20:08:06Z,Daniel Gafford,No,-1600,0.9412
+2026-11-22 15:08,open,2026-11-22,1e7b9477c6c55aea5efd9c1a47039f5c,Dallas Mavericks,Utah Jazz,2026-11-23T00:10:00Z,espnbet,player_double_double,2026-11-22T20:08:06Z,Darryn Peterson,Yes,700,0.125
+2026-11-22 15:08,open,2026-11-22,1e7b9477c6c55aea5efd9c1a47039f5c,Dallas Mavericks,Utah Jazz,2026-11-23T00:10:00Z,espnbet,player_double_double,2026-11-22T20:08:06Z,Darryn Peterson,No,-2500,0.9615
+2026-11-22 15:08,open,2026-11-22,1e7b9477c6c55aea5efd9c1a47039f5c,Dallas Mavericks,Utah Jazz,2026-11-23T00:10:00Z,espnbet,player_double_double,2026-11-22T20:08:06Z,Jaxson Hayes,Yes,475,0.1739
+2026-11-22 15:08,open,2026-11-22,1e7b9477c6c55aea5efd9c1a47039f5c,Dallas Mavericks,Utah Jazz,2026-11-23T00:10:00Z,espnbet,player_double_double,2026-11-22T20:08:06Z,Jaxson Hayes,No,-1100,0.9167
+2026-11-22 15:08,open,2026-11-22,1e7b9477c6c55aea5efd9c1a47039f5c,Dallas Mavericks,Utah Jazz,2026-11-23T00:10:00Z,espnbet,player_double_double,2026-11-22T20:08:06Z,Keyonte George,Yes,240,0.2941
+2026-11-22 15:08,open,2026-11-22,1e7b9477c6c55aea5efd9c1a47039f5c,Dallas Mavericks,Utah Jazz,2026-11-23T00:10:00Z,espnbet,player_double_double,2026-11-22T20:08:06Z,Keyonte George,No,-375,0.7895
+2026-11-22 15:08,open,2026-11-22,1e7b9477c6c55aea5efd9c1a47039f5c,Dallas Mavericks,Utah Jazz,2026-11-23T00:10:00Z,espnbet,player_double_double,2026-11-22T20:08:06Z,Kyrie Irving,Yes,900,0.1
+2026-11-22 15:08,open,2026-11-22,1e7b9477c6c55aea5efd9c1a47039f5c,Dallas Mavericks,Utah Jazz,2026-11-23T00:10:00Z,espnbet,player_double_double,2026-11-22T20:08:06Z,Kyrie Irving,No,-5000,0.9804
+2026-11-22 15:08,open,2026-11-22,1e7b9477c6c55aea5efd9c1a47039f5c,Dallas Mavericks,Utah Jazz,2026-11-23T00:10:00Z,betmgm,player_double_double,2026-11-22T20:07:39Z,Keyonte George,Yes,260,0.2778
+2026-11-22 15:08,open,2026-11-22,1e7b9477c6c55aea5efd9c1a47039f5c,Dallas Mavericks,Utah Jazz,2026-11-23T00:10:00Z,betmgm,player_double_double,2026-11-22T20:07:39Z,Kyrie Irving,Yes,950,0.0952
+2026-11-22 15:08,open,2026-11-22,1e7b9477c6c55aea5efd9c1a47039f5c,Dallas Mavericks,Utah Jazz,2026-11-23T00:10:00Z,betmgm,player_double_double,2026-11-22T20:07:39Z,Cooper Flagg,Yes,210,0.3226
+2026-11-22 15:08,open,2026-11-22,1e7b9477c6c55aea5efd9c1a47039f5c,Dallas Mavericks,Utah Jazz,2026-11-23T00:10:00Z,betmgm,player_double_double,2026-11-22T20:07:39Z,Ace Bailey,Yes,825,0.1081
+2026-11-22 15:08,open,2026-11-22,1e7b9477c6c55aea5efd9c1a47039f5c,Dallas Mavericks,Utah Jazz,2026-11-23T00:10:00Z,betmgm,player_double_double,2026-11-22T20:07:39Z,Darryn Peterson,Yes,950,0.0952
+2026-11-22 15:08,open,2026-11-22,1e7b9477c6c55aea5efd9c1a47039f5c,Dallas Mavericks,Utah Jazz,2026-11-23T00:10:00Z,betmgm,player_double_double,2026-11-22T20:07:39Z,Naji Marshall,Yes,1400,0.0667
+2026-11-22 15:08,open,2026-11-22,1e7b9477c6c55aea5efd9c1a47039f5c,Dallas Mavericks,Utah Jazz,2026-11-23T00:10:00Z,ballybet,player_double_double,2026-11-22T20:08:23Z,Cooper Flagg,Yes,230,0.303
+2026-11-22 15:08,open,2026-11-22,1e7b9477c6c55aea5efd9c1a47039f5c,Dallas Mavericks,Utah Jazz,2026-11-23T00:10:00Z,ballybet,player_double_double,2026-11-22T20:08:23Z,Darryn Peterson,Yes,800,0.1111
+2026-11-22 15:08,open,2026-11-22,1e7b9477c6c55aea5efd9c1a47039f5c,Dallas Mavericks,Utah Jazz,2026-11-23T00:10:00Z,ballybet,player_double_double,2026-11-22T20:08:23Z,Keyonte George,Yes,260,0.2778
+2026-11-22 15:08,open,2026-11-22,1e7b9477c6c55aea5efd9c1a47039f5c,Dallas Mavericks,Utah Jazz,2026-11-23T00:10:00Z,ballybet,player_double_double,2026-11-22T20:08:23Z,Daniel Gafford,Yes,540,0.1562
+2026-11-22 15:08,open,2026-11-22,1e7b9477c6c55aea5efd9c1a47039f5c,Dallas Mavericks,Utah Jazz,2026-11-23T00:10:00Z,ballybet,player_double_double,2026-11-22T20:08:23Z,Kyrie Irving,Yes,1100,0.0833
+2026-11-22 15:08,open,2026-11-22,1e7b9477c6c55aea5efd9c1a47039f5c,Dallas Mavericks,Utah Jazz,2026-11-23T00:10:00Z,ballybet,player_double_double,2026-11-22T20:08:23Z,Jaxson Hayes,Yes,525,0.16
+2026-11-22 15:08,open,2026-11-22,1e7b9477c6c55aea5efd9c1a47039f5c,Dallas Mavericks,Utah Jazz,2026-11-23T00:10:00Z,ballybet,player_double_double,2026-11-22T20:08:23Z,Ace Bailey,Yes,900,0.1
+2026-11-22 15:08,open,2026-11-22,1e7b9477c6c55aea5efd9c1a47039f5c,Dallas Mavericks,Utah Jazz,2026-11-23T00:10:00Z,hardrockbet,player_double_double,2026-11-22T20:08:21Z,Cooper Flagg,Yes,240,0.2941
+2026-11-22 15:08,open,2026-11-22,1e7b9477c6c55aea5efd9c1a47039f5c,Dallas Mavericks,Utah Jazz,2026-11-23T00:10:00Z,hardrockbet,player_double_double,2026-11-22T20:08:21Z,Kyrie Irving,Yes,1750,0.0541
+2026-11-22 15:08,open,2026-11-22,1e7b9477c6c55aea5efd9c1a47039f5c,Dallas Mavericks,Utah Jazz,2026-11-23T00:10:00Z,hardrockbet,player_double_double,2026-11-22T20:08:21Z,Keyonte George,Yes,250,0.2857
+2026-11-22 15:08,open,2026-11-22,1e7b9477c6c55aea5efd9c1a47039f5c,Dallas Mavericks,Utah Jazz,2026-11-23T00:10:00Z,hardrockbet,player_double_double,2026-11-22T20:08:21Z,Ace Bailey,Yes,900,0.1
+2026-11-22 15:08,open,2026-11-22,1e7b9477c6c55aea5efd9c1a47039f5c,Dallas Mavericks,Utah Jazz,2026-11-23T00:10:00Z,hardrockbet,player_double_double,2026-11-22T20:08:21Z,Darryn Peterson,Yes,750,0.1176
+2026-11-22 15:08,open,2026-11-22,1e7b9477c6c55aea5efd9c1a47039f5c,Dallas Mavericks,Utah Jazz,2026-11-23T00:10:00Z,hardrockbet,player_double_double,2026-11-22T20:08:21Z,Caleb Martin,Yes,4000,0.0244
+2026-11-22 15:08,open,2026-11-22,1e7b9477c6c55aea5efd9c1a47039f5c,Dallas Mavericks,Utah Jazz,2026-11-23T00:10:00Z,hardrockbet,player_double_double,2026-11-22T20:08:21Z,Naji Marshall,Yes,2500,0.0385
+2026-11-22 15:08,open,2026-11-22,335ad5604b51b7742fd1dee92d78da35,Orlando Magic,Washington Wizards,2026-11-23T00:10:00Z,fanduel,player_double_double,2026-11-22T20:07:34Z,Anthony Davis,Yes,-158,0.6124
+2026-11-22 15:08,open,2026-11-22,335ad5604b51b7742fd1dee92d78da35,Orlando Magic,Washington Wizards,2026-11-23T00:10:00Z,fanduel,player_double_double,2026-11-22T20:07:34Z,Franz Wagner,Yes,140,0.4167
+2026-11-22 15:08,open,2026-11-22,335ad5604b51b7742fd1dee92d78da35,Orlando Magic,Washington Wizards,2026-11-23T00:10:00Z,fanduel,player_double_double,2026-11-22T20:07:34Z,Trae Young,Yes,194,0.3401
+2026-11-22 15:08,open,2026-11-22,335ad5604b51b7742fd1dee92d78da35,Orlando Magic,Washington Wizards,2026-11-23T00:10:00Z,fanduel,player_double_double,2026-11-22T20:07:34Z,Wendell Carter Jr,Yes,220,0.3125
+2026-11-22 15:08,open,2026-11-22,335ad5604b51b7742fd1dee92d78da35,Orlando Magic,Washington Wizards,2026-11-23T00:10:00Z,fanduel,player_double_double,2026-11-22T20:07:34Z,AJ Dybantsa,Yes,410,0.1961
+2026-11-22 15:08,open,2026-11-22,335ad5604b51b7742fd1dee92d78da35,Orlando Magic,Washington Wizards,2026-11-23T00:10:00Z,fanduel,player_double_double,2026-11-22T20:07:34Z,Alex Sarr,Yes,630,0.137
+2026-11-22 15:08,open,2026-11-22,335ad5604b51b7742fd1dee92d78da35,Orlando Magic,Washington Wizards,2026-11-23T00:10:00Z,fanduel,player_double_double,2026-11-22T20:07:34Z,Anthony Black,Yes,850,0.1053
+2026-11-22 15:08,open,2026-11-22,335ad5604b51b7742fd1dee92d78da35,Orlando Magic,Washington Wizards,2026-11-23T00:10:00Z,fanduel,player_double_double,2026-11-22T20:07:34Z,Kyshawn George,Yes,1260,0.0735
+2026-11-22 15:08,open,2026-11-22,335ad5604b51b7742fd1dee92d78da35,Orlando Magic,Washington Wizards,2026-11-23T00:10:00Z,fanduel,player_double_double,2026-11-22T20:07:34Z,Desmond Bane,Yes,1280,0.0725
+2026-11-22 15:08,open,2026-11-22,335ad5604b51b7742fd1dee92d78da35,Orlando Magic,Washington Wizards,2026-11-23T00:10:00Z,fanduel,player_double_double,2026-11-22T20:07:34Z,Jalen Suggs,Yes,1400,0.0667
+2026-11-22 15:08,open,2026-11-22,335ad5604b51b7742fd1dee92d78da35,Orlando Magic,Washington Wizards,2026-11-23T00:10:00Z,fanduel,player_double_double,2026-11-22T20:07:34Z,Tristan da Silva,Yes,5000,0.0196
+2026-11-22 15:08,open,2026-11-22,335ad5604b51b7742fd1dee92d78da35,Orlando Magic,Washington Wizards,2026-11-23T00:10:00Z,novig,player_double_double,2026-11-22T20:08:09Z,Wendell Carter Jr,Yes,239,0.295
+2026-11-22 15:08,open,2026-11-22,335ad5604b51b7742fd1dee92d78da35,Orlando Magic,Washington Wizards,2026-11-23T00:10:00Z,novig,player_double_double,2026-11-22T20:08:09Z,Wendell Carter Jr,No,-308,0.7549
+2026-11-22 15:08,open,2026-11-22,335ad5604b51b7742fd1dee92d78da35,Orlando Magic,Washington Wizards,2026-11-23T00:10:00Z,novig,player_double_double,2026-11-22T20:08:09Z,Alex Sarr,Yes,669,0.13
+2026-11-22 15:08,open,2026-11-22,335ad5604b51b7742fd1dee92d78da35,Orlando Magic,Washington Wizards,2026-11-23T00:10:00Z,novig,player_double_double,2026-11-22T20:08:09Z,AJ Dybantsa,Yes,488,0.1701
+2026-11-22 15:08,open,2026-11-22,335ad5604b51b7742fd1dee92d78da35,Orlando Magic,Washington Wizards,2026-11-23T00:10:00Z,novig,player_double_double,2026-11-22T20:08:09Z,AJ Dybantsa,No,-733,0.88
+2026-11-22 15:08,open,2026-11-22,335ad5604b51b7742fd1dee92d78da35,Orlando Magic,Washington Wizards,2026-11-23T00:10:00Z,novig,player_double_double,2026-11-22T20:08:09Z,Anthony Davis,Yes,-135,0.5745
+2026-11-22 15:08,open,2026-11-22,335ad5604b51b7742fd1dee92d78da35,Orlando Magic,Washington Wizards,2026-11-23T00:10:00Z,novig,player_double_double,2026-11-22T20:08:09Z,Anthony Davis,No,-115,0.5349
+2026-11-22 15:08,open,2026-11-22,335ad5604b51b7742fd1dee92d78da35,Orlando Magic,Washington Wizards,2026-11-23T00:10:00Z,novig,player_double_double,2026-11-22T20:08:09Z,Anthony Black,Yes,1011,0.09
+2026-11-22 15:08,open,2026-11-22,335ad5604b51b7742fd1dee92d78da35,Orlando Magic,Washington Wizards,2026-11-23T00:10:00Z,novig,player_double_double,2026-11-22T20:08:09Z,Anthony Black,No,-2603,0.963
+2026-11-22 15:08,open,2026-11-22,335ad5604b51b7742fd1dee92d78da35,Orlando Magic,Washington Wizards,2026-11-23T00:10:00Z,novig,player_double_double,2026-11-22T20:08:09Z,Kyshawn George,Yes,1438,0.065
+2026-11-22 15:08,open,2026-11-22,335ad5604b51b7742fd1dee92d78da35,Orlando Magic,Washington Wizards,2026-11-23T00:10:00Z,novig,player_double_double,2026-11-22T20:08:09Z,Franz Wagner,Yes,174,0.365
+2026-11-22 15:08,open,2026-11-22,335ad5604b51b7742fd1dee92d78da35,Orlando Magic,Washington Wizards,2026-11-23T00:10:00Z,novig,player_double_double,2026-11-22T20:08:09Z,Franz Wagner,No,-300,0.75
+2026-11-22 15:08,open,2026-11-22,335ad5604b51b7742fd1dee92d78da35,Orlando Magic,Washington Wizards,2026-11-23T00:10:00Z,novig,player_double_double,2026-11-22T20:08:09Z,Trae Young,Yes,208,0.3247
+2026-11-22 15:08,open,2026-11-22,335ad5604b51b7742fd1dee92d78da35,Orlando Magic,Washington Wizards,2026-11-23T00:10:00Z,novig,player_double_double,2026-11-22T20:08:09Z,Trae Young,No,-326,0.7653
+2026-11-22 15:08,open,2026-11-22,335ad5604b51b7742fd1dee92d78da35,Orlando Magic,Washington Wizards,2026-11-23T00:10:00Z,novig,player_double_double,2026-11-22T20:08:09Z,Desmond Bane,Yes,1718,0.055
+2026-11-22 15:08,open,2026-11-22,335ad5604b51b7742fd1dee92d78da35,Orlando Magic,Washington Wizards,2026-11-23T00:10:00Z,novig,player_double_double,2026-11-22T20:08:09Z,Jalen Suggs,Yes,1718,0.055
+2026-11-22 15:08,open,2026-11-22,335ad5604b51b7742fd1dee92d78da35,Orlando Magic,Washington Wizards,2026-11-23T00:10:00Z,novig,player_double_double,2026-11-22T20:08:09Z,Tristan da Silva,Yes,4445,0.022
+2026-11-22 15:08,open,2026-11-22,335ad5604b51b7742fd1dee92d78da35,Orlando Magic,Washington Wizards,2026-11-23T00:10:00Z,ballybet,player_double_double,2026-11-22T20:08:23Z,AJ Dybantsa,Yes,420,0.1923
+2026-11-22 15:08,open,2026-11-22,335ad5604b51b7742fd1dee92d78da35,Orlando Magic,Washington Wizards,2026-11-23T00:10:00Z,ballybet,player_double_double,2026-11-22T20:08:23Z,Franz Wagner,Yes,175,0.3636
+2026-11-22 15:08,open,2026-11-22,335ad5604b51b7742fd1dee92d78da35,Orlando Magic,Washington Wizards,2026-11-23T00:10:00Z,ballybet,player_double_double,2026-11-22T20:08:23Z,Wendell Carter Jr,Yes,205,0.3279
+2026-11-22 15:08,open,2026-11-22,335ad5604b51b7742fd1dee92d78da35,Orlando Magic,Washington Wizards,2026-11-23T00:10:00Z,ballybet,player_double_double,2026-11-22T20:08:23Z,Anthony Davis,Yes,-155,0.6078
+2026-11-22 15:08,open,2026-11-22,335ad5604b51b7742fd1dee92d78da35,Orlando Magic,Washington Wizards,2026-11-23T00:10:00Z,ballybet,player_double_double,2026-11-22T20:08:23Z,Desmond Bane,Yes,1900,0.05
+2026-11-22 15:08,open,2026-11-22,335ad5604b51b7742fd1dee92d78da35,Orlando Magic,Washington Wizards,2026-11-23T00:10:00Z,ballybet,player_double_double,2026-11-22T20:08:23Z,Alex Sarr,Yes,550,0.1538
+2026-11-22 15:08,open,2026-11-22,335ad5604b51b7742fd1dee92d78da35,Orlando Magic,Washington Wizards,2026-11-23T00:10:00Z,ballybet,player_double_double,2026-11-22T20:08:23Z,Trae Young,Yes,225,0.3077
+2026-11-22 15:08,open,2026-11-22,335ad5604b51b7742fd1dee92d78da35,Orlando Magic,Washington Wizards,2026-11-23T00:10:00Z,ballybet,player_double_double,2026-11-22T20:08:23Z,Jalen Suggs,Yes,1600,0.0588
+2026-11-22 15:08,open,2026-11-22,335ad5604b51b7742fd1dee92d78da35,Orlando Magic,Washington Wizards,2026-11-23T00:10:00Z,ballybet,player_double_double,2026-11-22T20:08:23Z,Kyshawn George,Yes,1200,0.0769
+2026-11-22 15:08,open,2026-11-22,335ad5604b51b7742fd1dee92d78da35,Orlando Magic,Washington Wizards,2026-11-23T00:10:00Z,ballybet,player_double_double,2026-11-22T20:08:23Z,Anthony Black,Yes,850,0.1053
+2026-11-22 15:08,open,2026-11-22,335ad5604b51b7742fd1dee92d78da35,Orlando Magic,Washington Wizards,2026-11-23T00:10:00Z,espnbet,player_double_double,2026-11-22T20:07:19Z,AJ Dybantsa,Yes,380,0.2083
+2026-11-22 15:08,open,2026-11-22,335ad5604b51b7742fd1dee92d78da35,Orlando Magic,Washington Wizards,2026-11-23T00:10:00Z,espnbet,player_double_double,2026-11-22T20:07:19Z,AJ Dybantsa,No,-750,0.8824
+2026-11-22 15:08,open,2026-11-22,335ad5604b51b7742fd1dee92d78da35,Orlando Magic,Washington Wizards,2026-11-23T00:10:00Z,espnbet,player_double_double,2026-11-22T20:07:19Z,Alex Sarr,Yes,475,0.1739
+2026-11-22 15:08,open,2026-11-22,335ad5604b51b7742fd1dee92d78da35,Orlando Magic,Washington Wizards,2026-11-23T00:10:00Z,espnbet,player_double_double,2026-11-22T20:07:19Z,Alex Sarr,No,-1100,0.9167
+2026-11-22 15:08,open,2026-11-22,335ad5604b51b7742fd1dee92d78da35,Orlando Magic,Washington Wizards,2026-11-23T00:10:00Z,espnbet,player_double_double,2026-11-22T20:07:19Z,Anthony Black,Yes,650,0.1333
+2026-11-22 15:08,open,2026-11-22,335ad5604b51b7742fd1dee92d78da35,Orlando Magic,Washington Wizards,2026-11-23T00:10:00Z,espnbet,player_double_double,2026-11-22T20:07:19Z,Anthony Black,No,-2000,0.9524
+2026-11-22 15:08,open,2026-11-22,335ad5604b51b7742fd1dee92d78da35,Orlando Magic,Washington Wizards,2026-11-23T00:10:00Z,espnbet,player_double_double,2026-11-22T20:07:19Z,Anthony Davis,Yes,-150,0.6
+2026-11-22 15:08,open,2026-11-22,335ad5604b51b7742fd1dee92d78da35,Orlando Magic,Washington Wizards,2026-11-23T00:10:00Z,espnbet,player_double_double,2026-11-22T20:07:19Z,Anthony Davis,No,115,0.4651
+2026-11-22 15:08,open,2026-11-22,335ad5604b51b7742fd1dee92d78da35,Orlando Magic,Washington Wizards,2026-11-23T00:10:00Z,espnbet,player_double_double,2026-11-22T20:07:19Z,Franz Wagner,Yes,150,0.4
+2026-11-22 15:08,open,2026-11-22,335ad5604b51b7742fd1dee92d78da35,Orlando Magic,Washington Wizards,2026-11-23T00:10:00Z,espnbet,player_double_double,2026-11-22T20:07:19Z,Franz Wagner,No,-210,0.6774
+2026-11-22 15:08,open,2026-11-22,335ad5604b51b7742fd1dee92d78da35,Orlando Magic,Washington Wizards,2026-11-23T00:10:00Z,espnbet,player_double_double,2026-11-22T20:07:19Z,Jalen Suggs,Yes,1100,0.0833
+2026-11-22 15:08,open,2026-11-22,335ad5604b51b7742fd1dee92d78da35,Orlando Magic,Washington Wizards,2026-11-23T00:10:00Z,espnbet,player_double_double,2026-11-22T20:07:19Z,Jalen Suggs,No,-5000,0.9804
+2026-11-22 15:08,open,2026-11-22,335ad5604b51b7742fd1dee92d78da35,Orlando Magic,Washington Wizards,2026-11-23T00:10:00Z,espnbet,player_double_double,2026-11-22T20:07:19Z,Trae Young,Yes,200,0.3333
+2026-11-22 15:08,open,2026-11-22,335ad5604b51b7742fd1dee92d78da35,Orlando Magic,Washington Wizards,2026-11-23T00:10:00Z,espnbet,player_double_double,2026-11-22T20:07:19Z,Trae Young,No,-285,0.7403
+2026-11-22 15:08,open,2026-11-22,335ad5604b51b7742fd1dee92d78da35,Orlando Magic,Washington Wizards,2026-11-23T00:10:00Z,espnbet,player_double_double,2026-11-22T20:07:19Z,Wendell Carter Jr,Yes,200,0.3333
+2026-11-22 15:08,open,2026-11-22,335ad5604b51b7742fd1dee92d78da35,Orlando Magic,Washington Wizards,2026-11-23T00:10:00Z,espnbet,player_double_double,2026-11-22T20:07:19Z,Wendell Carter Jr,No,-285,0.7403
+2026-11-22 15:08,open,2026-11-22,335ad5604b51b7742fd1dee92d78da35,Orlando Magic,Washington Wizards,2026-11-23T00:10:00Z,draftkings,player_double_double,2026-11-22T20:08:39Z,Anthony Davis,Yes,-155,0.6078
+2026-11-22 15:08,open,2026-11-22,335ad5604b51b7742fd1dee92d78da35,Orlando Magic,Washington Wizards,2026-11-23T00:10:00Z,draftkings,player_double_double,2026-11-22T20:08:39Z,Franz Wagner,Yes,153,0.3953
+2026-11-22 15:08,open,2026-11-22,335ad5604b51b7742fd1dee92d78da35,Orlando Magic,Washington Wizards,2026-11-23T00:10:00Z,draftkings,player_double_double,2026-11-22T20:08:39Z,Wendell Carter Jr,Yes,195,0.339
+2026-11-22 15:08,open,2026-11-22,335ad5604b51b7742fd1dee92d78da35,Orlando Magic,Washington Wizards,2026-11-23T00:10:00Z,draftkings,player_double_double,2026-11-22T20:08:39Z,Trae Young,Yes,205,0.3279
+2026-11-22 15:08,open,2026-11-22,335ad5604b51b7742fd1dee92d78da35,Orlando Magic,Washington Wizards,2026-11-23T00:10:00Z,draftkings,player_double_double,2026-11-22T20:08:39Z,AJ Dybantsa,Yes,424,0.1908
+2026-11-22 15:08,open,2026-11-22,335ad5604b51b7742fd1dee92d78da35,Orlando Magic,Washington Wizards,2026-11-23T00:10:00Z,draftkings,player_double_double,2026-11-22T20:08:39Z,Alex Sarr,Yes,588,0.1453
+2026-11-22 15:08,open,2026-11-22,335ad5604b51b7742fd1dee92d78da35,Orlando Magic,Washington Wizards,2026-11-23T00:10:00Z,draftkings,player_double_double,2026-11-22T20:08:39Z,Anthony Black,Yes,1120,0.082
+2026-11-22 15:08,open,2026-11-22,335ad5604b51b7742fd1dee92d78da35,Orlando Magic,Washington Wizards,2026-11-23T00:10:00Z,draftkings,player_double_double,2026-11-22T20:08:39Z,Kyshawn George,Yes,1640,0.0575
+2026-11-22 15:08,open,2026-11-22,335ad5604b51b7742fd1dee92d78da35,Orlando Magic,Washington Wizards,2026-11-23T00:10:00Z,draftkings,player_double_double,2026-11-22T20:08:39Z,Desmond Bane,Yes,2100,0.0455
+2026-11-22 15:08,open,2026-11-22,335ad5604b51b7742fd1dee92d78da35,Orlando Magic,Washington Wizards,2026-11-23T00:10:00Z,draftkings,player_double_double,2026-11-22T20:08:39Z,Jalen Suggs,Yes,2200,0.0435
+2026-11-22 15:08,open,2026-11-22,335ad5604b51b7742fd1dee92d78da35,Orlando Magic,Washington Wizards,2026-11-23T00:10:00Z,draftkings,player_double_double,2026-11-22T20:08:39Z,Tristan da Silva,Yes,3700,0.0263
+2026-11-22 15:08,open,2026-11-22,335ad5604b51b7742fd1dee92d78da35,Orlando Magic,Washington Wizards,2026-11-23T00:10:00Z,betmgm,player_double_double,2026-11-22T20:08:34Z,Alex Sarr,Yes,700,0.125
+2026-11-22 15:08,open,2026-11-22,335ad5604b51b7742fd1dee92d78da35,Orlando Magic,Washington Wizards,2026-11-23T00:10:00Z,betmgm,player_double_double,2026-11-22T20:08:34Z,Trae Young,Yes,220,0.3125
+2026-11-22 15:08,open,2026-11-22,335ad5604b51b7742fd1dee92d78da35,Orlando Magic,Washington Wizards,2026-11-23T00:10:00Z,betmgm,player_double_double,2026-11-22T20:08:34Z,Anthony Davis,Yes,-160,0.6154
+2026-11-22 15:08,open,2026-11-22,335ad5604b51b7742fd1dee92d78da35,Orlando Magic,Washington Wizards,2026-11-23T00:10:00Z,betmgm,player_double_double,2026-11-22T20:08:34Z,AJ Dybantsa,Yes,475,0.1739
+2026-11-22 15:08,open,2026-11-22,335ad5604b51b7742fd1dee92d78da35,Orlando Magic,Washington Wizards,2026-11-23T00:10:00Z,betmgm,player_double_double,2026-11-22T20:08:34Z,Kyshawn George,Yes,1250,0.0741
+2026-11-22 15:08,open,2026-11-22,335ad5604b51b7742fd1dee92d78da35,Orlando Magic,Washington Wizards,2026-11-23T00:10:00Z,betmgm,player_double_double,2026-11-22T20:08:34Z,Franz Wagner,Yes,170,0.3704
+2026-11-22 15:08,open,2026-11-22,335ad5604b51b7742fd1dee92d78da35,Orlando Magic,Washington Wizards,2026-11-23T00:10:00Z,betmgm,player_double_double,2026-11-22T20:08:34Z,Jalen Suggs,Yes,1400,0.0667
+2026-11-22 15:08,open,2026-11-22,335ad5604b51b7742fd1dee92d78da35,Orlando Magic,Washington Wizards,2026-11-23T00:10:00Z,betmgm,player_double_double,2026-11-22T20:08:34Z,Desmond Bane,Yes,1300,0.0714
+2026-11-22 15:08,open,2026-11-22,335ad5604b51b7742fd1dee92d78da35,Orlando Magic,Washington Wizards,2026-11-23T00:10:00Z,betmgm,player_double_double,2026-11-22T20:08:34Z,Anthony Black,Yes,900,0.1
+2026-11-22 15:08,open,2026-11-22,335ad5604b51b7742fd1dee92d78da35,Orlando Magic,Washington Wizards,2026-11-23T00:10:00Z,hardrockbet,player_double_double,2026-11-22T20:07:33Z,Franz Wagner,Yes,160,0.3846
+2026-11-22 15:08,open,2026-11-22,335ad5604b51b7742fd1dee92d78da35,Orlando Magic,Washington Wizards,2026-11-23T00:10:00Z,hardrockbet,player_double_double,2026-11-22T20:07:33Z,Desmond Bane,Yes,1500,0.0625
+2026-11-22 15:08,open,2026-11-22,335ad5604b51b7742fd1dee92d78da35,Orlando Magic,Washington Wizards,2026-11-23T00:10:00Z,hardrockbet,player_double_double,2026-11-22T20:07:33Z,AJ Dybantsa,Yes,425,0.1905
+2026-11-22 15:08,open,2026-11-22,335ad5604b51b7742fd1dee92d78da35,Orlando Magic,Washington Wizards,2026-11-23T00:10:00Z,hardrockbet,player_double_double,2026-11-22T20:07:33Z,Trae Young,Yes,210,0.3226
+2026-11-22 15:08,open,2026-11-22,335ad5604b51b7742fd1dee92d78da35,Orlando Magic,Washington Wizards,2026-11-23T00:10:00Z,hardrockbet,player_double_double,2026-11-22T20:07:33Z,Kyshawn George,Yes,1400,0.0667
+2026-11-22 15:08,open,2026-11-22,335ad5604b51b7742fd1dee92d78da35,Orlando Magic,Washington Wizards,2026-11-23T00:10:00Z,hardrockbet,player_double_double,2026-11-22T20:07:33Z,Anthony Davis,Yes,-150,0.6
+2026-11-22 15:08,open,2026-11-22,335ad5604b51b7742fd1dee92d78da35,Orlando Magic,Washington Wizards,2026-11-23T00:10:00Z,hardrockbet,player_double_double,2026-11-22T20:07:33Z,Anthony Black,Yes,700,0.125
+2026-11-22 15:08,open,2026-11-22,335ad5604b51b7742fd1dee92d78da35,Orlando Magic,Washington Wizards,2026-11-23T00:10:00Z,hardrockbet,player_double_double,2026-11-22T20:07:33Z,Jalen Suggs,Yes,1600,0.0588
+2026-11-22 15:08,open,2026-11-22,335ad5604b51b7742fd1dee92d78da35,Orlando Magic,Washington Wizards,2026-11-23T00:10:00Z,hardrockbet,player_double_double,2026-11-22T20:07:33Z,Wendell Carter Jr,Yes,210,0.3226
+2026-11-22 15:08,open,2026-11-22,031fa761cc38e1b5afd9309b731b38b2,Indiana Pacers,New York Knicks,2026-11-23T01:10:00Z,fanduel,player_double_double,2026-11-22T20:07:22Z,Karl-Anthony Towns,Yes,-500,0.8333
+2026-11-22 15:08,open,2026-11-22,031fa761cc38e1b5afd9309b731b38b2,Indiana Pacers,New York Knicks,2026-11-23T01:10:00Z,fanduel,player_double_double,2026-11-22T20:07:22Z,Ivica Zubac,Yes,210,0.3226
+2026-11-22 15:08,open,2026-11-22,031fa761cc38e1b5afd9309b731b38b2,Indiana Pacers,New York Knicks,2026-11-23T01:10:00Z,fanduel,player_double_double,2026-11-22T20:07:22Z,Josh Hart,Yes,265,0.274
+2026-11-22 15:08,open,2026-11-22,031fa761cc38e1b5afd9309b731b38b2,Indiana Pacers,New York Knicks,2026-11-23T01:10:00Z,fanduel,player_double_double,2026-11-22T20:07:22Z,Andrew Nembhard,Yes,400,0.2
+2026-11-22 15:08,open,2026-11-22,031fa761cc38e1b5afd9309b731b38b2,Indiana Pacers,New York Knicks,2026-11-23T01:10:00Z,fanduel,player_double_double,2026-11-22T20:07:22Z,Jalen Brunson,Yes,410,0.1961
+2026-11-22 15:08,open,2026-11-22,031fa761cc38e1b5afd9309b731b38b2,Indiana Pacers,New York Knicks,2026-11-23T01:10:00Z,fanduel,player_double_double,2026-11-22T20:07:22Z,Pascal Siakam,Yes,640,0.1351
+2026-11-22 15:08,open,2026-11-22,031fa761cc38e1b5afd9309b731b38b2,Indiana Pacers,New York Knicks,2026-11-23T01:10:00Z,fanduel,player_double_double,2026-11-22T20:07:22Z,Kelly Oubre Jr.,Yes,1280,0.0725
+2026-11-22 15:08,open,2026-11-22,031fa761cc38e1b5afd9309b731b38b2,Indiana Pacers,New York Knicks,2026-11-23T01:10:00Z,fanduel,player_double_double,2026-11-22T20:07:22Z,Obi Toppin,Yes,1500,0.0625
+2026-11-22 15:08,open,2026-11-22,031fa761cc38e1b5afd9309b731b38b2,Indiana Pacers,New York Knicks,2026-11-23T01:10:00Z,fanduel,player_double_double,2026-11-22T20:07:22Z,Mikal Bridges,Yes,2500,0.0385
+2026-11-22 15:08,open,2026-11-22,031fa761cc38e1b5afd9309b731b38b2,Indiana Pacers,New York Knicks,2026-11-23T01:10:00Z,fanduel,player_double_double,2026-11-22T20:07:22Z,Aaron Nesmith,Yes,4000,0.0244
+2026-11-22 15:08,open,2026-11-22,031fa761cc38e1b5afd9309b731b38b2,Indiana Pacers,New York Knicks,2026-11-23T01:10:00Z,novig,player_double_double,2026-11-22T20:08:13Z,Jalen Brunson,Yes,488,0.1701
+2026-11-22 15:08,open,2026-11-22,031fa761cc38e1b5afd9309b731b38b2,Indiana Pacers,New York Knicks,2026-11-23T01:10:00Z,novig,player_double_double,2026-11-22T20:08:13Z,Jalen Brunson,No,-641,0.865
+2026-11-22 15:08,open,2026-11-22,031fa761cc38e1b5afd9309b731b38b2,Indiana Pacers,New York Knicks,2026-11-23T01:10:00Z,novig,player_double_double,2026-11-22T20:08:13Z,Karl-Anthony Towns,Yes,-400,0.8
+2026-11-22 15:08,open,2026-11-22,031fa761cc38e1b5afd9309b731b38b2,Indiana Pacers,New York Knicks,2026-11-23T01:10:00Z,novig,player_double_double,2026-11-22T20:08:13Z,Karl-Anthony Towns,No,264,0.2747
+2026-11-22 15:08,open,2026-11-22,031fa761cc38e1b5afd9309b731b38b2,Indiana Pacers,New York Knicks,2026-11-23T01:10:00Z,novig,player_double_double,2026-11-22T20:08:13Z,Pascal Siakam,Yes,614,0.1401
+2026-11-22 15:08,open,2026-11-22,031fa761cc38e1b5afd9309b731b38b2,Indiana Pacers,New York Knicks,2026-11-23T01:10:00Z,novig,player_double_double,2026-11-22T20:08:13Z,Aaron Nesmith,Yes,3348,0.029
+2026-11-22 15:08,open,2026-11-22,031fa761cc38e1b5afd9309b731b38b2,Indiana Pacers,New York Knicks,2026-11-23T01:10:00Z,novig,player_double_double,2026-11-22T20:08:13Z,Andrew Nembhard,Yes,413,0.1949
+2026-11-22 15:08,open,2026-11-22,031fa761cc38e1b5afd9309b731b38b2,Indiana Pacers,New York Knicks,2026-11-23T01:10:00Z,novig,player_double_double,2026-11-22T20:08:13Z,Andrew Nembhard,No,-641,0.865
+2026-11-22 15:08,open,2026-11-22,031fa761cc38e1b5afd9309b731b38b2,Indiana Pacers,New York Knicks,2026-11-23T01:10:00Z,novig,player_double_double,2026-11-22T20:08:13Z,Josh Hart,Yes,292,0.2551
+2026-11-22 15:08,open,2026-11-22,031fa761cc38e1b5afd9309b731b38b2,Indiana Pacers,New York Knicks,2026-11-23T01:10:00Z,novig,player_double_double,2026-11-22T20:08:13Z,Josh Hart,No,-413,0.8051
+2026-11-22 15:08,open,2026-11-22,031fa761cc38e1b5afd9309b731b38b2,Indiana Pacers,New York Knicks,2026-11-23T01:10:00Z,novig,player_double_double,2026-11-22T20:08:13Z,Kelly Oubre Jr.,Yes,1438,0.065
+2026-11-22 15:08,open,2026-11-22,031fa761cc38e1b5afd9309b731b38b2,Indiana Pacers,New York Knicks,2026-11-23T01:10:00Z,novig,player_double_double,2026-11-22T20:08:13Z,Obi Toppin,Yes,1567,0.06
+2026-11-22 15:08,open,2026-11-22,031fa761cc38e1b5afd9309b731b38b2,Indiana Pacers,New York Knicks,2026-11-23T01:10:00Z,novig,player_double_double,2026-11-22T20:08:13Z,Mikal Bridges,Yes,3025,0.032
+2026-11-22 15:08,open,2026-11-22,031fa761cc38e1b5afd9309b731b38b2,Indiana Pacers,New York Knicks,2026-11-23T01:10:00Z,novig,player_double_double,2026-11-22T20:08:13Z,Ivica Zubac,Yes,239,0.295
+2026-11-22 15:08,open,2026-11-22,031fa761cc38e1b5afd9309b731b38b2,Indiana Pacers,New York Knicks,2026-11-23T01:10:00Z,novig,player_double_double,2026-11-22T20:08:13Z,Ivica Zubac,No,-257,0.7199
+2026-11-22 15:08,open,2026-11-22,031fa761cc38e1b5afd9309b731b38b2,Indiana Pacers,New York Knicks,2026-11-23T01:10:00Z,draftkings,player_double_double,2026-11-22T20:08:35Z,Karl-Anthony Towns,Yes,-397,0.7988
+2026-11-22 15:08,open,2026-11-22,031fa761cc38e1b5afd9309b731b38b2,Indiana Pacers,New York Knicks,2026-11-23T01:10:00Z,draftkings,player_double_double,2026-11-22T20:08:35Z,Ivica Zubac,Yes,209,0.3236
+2026-11-22 15:08,open,2026-11-22,031fa761cc38e1b5afd9309b731b38b2,Indiana Pacers,New York Knicks,2026-11-23T01:10:00Z,draftkings,player_double_double,2026-11-22T20:08:35Z,Josh Hart,Yes,241,0.2933
+2026-11-22 15:08,open,2026-11-22,031fa761cc38e1b5afd9309b731b38b2,Indiana Pacers,New York Knicks,2026-11-23T01:10:00Z,draftkings,player_double_double,2026-11-22T20:08:35Z,Andrew Nembhard,Yes,413,0.1949
+2026-11-22 15:08,open,2026-11-22,031fa761cc38e1b5afd9309b731b38b2,Indiana Pacers,New York Knicks,2026-11-23T01:10:00Z,draftkings,player_double_double,2026-11-22T20:08:35Z,Jalen Brunson,Yes,496,0.1678
+2026-11-22 15:08,open,2026-11-22,031fa761cc38e1b5afd9309b731b38b2,Indiana Pacers,New York Knicks,2026-11-23T01:10:00Z,draftkings,player_double_double,2026-11-22T20:08:35Z,Pascal Siakam,Yes,576,0.1479
+2026-11-22 15:08,open,2026-11-22,031fa761cc38e1b5afd9309b731b38b2,Indiana Pacers,New York Knicks,2026-11-23T01:10:00Z,draftkings,player_double_double,2026-11-22T20:08:35Z,Obi Toppin,Yes,1940,0.049
+2026-11-22 15:08,open,2026-11-22,031fa761cc38e1b5afd9309b731b38b2,Indiana Pacers,New York Knicks,2026-11-23T01:10:00Z,draftkings,player_double_double,2026-11-22T20:08:35Z,Kelly Oubre Jr.,Yes,2000,0.0476
+2026-11-22 15:08,open,2026-11-22,031fa761cc38e1b5afd9309b731b38b2,Indiana Pacers,New York Knicks,2026-11-23T01:10:00Z,draftkings,player_double_double,2026-11-22T20:08:35Z,Aaron Nesmith,Yes,3800,0.0256
+2026-11-22 15:08,open,2026-11-22,031fa761cc38e1b5afd9309b731b38b2,Indiana Pacers,New York Knicks,2026-11-23T01:10:00Z,draftkings,player_double_double,2026-11-22T20:08:35Z,Mikal Bridges,Yes,3900,0.025
+2026-11-22 15:08,open,2026-11-22,031fa761cc38e1b5afd9309b731b38b2,Indiana Pacers,New York Knicks,2026-11-23T01:10:00Z,espnbet,player_double_double,2026-11-22T20:08:28Z,Andrew Nembhard,Yes,360,0.2174
+2026-11-22 15:08,open,2026-11-22,031fa761cc38e1b5afd9309b731b38b2,Indiana Pacers,New York Knicks,2026-11-23T01:10:00Z,espnbet,player_double_double,2026-11-22T20:08:28Z,Andrew Nembhard,No,-700,0.875
+2026-11-22 15:08,open,2026-11-22,031fa761cc38e1b5afd9309b731b38b2,Indiana Pacers,New York Knicks,2026-11-23T01:10:00Z,espnbet,player_double_double,2026-11-22T20:08:28Z,Ivica Zubac,Yes,200,0.3333
+2026-11-22 15:08,open,2026-11-22,031fa761cc38e1b5afd9309b731b38b2,Indiana Pacers,New York Knicks,2026-11-23T01:10:00Z,espnbet,player_double_double,2026-11-22T20:08:28Z,Ivica Zubac,No,-285,0.7403
+2026-11-22 15:08,open,2026-11-22,031fa761cc38e1b5afd9309b731b38b2,Indiana Pacers,New York Knicks,2026-11-23T01:10:00Z,espnbet,player_double_double,2026-11-22T20:08:28Z,Jalen Brunson,Yes,380,0.2083
+2026-11-22 15:08,open,2026-11-22,031fa761cc38e1b5afd9309b731b38b2,Indiana Pacers,New York Knicks,2026-11-23T01:10:00Z,espnbet,player_double_double,2026-11-22T20:08:28Z,Jalen Brunson,No,-750,0.8824
+2026-11-22 15:08,open,2026-11-22,031fa761cc38e1b5afd9309b731b38b2,Indiana Pacers,New York Knicks,2026-11-23T01:10:00Z,espnbet,player_double_double,2026-11-22T20:08:28Z,Josh Hart,Yes,260,0.2778
+2026-11-22 15:08,open,2026-11-22,031fa761cc38e1b5afd9309b731b38b2,Indiana Pacers,New York Knicks,2026-11-23T01:10:00Z,espnbet,player_double_double,2026-11-22T20:08:28Z,Josh Hart,No,-425,0.8095
+2026-11-22 15:08,open,2026-11-22,031fa761cc38e1b5afd9309b731b38b2,Indiana Pacers,New York Knicks,2026-11-23T01:10:00Z,espnbet,player_double_double,2026-11-22T20:08:28Z,Karl-Anthony Towns,Yes,-450,0.8182
+2026-11-22 15:08,open,2026-11-22,031fa761cc38e1b5afd9309b731b38b2,Indiana Pacers,New York Knicks,2026-11-23T01:10:00Z,espnbet,player_double_double,2026-11-22T20:08:28Z,Karl-Anthony Towns,No,280,0.2632
+2026-11-22 15:08,open,2026-11-22,031fa761cc38e1b5afd9309b731b38b2,Indiana Pacers,New York Knicks,2026-11-23T01:10:00Z,espnbet,player_double_double,2026-11-22T20:08:28Z,Pascal Siakam,Yes,475,0.1739
+2026-11-22 15:08,open,2026-11-22,031fa761cc38e1b5afd9309b731b38b2,Indiana Pacers,New York Knicks,2026-11-23T01:10:00Z,espnbet,player_double_double,2026-11-22T20:08:28Z,Pascal Siakam,No,-1100,0.9167
+2026-11-22 15:08,open,2026-11-22,031fa761cc38e1b5afd9309b731b38b2,Indiana Pacers,New York Knicks,2026-11-23T01:10:00Z,betmgm,player_double_double,2026-11-22T20:07:38Z,Jalen Brunson,Yes,475,0.1739
+2026-11-22 15:08,open,2026-11-22,031fa761cc38e1b5afd9309b731b38b2,Indiana Pacers,New York Knicks,2026-11-23T01:10:00Z,betmgm,player_double_double,2026-11-22T20:07:38Z,Josh Hart,Yes,260,0.2778
+2026-11-22 15:08,open,2026-11-22,031fa761cc38e1b5afd9309b731b38b2,Indiana Pacers,New York Knicks,2026-11-23T01:10:00Z,betmgm,player_double_double,2026-11-22T20:07:38Z,Mikal Bridges,Yes,1650,0.0571
+2026-11-22 15:08,open,2026-11-22,031fa761cc38e1b5afd9309b731b38b2,Indiana Pacers,New York Knicks,2026-11-23T01:10:00Z,betmgm,player_double_double,2026-11-22T20:07:38Z,Pascal Siakam,Yes,500,0.1667
+2026-11-22 15:08,open,2026-11-22,031fa761cc38e1b5afd9309b731b38b2,Indiana Pacers,New York Knicks,2026-11-23T01:10:00Z,betmgm,player_double_double,2026-11-22T20:07:38Z,Andrew Nembhard,Yes,375,0.2105
+2026-11-22 15:08,open,2026-11-22,031fa761cc38e1b5afd9309b731b38b2,Indiana Pacers,New York Knicks,2026-11-23T01:10:00Z,betmgm,player_double_double,2026-11-22T20:07:38Z,Aaron Nesmith,Yes,1700,0.0556
+2026-11-22 15:08,open,2026-11-22,031fa761cc38e1b5afd9309b731b38b2,Indiana Pacers,New York Knicks,2026-11-23T01:10:00Z,betmgm,player_double_double,2026-11-22T20:07:38Z,Kelly Oubre Jr.,Yes,1400,0.0667
+2026-11-22 15:08,open,2026-11-22,031fa761cc38e1b5afd9309b731b38b2,Indiana Pacers,New York Knicks,2026-11-23T01:10:00Z,betmgm,player_double_double,2026-11-22T20:07:38Z,Karl-Anthony Towns,Yes,-500,0.8333
+2026-11-22 15:08,open,2026-11-22,031fa761cc38e1b5afd9309b731b38b2,Indiana Pacers,New York Knicks,2026-11-23T01:10:00Z,ballybet,player_double_double,2026-11-22T20:08:22Z,Pascal Siakam,Yes,500,0.1667
+2026-11-22 15:08,open,2026-11-22,031fa761cc38e1b5afd9309b731b38b2,Indiana Pacers,New York Knicks,2026-11-23T01:10:00Z,ballybet,player_double_double,2026-11-22T20:08:22Z,Andrew Nembhard,Yes,390,0.2041
+2026-11-22 15:08,open,2026-11-22,031fa761cc38e1b5afd9309b731b38b2,Indiana Pacers,New York Knicks,2026-11-23T01:10:00Z,ballybet,player_double_double,2026-11-22T20:08:22Z,Jalen Brunson,Yes,500,0.1667
+2026-11-22 15:08,open,2026-11-22,031fa761cc38e1b5afd9309b731b38b2,Indiana Pacers,New York Knicks,2026-11-23T01:10:00Z,ballybet,player_double_double,2026-11-22T20:08:22Z,Karl-Anthony Towns,Yes,-360,0.7826
+2026-11-22 15:08,open,2026-11-22,031fa761cc38e1b5afd9309b731b38b2,Indiana Pacers,New York Knicks,2026-11-23T01:10:00Z,ballybet,player_double_double,2026-11-22T20:08:22Z,Ivica Zubac,Yes,225,0.3077
+2026-11-22 15:08,open,2026-11-22,031fa761cc38e1b5afd9309b731b38b2,Indiana Pacers,New York Knicks,2026-11-23T01:10:00Z,ballybet,player_double_double,2026-11-22T20:08:22Z,Kelly Oubre Jr.,Yes,1700,0.0556
+2026-11-22 15:08,open,2026-11-22,031fa761cc38e1b5afd9309b731b38b2,Indiana Pacers,New York Knicks,2026-11-23T01:10:00Z,ballybet,player_double_double,2026-11-22T20:08:22Z,Josh Hart,Yes,290,0.2564
+2026-11-22 15:08,open,2026-11-22,031fa761cc38e1b5afd9309b731b38b2,Indiana Pacers,New York Knicks,2026-11-23T01:10:00Z,hardrockbet,player_double_double,2026-11-22T20:08:22Z,Pascal Siakam,Yes,525,0.16
+2026-11-22 15:08,open,2026-11-22,031fa761cc38e1b5afd9309b731b38b2,Indiana Pacers,New York Knicks,2026-11-23T01:10:00Z,hardrockbet,player_double_double,2026-11-22T20:08:22Z,Andrew Nembhard,Yes,400,0.2
+2026-11-22 15:08,open,2026-11-22,031fa761cc38e1b5afd9309b731b38b2,Indiana Pacers,New York Knicks,2026-11-23T01:10:00Z,hardrockbet,player_double_double,2026-11-22T20:08:22Z,Josh Hart,Yes,275,0.2667
+2026-11-22 15:08,open,2026-11-22,031fa761cc38e1b5afd9309b731b38b2,Indiana Pacers,New York Knicks,2026-11-23T01:10:00Z,hardrockbet,player_double_double,2026-11-22T20:08:22Z,Jalen Brunson,Yes,425,0.1905
+2026-11-22 15:08,open,2026-11-22,031fa761cc38e1b5afd9309b731b38b2,Indiana Pacers,New York Knicks,2026-11-23T01:10:00Z,hardrockbet,player_double_double,2026-11-22T20:08:22Z,Karl-Anthony Towns,Yes,-425,0.8095
+2026-11-22 15:08,open,2026-11-22,031fa761cc38e1b5afd9309b731b38b2,Indiana Pacers,New York Knicks,2026-11-23T01:10:00Z,hardrockbet,player_double_double,2026-11-22T20:08:22Z,Mikal Bridges,Yes,4000,0.0244
+2026-11-22 15:08,open,2026-11-22,b8c5bdb50209c7d050400c7d28c32e30,Boston Celtics,Golden State Warriors,2026-11-23T01:40:00Z,fanduel,player_double_double,2026-11-22T20:07:50Z,Jayson Tatum,Yes,162,0.3817
+2026-11-22 15:08,open,2026-11-22,b8c5bdb50209c7d050400c7d28c32e30,Boston Celtics,Golden State Warriors,2026-11-23T01:40:00Z,fanduel,player_double_double,2026-11-22T20:07:50Z,Yaxel Lendeborg,Yes,260,0.2778
+2026-11-22 15:08,open,2026-11-22,b8c5bdb50209c7d050400c7d28c32e30,Boston Celtics,Golden State Warriors,2026-11-23T01:40:00Z,fanduel,player_double_double,2026-11-22T20:07:50Z,Neemias Queta,Yes,360,0.2174
+2026-11-22 15:08,open,2026-11-22,b8c5bdb50209c7d050400c7d28c32e30,Boston Celtics,Golden State Warriors,2026-11-23T01:40:00Z,fanduel,player_double_double,2026-11-22T20:07:50Z,Charles Bassey,Yes,700,0.125
+2026-11-22 15:08,open,2026-11-22,b8c5bdb50209c7d050400c7d28c32e30,Boston Celtics,Golden State Warriors,2026-11-23T01:40:00Z,fanduel,player_double_double,2026-11-22T20:07:50Z,Derrick White,Yes,920,0.098
+2026-11-22 15:08,open,2026-11-22,b8c5bdb50209c7d050400c7d28c32e30,Boston Celtics,Golden State Warriors,2026-11-23T01:40:00Z,fanduel,player_double_double,2026-11-22T20:07:50Z,Brandin Podziemski,Yes,1000,0.0909
+2026-11-22 15:08,open,2026-11-22,b8c5bdb50209c7d050400c7d28c32e30,Boston Celtics,Golden State Warriors,2026-11-23T01:40:00Z,fanduel,player_double_double,2026-11-22T20:07:50Z,Payton Pritchard,Yes,1200,0.0769
+2026-11-22 15:08,open,2026-11-22,b8c5bdb50209c7d050400c7d28c32e30,Boston Celtics,Golden State Warriors,2026-11-23T01:40:00Z,fanduel,player_double_double,2026-11-22T20:07:50Z,Draymond Green,Yes,1700,0.0556
+2026-11-22 15:08,open,2026-11-22,b8c5bdb50209c7d050400c7d28c32e30,Boston Celtics,Golden State Warriors,2026-11-23T01:40:00Z,fanduel,player_double_double,2026-11-22T20:07:50Z,Gui Santos,Yes,2500,0.0385
+2026-11-22 15:08,open,2026-11-22,b8c5bdb50209c7d050400c7d28c32e30,Boston Celtics,Golden State Warriors,2026-11-23T01:40:00Z,fanduel,player_double_double,2026-11-22T20:07:50Z,Baylor Scheierman,Yes,2800,0.0345
+2026-11-22 15:08,open,2026-11-22,b8c5bdb50209c7d050400c7d28c32e30,Boston Celtics,Golden State Warriors,2026-11-23T01:40:00Z,novig,player_double_double,2026-11-22T20:08:12Z,Gui Santos,Yes,2930,0.033
+2026-11-22 15:08,open,2026-11-22,b8c5bdb50209c7d050400c7d28c32e30,Boston Celtics,Golden State Warriors,2026-11-23T01:40:00Z,novig,player_double_double,2026-11-22T20:08:12Z,Baylor Scheierman,Yes,2930,0.033
+2026-11-22 15:08,open,2026-11-22,b8c5bdb50209c7d050400c7d28c32e30,Boston Celtics,Golden State Warriors,2026-11-23T01:40:00Z,novig,player_double_double,2026-11-22T20:08:12Z,Derrick White,Yes,1150,0.08
+2026-11-22 15:08,open,2026-11-22,b8c5bdb50209c7d050400c7d28c32e30,Boston Celtics,Golden State Warriors,2026-11-23T01:40:00Z,novig,player_double_double,2026-11-22T20:08:12Z,Jayson Tatum,Yes,170,0.3704
+2026-11-22 15:08,open,2026-11-22,b8c5bdb50209c7d050400c7d28c32e30,Boston Celtics,Golden State Warriors,2026-11-23T01:40:00Z,novig,player_double_double,2026-11-22T20:08:12Z,Jayson Tatum,No,-257,0.7199
+2026-11-22 15:08,open,2026-11-22,b8c5bdb50209c7d050400c7d28c32e30,Boston Celtics,Golden State Warriors,2026-11-23T01:40:00Z,novig,player_double_double,2026-11-22T20:08:12Z,Payton Pritchard,Yes,1718,0.055
+2026-11-22 15:08,open,2026-11-22,b8c5bdb50209c7d050400c7d28c32e30,Boston Celtics,Golden State Warriors,2026-11-23T01:40:00Z,novig,player_double_double,2026-11-22T20:08:12Z,Yaxel Lendeborg,Yes,344,0.2252
+2026-11-22 15:08,open,2026-11-22,b8c5bdb50209c7d050400c7d28c32e30,Boston Celtics,Golden State Warriors,2026-11-23T01:40:00Z,novig,player_double_double,2026-11-22T20:08:12Z,Yaxel Lendeborg,No,-488,0.8299
+2026-11-22 15:08,open,2026-11-22,b8c5bdb50209c7d050400c7d28c32e30,Boston Celtics,Golden State Warriors,2026-11-23T01:40:00Z,novig,player_double_double,2026-11-22T20:08:12Z,Brandin Podziemski,Yes,1329,0.07
+2026-11-22 15:08,open,2026-11-22,b8c5bdb50209c7d050400c7d28c32e30,Boston Celtics,Golden State Warriors,2026-11-23T01:40:00Z,novig,player_double_double,2026-11-22T20:08:12Z,Draymond Green,Yes,2122,0.045
+2026-11-22 15:08,open,2026-11-22,b8c5bdb50209c7d050400c7d28c32e30,Boston Celtics,Golden State Warriors,2026-11-23T01:40:00Z,novig,player_double_double,2026-11-22T20:08:12Z,Charles Bassey,Yes,770,0.1149
+2026-11-22 15:08,open,2026-11-22,b8c5bdb50209c7d050400c7d28c32e30,Boston Celtics,Golden State Warriors,2026-11-23T01:40:00Z,novig,player_double_double,2026-11-22T20:08:12Z,Charles Bassey,No,-2400,0.96
+2026-11-22 15:08,open,2026-11-22,b8c5bdb50209c7d050400c7d28c32e30,Boston Celtics,Golden State Warriors,2026-11-23T01:40:00Z,novig,player_double_double,2026-11-22T20:08:12Z,Neemias Queta,Yes,413,0.1949
+2026-11-22 15:08,open,2026-11-22,b8c5bdb50209c7d050400c7d28c32e30,Boston Celtics,Golden State Warriors,2026-11-23T01:40:00Z,novig,player_double_double,2026-11-22T20:08:12Z,Neemias Queta,No,-590,0.8551
+2026-11-22 15:08,open,2026-11-22,b8c5bdb50209c7d050400c7d28c32e30,Boston Celtics,Golden State Warriors,2026-11-23T01:40:00Z,betmgm,player_double_double,2026-11-22T20:07:39Z,Draymond Green,Yes,1500,0.0625
+2026-11-22 15:08,open,2026-11-22,b8c5bdb50209c7d050400c7d28c32e30,Boston Celtics,Golden State Warriors,2026-11-23T01:40:00Z,betmgm,player_double_double,2026-11-22T20:07:39Z,Brandin Podziemski,Yes,1100,0.0833
+2026-11-22 15:08,open,2026-11-22,b8c5bdb50209c7d050400c7d28c32e30,Boston Celtics,Golden State Warriors,2026-11-23T01:40:00Z,betmgm,player_double_double,2026-11-22T20:07:39Z,De'Anthony Melton,Yes,1800,0.0526
+2026-11-22 15:08,open,2026-11-22,b8c5bdb50209c7d050400c7d28c32e30,Boston Celtics,Golden State Warriors,2026-11-23T01:40:00Z,betmgm,player_double_double,2026-11-22T20:07:39Z,Derrick White,Yes,1250,0.0741
+2026-11-22 15:08,open,2026-11-22,b8c5bdb50209c7d050400c7d28c32e30,Boston Celtics,Golden State Warriors,2026-11-23T01:40:00Z,betmgm,player_double_double,2026-11-22T20:07:39Z,Yaxel Lendeborg,Yes,325,0.2353
+2026-11-22 15:08,open,2026-11-22,b8c5bdb50209c7d050400c7d28c32e30,Boston Celtics,Golden State Warriors,2026-11-23T01:40:00Z,betmgm,player_double_double,2026-11-22T20:07:39Z,Jayson Tatum,Yes,150,0.4
+2026-11-22 15:08,open,2026-11-22,b8c5bdb50209c7d050400c7d28c32e30,Boston Celtics,Golden State Warriors,2026-11-23T01:40:00Z,espnbet,player_double_double,2026-11-22T20:07:54Z,Brandin Podziemski,Yes,750,0.1176
+2026-11-22 15:08,open,2026-11-22,b8c5bdb50209c7d050400c7d28c32e30,Boston Celtics,Golden State Warriors,2026-11-23T01:40:00Z,espnbet,player_double_double,2026-11-22T20:07:54Z,Brandin Podziemski,No,-3000,0.9677
+2026-11-22 15:08,open,2026-11-22,b8c5bdb50209c7d050400c7d28c32e30,Boston Celtics,Golden State Warriors,2026-11-23T01:40:00Z,espnbet,player_double_double,2026-11-22T20:07:54Z,Charles Bassey,Yes,600,0.1429
+2026-11-22 15:08,open,2026-11-22,b8c5bdb50209c7d050400c7d28c32e30,Boston Celtics,Golden State Warriors,2026-11-23T01:40:00Z,espnbet,player_double_double,2026-11-22T20:07:54Z,Charles Bassey,No,-1600,0.9412
+2026-11-22 15:08,open,2026-11-22,b8c5bdb50209c7d050400c7d28c32e30,Boston Celtics,Golden State Warriors,2026-11-23T01:40:00Z,espnbet,player_double_double,2026-11-22T20:07:54Z,Derrick White,Yes,1200,0.0769
+2026-11-22 15:08,open,2026-11-22,b8c5bdb50209c7d050400c7d28c32e30,Boston Celtics,Golden State Warriors,2026-11-23T01:40:00Z,espnbet,player_double_double,2026-11-22T20:07:54Z,Derrick White,No,-2500,0.9615
+2026-11-22 15:08,open,2026-11-22,b8c5bdb50209c7d050400c7d28c32e30,Boston Celtics,Golden State Warriors,2026-11-23T01:40:00Z,espnbet,player_double_double,2026-11-22T20:07:54Z,Jayson Tatum,Yes,165,0.3774
+2026-11-22 15:08,open,2026-11-22,b8c5bdb50209c7d050400c7d28c32e30,Boston Celtics,Golden State Warriors,2026-11-23T01:40:00Z,espnbet,player_double_double,2026-11-22T20:07:54Z,Jayson Tatum,No,-225,0.6923
+2026-11-22 15:08,open,2026-11-22,b8c5bdb50209c7d050400c7d28c32e30,Boston Celtics,Golden State Warriors,2026-11-23T01:40:00Z,espnbet,player_double_double,2026-11-22T20:07:54Z,Neemias Queta,Yes,320,0.2381
+2026-11-22 15:08,open,2026-11-22,b8c5bdb50209c7d050400c7d28c32e30,Boston Celtics,Golden State Warriors,2026-11-23T01:40:00Z,espnbet,player_double_double,2026-11-22T20:07:54Z,Neemias Queta,No,-600,0.8571
+2026-11-22 15:08,open,2026-11-22,b8c5bdb50209c7d050400c7d28c32e30,Boston Celtics,Golden State Warriors,2026-11-23T01:40:00Z,espnbet,player_double_double,2026-11-22T20:07:54Z,Yaxel Lendeborg,Yes,375,0.2105
+2026-11-22 15:08,open,2026-11-22,b8c5bdb50209c7d050400c7d28c32e30,Boston Celtics,Golden State Warriors,2026-11-23T01:40:00Z,espnbet,player_double_double,2026-11-22T20:07:54Z,Yaxel Lendeborg,No,-550,0.8462
+2026-11-22 15:08,open,2026-11-22,b8c5bdb50209c7d050400c7d28c32e30,Boston Celtics,Golden State Warriors,2026-11-23T01:40:00Z,draftkings,player_double_double,2026-11-22T20:08:43Z,Jayson Tatum,Yes,175,0.3636
+2026-11-22 15:08,open,2026-11-22,b8c5bdb50209c7d050400c7d28c32e30,Boston Celtics,Golden State Warriors,2026-11-23T01:40:00Z,draftkings,player_double_double,2026-11-22T20:08:43Z,Neemias Queta,Yes,320,0.2381
+2026-11-22 15:08,open,2026-11-22,b8c5bdb50209c7d050400c7d28c32e30,Boston Celtics,Golden State Warriors,2026-11-23T01:40:00Z,draftkings,player_double_double,2026-11-22T20:08:43Z,Yaxel Lendeborg,Yes,332,0.2315
+2026-11-22 15:08,open,2026-11-22,b8c5bdb50209c7d050400c7d28c32e30,Boston Celtics,Golden State Warriors,2026-11-23T01:40:00Z,draftkings,player_double_double,2026-11-22T20:08:43Z,Charles Bassey,Yes,760,0.1163
+2026-11-22 15:08,open,2026-11-22,b8c5bdb50209c7d050400c7d28c32e30,Boston Celtics,Golden State Warriors,2026-11-23T01:40:00Z,draftkings,player_double_double,2026-11-22T20:08:43Z,Brandin Podziemski,Yes,1400,0.0667
+2026-11-22 15:08,open,2026-11-22,b8c5bdb50209c7d050400c7d28c32e30,Boston Celtics,Golden State Warriors,2026-11-23T01:40:00Z,draftkings,player_double_double,2026-11-22T20:08:43Z,Derrick White,Yes,1540,0.061
+2026-11-22 15:08,open,2026-11-22,b8c5bdb50209c7d050400c7d28c32e30,Boston Celtics,Golden State Warriors,2026-11-23T01:40:00Z,draftkings,player_double_double,2026-11-22T20:08:43Z,Draymond Green,Yes,2100,0.0455
+2026-11-22 15:08,open,2026-11-22,b8c5bdb50209c7d050400c7d28c32e30,Boston Celtics,Golden State Warriors,2026-11-23T01:40:00Z,draftkings,player_double_double,2026-11-22T20:08:43Z,Payton Pritchard,Yes,2300,0.0417
+2026-11-22 15:08,open,2026-11-22,b8c5bdb50209c7d050400c7d28c32e30,Boston Celtics,Golden State Warriors,2026-11-23T01:40:00Z,draftkings,player_double_double,2026-11-22T20:08:43Z,Baylor Scheierman,Yes,2700,0.0357
+2026-11-22 15:08,open,2026-11-22,b8c5bdb50209c7d050400c7d28c32e30,Boston Celtics,Golden State Warriors,2026-11-23T01:40:00Z,draftkings,player_double_double,2026-11-22T20:08:43Z,Gui Santos,Yes,3500,0.0278
+2026-11-22 15:08,open,2026-11-22,b8c5bdb50209c7d050400c7d28c32e30,Boston Celtics,Golden State Warriors,2026-11-23T01:40:00Z,ballybet,player_double_double,2026-11-22T20:07:45Z,Brandin Podziemski,Yes,1150,0.08
+2026-11-22 15:08,open,2026-11-22,b8c5bdb50209c7d050400c7d28c32e30,Boston Celtics,Golden State Warriors,2026-11-23T01:40:00Z,ballybet,player_double_double,2026-11-22T20:07:45Z,Draymond Green,Yes,1900,0.05
+2026-11-22 15:08,open,2026-11-22,b8c5bdb50209c7d050400c7d28c32e30,Boston Celtics,Golden State Warriors,2026-11-23T01:40:00Z,ballybet,player_double_double,2026-11-22T20:07:45Z,Yaxel Lendeborg,Yes,280,0.2632
+2026-11-22 15:08,open,2026-11-22,b8c5bdb50209c7d050400c7d28c32e30,Boston Celtics,Golden State Warriors,2026-11-23T01:40:00Z,ballybet,player_double_double,2026-11-22T20:07:45Z,Neemias Queta,Yes,300,0.25
+2026-11-22 15:08,open,2026-11-22,b8c5bdb50209c7d050400c7d28c32e30,Boston Celtics,Golden State Warriors,2026-11-23T01:40:00Z,ballybet,player_double_double,2026-11-22T20:07:45Z,Payton Pritchard,Yes,2000,0.0476
+2026-11-22 15:08,open,2026-11-22,b8c5bdb50209c7d050400c7d28c32e30,Boston Celtics,Golden State Warriors,2026-11-23T01:40:00Z,ballybet,player_double_double,2026-11-22T20:07:45Z,Jayson Tatum,Yes,148,0.4032
+2026-11-22 15:08,open,2026-11-22,b8c5bdb50209c7d050400c7d28c32e30,Boston Celtics,Golden State Warriors,2026-11-23T01:40:00Z,ballybet,player_double_double,2026-11-22T20:07:45Z,Charles Bassey,Yes,600,0.1429
+2026-11-22 15:08,open,2026-11-22,b8c5bdb50209c7d050400c7d28c32e30,Boston Celtics,Golden State Warriors,2026-11-23T01:40:00Z,ballybet,player_double_double,2026-11-22T20:07:45Z,Derrick White,Yes,1200,0.0769
+2026-11-22 15:08,open,2026-11-22,b8c5bdb50209c7d050400c7d28c32e30,Boston Celtics,Golden State Warriors,2026-11-23T01:40:00Z,hardrockbet,player_double_double,2026-11-22T20:08:05Z,Baylor Scheierman,Yes,2250,0.0426
+2026-11-22 15:08,open,2026-11-22,b8c5bdb50209c7d050400c7d28c32e30,Boston Celtics,Golden State Warriors,2026-11-23T01:40:00Z,hardrockbet,player_double_double,2026-11-22T20:08:05Z,Draymond Green,Yes,1750,0.0541
+2026-11-22 15:08,open,2026-11-22,b8c5bdb50209c7d050400c7d28c32e30,Boston Celtics,Golden State Warriors,2026-11-23T01:40:00Z,hardrockbet,player_double_double,2026-11-22T20:08:05Z,Payton Pritchard,Yes,1600,0.0588
+2026-11-22 15:08,open,2026-11-22,b8c5bdb50209c7d050400c7d28c32e30,Boston Celtics,Golden State Warriors,2026-11-23T01:40:00Z,hardrockbet,player_double_double,2026-11-22T20:08:05Z,Neemias Queta,Yes,350,0.2222
+2026-11-22 15:08,open,2026-11-22,b8c5bdb50209c7d050400c7d28c32e30,Boston Celtics,Golden State Warriors,2026-11-23T01:40:00Z,hardrockbet,player_double_double,2026-11-22T20:08:05Z,Jayson Tatum,Yes,170,0.3704
+2026-11-22 15:08,open,2026-11-22,b8c5bdb50209c7d050400c7d28c32e30,Boston Celtics,Golden State Warriors,2026-11-23T01:40:00Z,hardrockbet,player_double_double,2026-11-22T20:08:05Z,Derrick White,Yes,1000,0.0909
+2026-11-22 15:08,open,2026-11-22,b8c5bdb50209c7d050400c7d28c32e30,Boston Celtics,Golden State Warriors,2026-11-23T01:40:00Z,hardrockbet,player_double_double,2026-11-22T20:08:05Z,Yaxel Lendeborg,Yes,325,0.2353
+2026-11-22 15:08,open,2026-11-22,b8c5bdb50209c7d050400c7d28c32e30,Boston Celtics,Golden State Warriors,2026-11-23T01:40:00Z,hardrockbet,player_double_double,2026-11-22T20:08:05Z,Gui Santos,Yes,2500,0.0385
+2026-11-22 15:08,open,2026-11-22,b8c5bdb50209c7d050400c7d28c32e30,Boston Celtics,Golden State Warriors,2026-11-23T01:40:00Z,hardrockbet,player_double_double,2026-11-22T20:08:05Z,Brandin Podziemski,Yes,1100,0.0833

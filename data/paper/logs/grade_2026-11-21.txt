@@ -1,0 +1,16 @@
+----- grade 2026-11-21, started 2026-11-22 15:07 ET -----
+[   0.5s] hoopR player_box_2027: 0.1 MB
+[   1.0s] hoopR team_box_2027: 0.0 MB
+[   1.5s] hoopR schedule_2027: 0.2 MB
+[   3.8s] top five 2026-11-21: 2-1 against 1.33 expected hits, 0 pending, +0.70 units at FanDuel prices; ledger_top.csv now 115 rows
+[   3.8s] five-name record to date: 60-50, expected 55.9 hits, z +0.85 (luck against model bias; a z beyond 2 for a run of 100 legs means the model, not the dice)
+
+🏀 DD results: 2026-11-21
+
+**1-0** (100%) · +0.36u at the open price
+✅ **Victor Wembanyama** (SA vs NO) Yes -280 · model 0.76 · 50 pts 19 reb 1 ast · fair CLV -0.077 / -0.063
+
+📈 **Season:** 2-6 (25%) · -4.40u at the open price on 8 priced picks · fair CLV mean -0.046 / -0.057 on 4 picks with a two-way close
+_Gate: 96 more picks with a two-way close needed before the CLV test reads. Backfill picks without prices, not counted: 3-0._
+
+[   3.9s] ledger ledger.csv now 12 rows; wrote discord_grade_2026-11-21.md
