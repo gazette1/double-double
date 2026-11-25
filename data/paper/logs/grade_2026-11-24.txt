@@ -1,0 +1,10 @@
+----- grade 2026-11-24, started 2026-11-25 15:08 ET -----
+🏀 DD results: 2026-11-24
+
+No plays were posted for this date, nothing to grade.
+
+[   0.5s] hoopR player_box_2027: 0.2 MB
+[   0.9s] hoopR team_box_2027: 0.1 MB
+[   1.3s] hoopR schedule_2027: 0.2 MB
+[   3.7s] top five 2026-11-24: 2-2 against 1.88 expected hits, 0 pending, -1.13 units at FanDuel prices; ledger_top.csv now 130 rows
+[   3.7s] five-name record to date: 67-55, expected 62.0 hits, z +0.99 (luck against model bias; a z beyond 2 for a run of 100 legs means the model, not the dice)

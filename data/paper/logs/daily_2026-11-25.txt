@@ -1,0 +1,35 @@
+----- daily 2026-11-25, started 2026-11-25 15:08 ET -----
+[   0.0s] daily run for 2026-11-25 (live)
+[   0.5s] hoopR player_box_2027: 0.2 MB
+[   0.9s] hoopR team_box_2027: 0.1 MB
+[   1.3s] hoopR schedule_2027: 0.2 MB
+[   1.3s] production model trained 2026-11-22 15:08 (cutoff 2026-11-21, 3 days old)
+[   1.7s] slate: 9 games: MIA at PHI 17:00 (PHI -1.5), CHI at CHA 19:00 (CHA -3.5), CLE at NY 19:30 (NY -1.5), MIN at OKC 19:30 (OKC -1.5), LAC at MEM 20:00 (MEM -7.5), BKN at MIL 20:00 (MIL -1.5), PHX at HOU 20:30 (HOU -9.5), SAC at GS 22:00 (GS -6.5), SA at POR 22:00 (SA -3.5)
+[   2.7s] history through 2026-11-24: 306066 player rows
+[   9.6s] rosters: 317 players on 18 teams; injury report 95 players league-wide, 46 of tonight's players Out or Doubtful
+[   9.6s] pending rows 271 for 9 games
+[   9.9s] played rows 250742
+[  10.8s] player form done
+[  10.9s] history and schedule done
+[  11.4s] team context done (team-games 23622, 18 from player box sums, 12 without box stats)
+[  13.6s] rank, share, and absence features done
+[  13.8s] live rows 255 of 271 pending players (16 with fewer than 5 prior games skipped; 0 without any box-score history)
+[  13.8s] skipped (fewer than 5 prior games): Jaden Akins (NY, 1), Quadir Copeland (HOU, 0), Kylan Boswell (CHA, 0), Zack Austin (CLE, 0), Tre Donaldson (MIA, 3), Tyler Nickel (NY, 0), Dailyn Swain (CHI, 4), Joshua Jefferson (BKN, 1), Khalifa Diop (CLE, 0), Maliq Brown (SA, 2), Tobe Awaka (CHI, 4), Tyler Bilodeau (BKN, 0), Ernest Udeh Jr. (CLE, 0), Ja'Kobi Gillespie (SA, 3), Michael Ajayi (CHA, 0), Bogoljub Markovic (MIL, 3)
+[  13.9s] predicted 255 players; top: Karl-Anthony Towns 0.81, Victor Wembanyama 0.73, Giannis Antetokounmpo 0.70, Domantas Sabonis 0.66, Donovan Clingan 0.50, Alperen Sengun 0.47
+[  13.9s] second night of a back-to-back, left out of the five and the picks: no team
+9 NBA games on 2026-11-25 (ET) in this snapshot (open)
+635 price rows logged; credits used this run 9; credits remaining 307
+[  17.7s] prices: 83 scored players with a FanDuel quote, 63 with a two-way quote; books in the snapshot: ['ballybet', 'betmgm', 'draftkings', 'espnbet', 'fanduel', 'hardrockbet', 'novig']
+
+🏀 DD picks: 2026-11-25 (9 games, 255 players scored)
+
+🟢 **Donovan Clingan** (POR vs SA) Yes **+118** FD
+   model **0.50** · fair 0.43 / 0.42 · edge **+0.075** / +0.084 · FD edge +0.042 · spread SA -3.5
+🟢 **Moussa Diabate** (CHA vs CHI) Yes **+152** FD
+   model **0.42** · fair 0.36 / 0.35 · edge **+0.063** / +0.075 · FD edge +0.028 · spread CHA -3.5
+
+_Bar: edge above 0.033 under both de-vig methods (0.063 in a team's first 5 games, doubled for near-locks in 10-point spreads); FanDuel one-sided margin tonight 0.033 on players with fair at least 0.20, floor 0.03; p at least 0.35; price edge at least 0.02 at the book._
+_Passed on the favorites: Karl-Anthony Towns p 0.81, FD -550, fair 0.74; Victor Wembanyama p 0.73, FD -380, fair 0.70; Giannis Antetokounmpo p 0.70, FD -450, fair 0.61; Domantas Sabonis p 0.66, FD -270, fair 0.66._
+_Credits used 9, remaining 307. Paper stakes only, 1 unit per pick. Model trained 2026-11-22 15:08 through 2026-11-21._
+
+[  17.8s] wrote picks_2026-11-25.csv (2 picks), board_2026-11-25.csv (255 rows), discord_2026-11-25.md
